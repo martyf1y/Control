@@ -1,0 +1,1639 @@
+fileFormatVersion: 2
+guid: 4b1043a021e644e92a1abe2a9f370901
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8646839998584243239
+    second: MonsterIdle_0
+  - first:
+      213: -7069022122269928998
+    second: MonsterIdle_1
+  - first:
+      213: -4328684399211102983
+    second: MonsterIdle_2
+  - first:
+      213: -2276108931037155138
+    second: MonsterIdle_3
+  - first:
+      213: -1858700846971458146
+    second: MonsterIdle_4
+  - first:
+      213: 7466110184025212339
+    second: MonsterIdle_5
+  - first:
+      213: 1670547909367288371
+    second: MonsterIdle_6
+  - first:
+      213: -8112167552275625551
+    second: MonsterIdle_7
+  - first:
+      213: 8810799416746378652
+    second: MonsterIdle_8
+  - first:
+      213: 7066232255560828486
+    second: MonsterIdle_9
+  - first:
+      213: 1689494294572178212
+    second: MonsterIdle_10
+  - first:
+      213: 7275925732460812202
+    second: MonsterIdle_11
+  - first:
+      213: 8010042884312440016
+    second: MonsterIdle_12
+  - first:
+      213: -1577916758567247024
+    second: MonsterIdle_13
+  - first:
+      213: -7419590072821499990
+    second: MonsterIdle_14
+  - first:
+      213: -7967796875783167652
+    second: MonsterIdle_15
+  - first:
+      213: -4365542260713894519
+    second: MonsterIdle_16
+  - first:
+      213: 1104546740921294779
+    second: MonsterIdle_17
+  - first:
+      213: -2854973558199863752
+    second: MonsterIdle_18
+  - first:
+      213: 425916816030377224
+    second: MonsterIdle_19
+  - first:
+      213: 5309302875234251355
+    second: MonsterIdle_20
+  - first:
+      213: 4709080597769769774
+    second: MonsterIdle_21
+  - first:
+      213: 2906403300403373494
+    second: MonsterIdle_22
+  - first:
+      213: 8152601460963488025
+    second: MonsterIdle_23
+  - first:
+      213: -3236003905766905990
+    second: MonsterIdle_24
+  - first:
+      213: 3422079564731348885
+    second: MonsterIdle_25
+  - first:
+      213: -22157477799875441
+    second: MonsterIdle_26
+  - first:
+      213: -4834930758223369604
+    second: MonsterIdle_27
+  - first:
+      213: -5772970965396085140
+    second: MonsterIdle_28
+  - first:
+      213: -6761605658827577776
+    second: MonsterIdle_29
+  - first:
+      213: 2618566495856433970
+    second: MonsterIdle_30
+  - first:
+      213: 4455447932420249306
+    second: MonsterIdle_31
+  - first:
+      213: 290528848068658220
+    second: MonsterIdle_32
+  - first:
+      213: -7716101215694823688
+    second: MonsterIdle_33
+  - first:
+      213: -6451656387828995261
+    second: MonsterIdle_34
+  - first:
+      213: -1887843133297493623
+    second: MonsterIdle_35
+  - first:
+      213: -6783191656897486357
+    second: MonsterIdle_36
+  - first:
+      213: 7276154413716084822
+    second: MonsterIdle_37
+  - first:
+      213: 6247834419212267324
+    second: MonsterIdle_38
+  - first:
+      213: -6683874453637548304
+    second: MonsterIdle_39
+  - first:
+      213: 3883049539161411094
+    second: MonsterIdle_40
+  - first:
+      213: -1897134674939903742
+    second: MonsterIdle_41
+  - first:
+      213: -7974539650139073165
+    second: MonsterIdle_42
+  - first:
+      213: 6025041061441932166
+    second: MonsterIdle_43
+  - first:
+      213: -578491954574931863
+    second: MonsterIdle_44
+  - first:
+      213: -3090377770012519774
+    second: MonsterIdle_45
+  - first:
+      213: -5481943168137792545
+    second: MonsterIdle_46
+  - first:
+      213: 1206410098125625437
+    second: MonsterIdle_47
+  - first:
+      213: -1926681326796572630
+    second: MonsterIdle_48
+  - first:
+      213: -4722587375591484949
+    second: MonsterIdle_49
+  - first:
+      213: 1162292245391933614
+    second: MonsterIdle_50
+  - first:
+      213: 2015505168589167878
+    second: MonsterIdle_51
+  - first:
+      213: 8976622061272741934
+    second: MonsterIdle_52
+  - first:
+      213: -8990978179064106017
+    second: MonsterIdle_53
+  - first:
+      213: -2103735522579466147
+    second: MonsterIdle_54
+  - first:
+      213: 8107762025179739051
+    second: MonsterIdle_55
+  - first:
+      213: 4104513869087435812
+    second: MonsterIdle_56
+  - first:
+      213: -6785076758531725852
+    second: MonsterIdle_57
+  - first:
+      213: 8182448775831877894
+    second: MonsterIdle_58
+  - first:
+      213: 3390861165818891180
+    second: MonsterIdle_59
+  - first:
+      213: -4388975465795952696
+    second: MonsterIdle_60
+  - first:
+      213: 4994181457943524129
+    second: MonsterIdle_61
+  - first:
+      213: 3053442605330269879
+    second: MonsterIdle_62
+  - first:
+      213: 8199160054161645982
+    second: MonsterIdle_63
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MonsterIdle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3395
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00553f77f827344e3a922e35a28f21fb
+      internalID: -8646839998584243239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterIdle_1
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 3395
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 446e3ec3b2a2a4763a1899c4e8d827aa
+      internalID: -7069022122269928998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterIdle_2
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 3395
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de8cc70dec1314741847f469bca0bc1a
+      internalID: -4328684399211102983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterIdle_3
+      rect:
+        serializedVersion: 2
+        x: 1455
+        y: 3395
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac859a4ad0ff84eedb38b5122e97b293
+      internalID: -2276108931037155138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterIdle_4
+      rect:
+        serializedVersion: 2
+        x: 1940
+        y: 3395
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e46c095e6e37f4a1bb3b90c3a612d7a6
+      internalID: -1858700846971458146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterIdle_5
+      rect:
+        serializedVersion: 2
+        x: 2425
+        y: 3395
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d883ed51bb8240bc97e33cbf7c09ca5
+      internalID: 7466110184025212339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterIdle_6
+      rect:
+        serializedVersion: 2
+        x: 2910
+        y: 3395
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43079edd7600445ceb824a72fe6caa54
+      internalID: 1670547909367288371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterIdle_7
+      rect:
+        serializedVersion: 2
+        x: 3395
+        y: 3395
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 088a3869c947246f596a5d5ef7e5db28
+      internalID: -8112167552275625551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterIdle_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2910
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dfce5bd78dda468fadacb958822d80a
+      internalID: 8810799416746378652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterIdle_9
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 2910
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c86b21737c2546ca9c038f55592d00d
+      internalID: 7066232255560828486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterIdle_10
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 2910
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 951adf2ce33f643f190f912cdadb2393
+      internalID: 1689494294572178212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterIdle_11
+      rect:
+        serializedVersion: 2
+        x: 1455
+        y: 2910
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8374a7860282e45dbbccddbff9e13615
+      internalID: 7275925732460812202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterIdle_12
+      rect:
+        serializedVersion: 2
+        x: 1940
+        y: 2910
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 383c59f84b7dd48e480391c7f234a88c
+      internalID: 8010042884312440016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterIdle_13
+      rect:
+        serializedVersion: 2
+        x: 2425
+        y: 2910
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 164c781bffd0e43189188315299c86d0
+      internalID: -1577916758567247024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterIdle_14
+      rect:
+        serializedVersion: 2
+        x: 2910
+        y: 2910
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5aad625d0c4544ff5ada2e5af4b6b60d
+      internalID: -7419590072821499990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterIdle_15
+      rect:
+        serializedVersion: 2
+        x: 3395
+        y: 2910
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9314f2844b9a2413e9c4d49c3fdfe434
+      internalID: -7967796875783167652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterIdle_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2425
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2d11ade1e98a41d7b73f9272718aa93
+      internalID: -4365542260713894519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterIdle_17
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 2425
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80ae0f7227ac743b0b378cbf45828318
+      internalID: 1104546740921294779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterIdle_18
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 2425
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e451e24197c2d41599e28fc74c153f33
+      internalID: -2854973558199863752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterIdle_19
+      rect:
+        serializedVersion: 2
+        x: 1455
+        y: 2425
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2f3b22db178d4b75a7b1ebdc24ade85
+      internalID: 425916816030377224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterIdle_20
+      rect:
+        serializedVersion: 2
+        x: 1940
+        y: 2425
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a49e1739a6eb647fb85acad3a2118b7e
+      internalID: 5309302875234251355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterIdle_21
+      rect:
+        serializedVersion: 2
+        x: 2425
+        y: 2425
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de951d60bb5264e4ab7fe30abd0d0e11
+      internalID: 4709080597769769774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterIdle_22
+      rect:
+        serializedVersion: 2
+        x: 2910
+        y: 2425
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 172f312cb4d3a4ea0a0c5764fe270d4f
+      internalID: 2906403300403373494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterIdle_23
+      rect:
+        serializedVersion: 2
+        x: 3395
+        y: 2425
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b7dd4f99d89048b8b3fe1b0ad77ef54
+      internalID: 8152601460963488025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterIdle_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1940
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c8c34971e7da4c19891a1d030acbe13
+      internalID: -3236003905766905990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterIdle_25
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 1940
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aef2a376e3fe04a2e907673bbc38744c
+      internalID: 3422079564731348885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterIdle_26
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 1940
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cecedbe106e74ae193d4a9c6f16fa20
+      internalID: -22157477799875441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterIdle_27
+      rect:
+        serializedVersion: 2
+        x: 1455
+        y: 1940
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a37a15955cfa6434799e9a8f78907e5f
+      internalID: -4834930758223369604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterIdle_28
+      rect:
+        serializedVersion: 2
+        x: 1940
+        y: 1940
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36a0440dda21d45e0945d0b684f3c96f
+      internalID: -5772970965396085140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterIdle_29
+      rect:
+        serializedVersion: 2
+        x: 2425
+        y: 1940
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc55b7630705947c28213369392c2628
+      internalID: -6761605658827577776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterIdle_30
+      rect:
+        serializedVersion: 2
+        x: 2910
+        y: 1940
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b3bfad2f861243bf8889d713269676d
+      internalID: 2618566495856433970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterIdle_31
+      rect:
+        serializedVersion: 2
+        x: 3395
+        y: 1940
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49cf0383de33142798e7f6c1db8944c0
+      internalID: 4455447932420249306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterIdle_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1455
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2ba8eb342d6646c882e23f26e40b369
+      internalID: 290528848068658220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterIdle_33
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 1455
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2d2612670d9d4c29adbe15ff7aaa99d
+      internalID: -7716101215694823688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterIdle_34
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 1455
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e592d6e30767e474b822bbc0b718d262
+      internalID: -6451656387828995261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterIdle_35
+      rect:
+        serializedVersion: 2
+        x: 1455
+        y: 1455
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3750e5416b1244c781e138841a0167f
+      internalID: -1887843133297493623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterIdle_36
+      rect:
+        serializedVersion: 2
+        x: 1940
+        y: 1455
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 561782e46d68e4ba5ab4b4b5c5361b5c
+      internalID: -6783191656897486357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterIdle_37
+      rect:
+        serializedVersion: 2
+        x: 2425
+        y: 1455
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 431de9a3c6fd545f58e31e7937fbea2c
+      internalID: 7276154413716084822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterIdle_38
+      rect:
+        serializedVersion: 2
+        x: 2910
+        y: 1455
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2eea13a1e0d9e4e06bcf279194d5e705
+      internalID: 6247834419212267324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterIdle_39
+      rect:
+        serializedVersion: 2
+        x: 3395
+        y: 1455
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46647edaecfd64e3f9079f6d618be874
+      internalID: -6683874453637548304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterIdle_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 970
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfbc31d6828d94beeb3e21114071c2d6
+      internalID: 3883049539161411094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterIdle_41
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 970
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67b12485a860b4facbab42a36883dfdd
+      internalID: -1897134674939903742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterIdle_42
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 970
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31cff49be5e46417082a1a2ceea9faef
+      internalID: -7974539650139073165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterIdle_43
+      rect:
+        serializedVersion: 2
+        x: 1455
+        y: 970
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 572ebe8a8443f4621a193886b7908792
+      internalID: 6025041061441932166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterIdle_44
+      rect:
+        serializedVersion: 2
+        x: 1940
+        y: 970
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a60391165e4494371aaab206f3c9ada6
+      internalID: -578491954574931863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterIdle_45
+      rect:
+        serializedVersion: 2
+        x: 2425
+        y: 970
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7312d46caaf474212b8f6e5d82b407ed
+      internalID: -3090377770012519774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterIdle_46
+      rect:
+        serializedVersion: 2
+        x: 2910
+        y: 970
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03270cd2c349243c7b8ecf6240ba0e65
+      internalID: -5481943168137792545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterIdle_47
+      rect:
+        serializedVersion: 2
+        x: 3395
+        y: 970
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 977deb49f63044a5691adc285ee0f4b2
+      internalID: 1206410098125625437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterIdle_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 485
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81a50ef63329445ebb8278911492e3de
+      internalID: -1926681326796572630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterIdle_49
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 485
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de9990eb7f3a942348e76ae994520736
+      internalID: -4722587375591484949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterIdle_50
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 485
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aaa412a0ddc94e499ba615749ad6ae4
+      internalID: 1162292245391933614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterIdle_51
+      rect:
+        serializedVersion: 2
+        x: 1455
+        y: 485
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54e415e5d1d1342e8af96d2ed82cf04b
+      internalID: 2015505168589167878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterIdle_52
+      rect:
+        serializedVersion: 2
+        x: 1940
+        y: 485
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d0f636763b9f447590752b9a880a279
+      internalID: 8976622061272741934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterIdle_53
+      rect:
+        serializedVersion: 2
+        x: 2425
+        y: 485
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09f0aad8617c44053b0adf03e96be96c
+      internalID: -8990978179064106017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterIdle_54
+      rect:
+        serializedVersion: 2
+        x: 2910
+        y: 485
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5393303e50054b04b8ebd091c9b856a
+      internalID: -2103735522579466147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterIdle_55
+      rect:
+        serializedVersion: 2
+        x: 3395
+        y: 485
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11fa041f1f86f4c2b85d5b6e46a71d99
+      internalID: 8107762025179739051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterIdle_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04c4da02534df45c1a7b53e4cd362161
+      internalID: 4104513869087435812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterIdle_57
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 0
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 228c8b2fbdeb54880a632ee12eded4f1
+      internalID: -6785076758531725852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterIdle_58
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 0
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef0df1bbe210e4843b3c204d565caa7d
+      internalID: 8182448775831877894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterIdle_59
+      rect:
+        serializedVersion: 2
+        x: 1455
+        y: 0
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c5f077486d744659aac9f694335b4ac
+      internalID: 3390861165818891180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterIdle_60
+      rect:
+        serializedVersion: 2
+        x: 1940
+        y: 0
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b7fcceb803554ec0a9050ab2647ff4d
+      internalID: -4388975465795952696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterIdle_61
+      rect:
+        serializedVersion: 2
+        x: 2425
+        y: 0
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 371647906b3b04f16af24d7f2631b91d
+      internalID: 4994181457943524129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterIdle_62
+      rect:
+        serializedVersion: 2
+        x: 2910
+        y: 0
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0416067d37505424d84e85e8b02be634
+      internalID: 3053442605330269879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterIdle_63
+      rect:
+        serializedVersion: 2
+        x: 3395
+        y: 0
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad9d0d974cdfb44ceb1ef7f041e95557
+      internalID: 8199160054161645982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

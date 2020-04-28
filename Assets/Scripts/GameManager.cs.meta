@@ -1,0 +1,22 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class GameManager : MonoBehaviour
+{
+    float camY = 0f;
+    public GameObject monster; 
+    // Start is called before the first frame update
+    void Start()
+    {
+        Instantiate(monster, new Vector3(0, 10, -0.1f), Quaternion.identity);
+
+        Coroutine(monster.preFall());
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+       
+    }
+}

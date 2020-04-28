@@ -1,0 +1,967 @@
+fileFormatVersion: 2
+guid: 778e693d7da484156a5d3c9b9b5509ff
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2587255632447617167
+    second: MonsterMoveRight_0
+  - first:
+      213: -2873034569359293126
+    second: MonsterMoveRight_1
+  - first:
+      213: 3246548240610629747
+    second: MonsterMoveRight_2
+  - first:
+      213: 7436646666553213613
+    second: MonsterMoveRight_3
+  - first:
+      213: 6992749462349711313
+    second: MonsterMoveRight_4
+  - first:
+      213: 1505830113132309862
+    second: MonsterMoveRight_5
+  - first:
+      213: 3006955347397289396
+    second: MonsterMoveRight_6
+  - first:
+      213: 661516196839197847
+    second: MonsterMoveRight_7
+  - first:
+      213: -1318709622132205021
+    second: MonsterMoveRight_8
+  - first:
+      213: 3749664525616067097
+    second: MonsterMoveRight_9
+  - first:
+      213: -7510030027098517923
+    second: MonsterMoveRight_10
+  - first:
+      213: -5951447563461470653
+    second: MonsterMoveRight_11
+  - first:
+      213: -5901256292771761843
+    second: MonsterMoveRight_12
+  - first:
+      213: -664735049449333985
+    second: MonsterMoveRight_13
+  - first:
+      213: -2935316737127370720
+    second: MonsterMoveRight_14
+  - first:
+      213: 8557573364658336016
+    second: MonsterMoveRight_15
+  - first:
+      213: 3333917147306587691
+    second: MonsterMoveRight_16
+  - first:
+      213: 72200038578489774
+    second: MonsterMoveRight_17
+  - first:
+      213: 7466642841269068173
+    second: MonsterMoveRight_18
+  - first:
+      213: 7980122094393056
+    second: MonsterMoveRight_19
+  - first:
+      213: -6342317308097942040
+    second: MonsterMoveRight_20
+  - first:
+      213: -3900821367722645527
+    second: MonsterMoveRight_21
+  - first:
+      213: 9150502603478968657
+    second: MonsterMoveRight_22
+  - first:
+      213: 3696172150637363345
+    second: MonsterMoveRight_23
+  - first:
+      213: 4112870187852388780
+    second: MonsterMoveRight_24
+  - first:
+      213: -5830826735263683147
+    second: MonsterMoveRight_25
+  - first:
+      213: -1781576705955747293
+    second: MonsterMoveRight_26
+  - first:
+      213: -47241455806130564
+    second: MonsterMoveRight_27
+  - first:
+      213: 2774151676621924123
+    second: MonsterMoveRight_28
+  - first:
+      213: -1069121201666892104
+    second: MonsterMoveRight_29
+  - first:
+      213: 789582794835315451
+    second: MonsterMoveRight_30
+  - first:
+      213: -303803029200747391
+    second: MonsterMoveRight_31
+  - first:
+      213: -4143258063251511451
+    second: MonsterMoveRight_32
+  - first:
+      213: 17287770911032033
+    second: MonsterMoveRight_33
+  - first:
+      213: -8812025401876720540
+    second: MonsterMoveRight_34
+  - first:
+      213: -7272743230901551186
+    second: MonsterMoveRight_35
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MonsterMoveRight_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2275
+        width: 455
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3e435fcd210c45c380f135f4c1c5e83
+      internalID: -2587255632447617167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterMoveRight_1
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 2275
+        width: 455
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da26ef2b8e1774c809071323ad14c0cc
+      internalID: -2873034569359293126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterMoveRight_2
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 2275
+        width: 455
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c6fcb71e041a48e6b1c74781f4ae0f9
+      internalID: 3246548240610629747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterMoveRight_3
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 2275
+        width: 455
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fb72d55430c945ebb63204254a9b97a
+      internalID: 7436646666553213613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterMoveRight_4
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 2275
+        width: 455
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2ef62005c0434f2cb1669bc978eec4b
+      internalID: 6992749462349711313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterMoveRight_5
+      rect:
+        serializedVersion: 2
+        x: 2275
+        y: 2275
+        width: 455
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73c34c1292d9c4426adb74960b237738
+      internalID: 1505830113132309862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterMoveRight_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1820
+        width: 455
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c548e3d8faeb4448bf58188a4924d21
+      internalID: 3006955347397289396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterMoveRight_7
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 1820
+        width: 455
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d40a7f23310a547dabe873aa2bb0dcd2
+      internalID: 661516196839197847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterMoveRight_8
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 1820
+        width: 455
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cf06c7ec051f4d988bf9e4dea1e5f6c
+      internalID: -1318709622132205021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterMoveRight_9
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 1820
+        width: 455
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6235022948b734c47aa22a050230526c
+      internalID: 3749664525616067097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterMoveRight_10
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 1820
+        width: 455
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f430cae8b5c264e8f911b2a4090176e1
+      internalID: -7510030027098517923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterMoveRight_11
+      rect:
+        serializedVersion: 2
+        x: 2275
+        y: 1820
+        width: 455
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3dffe38056cf41f6ab4f947fff4e776
+      internalID: -5951447563461470653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterMoveRight_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1365
+        width: 455
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 862f9bbfee44748b89e03c2ea7bccd94
+      internalID: -5901256292771761843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterMoveRight_13
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 1365
+        width: 455
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81a7fdf77f5ff429da5c19000fcb412f
+      internalID: -664735049449333985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterMoveRight_14
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 1365
+        width: 455
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a6a7e043a33d45c49784ac74adf2537
+      internalID: -2935316737127370720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterMoveRight_15
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 1365
+        width: 455
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2c049e937839411a82c4c9bb2c40a57
+      internalID: 8557573364658336016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterMoveRight_16
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 1365
+        width: 455
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb6fdf56e80404071aa006bd7147f57d
+      internalID: 3333917147306587691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterMoveRight_17
+      rect:
+        serializedVersion: 2
+        x: 2275
+        y: 1365
+        width: 455
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e67ae2b7421e4be28e7ee2d3375cbc3
+      internalID: 72200038578489774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterMoveRight_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 910
+        width: 455
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfcb2e3ec75cc409baac89fcf388a1bf
+      internalID: 7466642841269068173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterMoveRight_19
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 910
+        width: 455
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec529c5691ff14bb28daa1f508756364
+      internalID: 7980122094393056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterMoveRight_20
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 910
+        width: 455
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb9a4e0ed96ea4edcab5165457479170
+      internalID: -6342317308097942040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterMoveRight_21
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 910
+        width: 455
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7419e5b5f8f564eeca9a99049c4aa144
+      internalID: -3900821367722645527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterMoveRight_22
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 910
+        width: 455
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61554274d73b345de93312286052e4b1
+      internalID: 9150502603478968657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterMoveRight_23
+      rect:
+        serializedVersion: 2
+        x: 2275
+        y: 910
+        width: 455
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 517a0d4220d3d47bca89402812b0cc2d
+      internalID: 3696172150637363345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterMoveRight_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 455
+        width: 455
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e54a656e7381d4a88a937be1c3bc03f6
+      internalID: 4112870187852388780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterMoveRight_25
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 455
+        width: 455
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8d2d46dab0d446a7b31a8119011c8b8
+      internalID: -5830826735263683147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterMoveRight_26
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 455
+        width: 455
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4892a9b5ae0c4670b66bddff47103f4
+      internalID: -1781576705955747293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterMoveRight_27
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 455
+        width: 455
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b7f8ad2c268c4970ae5d4443886b1d2
+      internalID: -47241455806130564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterMoveRight_28
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 455
+        width: 455
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eefcc9b79352a4bce932b7261e259dcd
+      internalID: 2774151676621924123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterMoveRight_29
+      rect:
+        serializedVersion: 2
+        x: 2275
+        y: 455
+        width: 455
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2adf4412136a8418d8bc4092e77e09b6
+      internalID: -1069121201666892104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterMoveRight_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 455
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1049a0efb0e4d450f9382424fc127b23
+      internalID: 789582794835315451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterMoveRight_31
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 0
+        width: 455
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96d842f6c37974a56bb88cec1fe59450
+      internalID: -303803029200747391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterMoveRight_32
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 0
+        width: 455
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a3bb06afc700429b91a63154aff7967
+      internalID: -4143258063251511451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterMoveRight_33
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 0
+        width: 455
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bb01efea23dc48fb995bbe14c313328
+      internalID: 17287770911032033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterMoveRight_34
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 0
+        width: 455
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d3123fefe5ef40d186c373db4970993
+      internalID: -8812025401876720540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterMoveRight_35
+      rect:
+        serializedVersion: 2
+        x: 2275
+        y: 0
+        width: 455
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76e7bed60babf40f4b7218c4ef3cde32
+      internalID: -7272743230901551186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
