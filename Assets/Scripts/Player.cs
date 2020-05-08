@@ -5,13 +5,17 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     [SerializeField]
+    public static Player instance = null; //Static instance allows it to be accessed by any other script.
+    private Animator animator;
+    private Rigidbody2D rg2d;
+
+
     private float moveSpeed = .1f;
     private Vector3 mousePosition;
 
-    Rigidbody2D rg2d;
     bool playInteract = false;
+    char facingThisWay = 'L';
 
-    public static Player instance = null; //Static instance of allows it to be accessed by any other script.
 
     // Start is called before the first frame update
     void Start()
@@ -23,18 +27,23 @@ public class Player : MonoBehaviour
             Destroy(gameObject);
 
         rg2d = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
-    public void PlayerInteraction()
+    public void PlayerMovement()
     {
-       
         if (playInteract)
         {
             // To add - If mouse is over world then do not do this 
             rg2d.gravityScale = 0;
             transform.rotation = Quaternion.Euler(0, 0, 0);
             mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            mousePosition = GetWorldPositionOnPlane(Input.mousePosition, 0); // This fixes persepctive issues with Z axis
+          
+
+            // Give a nice rubber band movement to mouse position
             transform.position = Vector2.Lerp(transform.position, mousePosition, moveSpeed);
+           // transform.position = Vector2(mousePosition.x, mousePosition.y);
         }
         else
         {
@@ -47,6 +56,11 @@ public class Player : MonoBehaviour
         return playInteract;
     }
 
+    public void StopInteract()
+    {
+        playInteract = false;
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -57,7 +71,34 @@ public class Player : MonoBehaviour
         {
             playInteract = !playInteract;
         }
-        PlayerInteraction();
+        PlayerMovement();
+    }
+
+    public Vector3 GetWorldPositionOnPlane(Vector3 screenPosition, float z)
+    {
+        Ray ray = Camera.main.ScreenPointToRay(screenPosition);
+        Plane xy = new Plane(Vector3.forward, new Vector3(0, 0, z));
+        float distance;
+        xy.Raycast(ray, out distance);
+        return ray.GetPoint(distance);
+    }
+
+    public void Flip(char nowFaceThisWay)
+    {
+        if (facingThisWay != nowFaceThisWay) {
+            transform.localScale = new Vector3(transform.localScale.x*-1, transform.localScale.y, transform.localScale.z);
+            facingThisWay = nowFaceThisWay;
+        }
+    }
+
+    public void AnimatePush()
+    {
+        animator.SetTrigger("StartPush");
+    }
+
+    public void AnimateStopPush()
+    {
+        animator.SetTrigger("EndPush");
     }
 
 }
