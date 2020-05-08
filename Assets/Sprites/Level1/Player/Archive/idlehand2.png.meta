@@ -1,0 +1,967 @@
+fileFormatVersion: 2
+guid: 6cb319c15c7ef4c89bf104512db54a59
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1587127303886561709
+    second: idlehand2_0
+  - first:
+      213: -5856662452497819581
+    second: idlehand2_1
+  - first:
+      213: 7646458361444332470
+    second: idlehand2_2
+  - first:
+      213: 4141150459983925255
+    second: idlehand2_3
+  - first:
+      213: -5819084647512622680
+    second: idlehand2_4
+  - first:
+      213: -5181599434233075381
+    second: idlehand2_5
+  - first:
+      213: -1993323241720241882
+    second: idlehand2_6
+  - first:
+      213: -4139342989522710193
+    second: idlehand2_7
+  - first:
+      213: -1648706882548111618
+    second: idlehand2_8
+  - first:
+      213: 274370624334550424
+    second: idlehand2_9
+  - first:
+      213: 540838521028595203
+    second: idlehand2_10
+  - first:
+      213: 6262015468760304365
+    second: idlehand2_11
+  - first:
+      213: 7996556224607499377
+    second: idlehand2_12
+  - first:
+      213: -5382686093223746134
+    second: idlehand2_13
+  - first:
+      213: -6011250730300539795
+    second: idlehand2_14
+  - first:
+      213: -8468668997375588316
+    second: idlehand2_15
+  - first:
+      213: -8220911285446939346
+    second: idlehand2_16
+  - first:
+      213: 5136306304227086155
+    second: idlehand2_17
+  - first:
+      213: -6535594033791197854
+    second: idlehand2_18
+  - first:
+      213: 9082790657123471453
+    second: idlehand2_19
+  - first:
+      213: -6270863252208939814
+    second: idlehand2_20
+  - first:
+      213: 6124263202456522406
+    second: idlehand2_21
+  - first:
+      213: 5202811031577258527
+    second: idlehand2_22
+  - first:
+      213: 2902036661677982648
+    second: idlehand2_23
+  - first:
+      213: -646832890553380797
+    second: idlehand2_24
+  - first:
+      213: -6065065636647885806
+    second: idlehand2_25
+  - first:
+      213: 278939699695954439
+    second: idlehand2_26
+  - first:
+      213: 4004124692877694419
+    second: idlehand2_27
+  - first:
+      213: -9208989488111255599
+    second: idlehand2_28
+  - first:
+      213: 2872878831729806037
+    second: idlehand2_29
+  - first:
+      213: 481673159384779535
+    second: idlehand2_30
+  - first:
+      213: 1944685253015761975
+    second: idlehand2_31
+  - first:
+      213: -2124276720918238104
+    second: idlehand2_32
+  - first:
+      213: 1461245076528441891
+    second: idlehand2_33
+  - first:
+      213: -1049016364993226173
+    second: idlehand2_34
+  - first:
+      213: 3805446384620339736
+    second: idlehand2_35
+  - first:
+      213: 2439885947831647463
+    second: idlehand2_36
+  - first:
+      213: -4404921880087397529
+    second: idlehand2_37
+  - first:
+      213: -4227749722643055904
+    second: idlehand2_38
+  - first:
+      213: 8796176159335470963
+    second: idlehand2_39
+  - first:
+      213: 4941149006686221699
+    second: idlehand2_40
+  - first:
+      213: 318254784020417789
+    second: idlehand2_41
+  - first:
+      213: -2161969011147855648
+    second: idlehand2_42
+  - first:
+      213: 6362997416248354647
+    second: idlehand2_43
+  - first:
+      213: -2420625139806639230
+    second: idlehand2_44
+  - first:
+      213: 3290690602501824269
+    second: idlehand2_45
+  - first:
+      213: 5184247713936071501
+    second: idlehand2_46
+  - first:
+      213: -7757485172414694391
+    second: idlehand2_47
+  - first:
+      213: 9084907800426095955
+    second: idlehand2_48
+  - first:
+      213: -5075567060314199264
+    second: idlehand2_49
+  - first:
+      213: -3567809313285620502
+    second: idlehand2_50
+  - first:
+      213: 7567184490999720448
+    second: idlehand2_51
+  - first:
+      213: 1476635179462559250
+    second: idlehand2_52
+  - first:
+      213: -8728945015608071754
+    second: idlehand2_53
+  - first:
+      213: -5105891028650703332
+    second: idlehand2_54
+  - first:
+      213: -8866696544980148957
+    second: idlehand2_55
+  - first:
+      213: -4790084414786935228
+    second: idlehand2_56
+  - first:
+      213: 2396373579962446736
+    second: idlehand2_57
+  - first:
+      213: 6438421935197913235
+    second: idlehand2_58
+  - first:
+      213: -3413809339395062902
+    second: idlehand2_59
+  - first:
+      213: -3004348122752456644
+    second: idlehand2_60
+  - first:
+      213: 3493347255395033294
+    second: idlehand2_61
+  - first:
+      213: 2829631312291496631
+    second: idlehand2_62
+  - first:
+      213: -2058233103704716163
+    second: idlehand2_63
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: idlehand2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 481
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c0159b642ec346e3a9102364bdd5e01
+      internalID: 1587127303886561709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idlehand2_1
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 0
+        width: 481
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2cc4aa7d81ec45dbbc1f360892a6633
+      internalID: -5856662452497819581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idlehand2_2
+      rect:
+        serializedVersion: 2
+        x: 962
+        y: 0
+        width: 481
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9041e8e7c6ce14e0d9e9888264493ad4
+      internalID: 7646458361444332470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idlehand2_3
+      rect:
+        serializedVersion: 2
+        x: 1443
+        y: 0
+        width: 481
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c5d2a769a0b44bbabb6546edc7c79dc
+      internalID: 4141150459983925255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idlehand2_4
+      rect:
+        serializedVersion: 2
+        x: 1924
+        y: 0
+        width: 481
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b788fd40210664865ac4dc76a4277cac
+      internalID: -5819084647512622680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idlehand2_5
+      rect:
+        serializedVersion: 2
+        x: 2405
+        y: 0
+        width: 481
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d365fc43fd154a6ba29592ea59e922b
+      internalID: -5181599434233075381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idlehand2_6
+      rect:
+        serializedVersion: 2
+        x: 2886
+        y: 0
+        width: 481
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a82f24bc4c794a2eb3a274dc682aff0
+      internalID: -1993323241720241882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idlehand2_7
+      rect:
+        serializedVersion: 2
+        x: 3367
+        y: 0
+        width: 481
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b242b772999c6460ea2f67eee68c3b09
+      internalID: -4139342989522710193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idlehand2_8
+      rect:
+        serializedVersion: 2
+        x: 3848
+        y: 0
+        width: 481
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f00a68807cb44e29aca7e34bed01894
+      internalID: -1648706882548111618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idlehand2_9
+      rect:
+        serializedVersion: 2
+        x: 4329
+        y: 0
+        width: 481
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ca685dc5624943f68a343641e8dc897
+      internalID: 274370624334550424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idlehand2_10
+      rect:
+        serializedVersion: 2
+        x: 4810
+        y: 0
+        width: 481
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0f3f06bcfd2d46ee91e56efc28a0e21
+      internalID: 540838521028595203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idlehand2_11
+      rect:
+        serializedVersion: 2
+        x: 5291
+        y: 0
+        width: 481
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7062a72fa1e84a5b8d222d1c808a0a3
+      internalID: 6262015468760304365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idlehand2_12
+      rect:
+        serializedVersion: 2
+        x: 5772
+        y: 0
+        width: 481
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bc9e905d2f8b49469962a4eda22b751
+      internalID: 7996556224607499377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idlehand2_13
+      rect:
+        serializedVersion: 2
+        x: 6253
+        y: 0
+        width: 481
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c80353b6c94384f01b0acd457e2501de
+      internalID: -5382686093223746134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idlehand2_14
+      rect:
+        serializedVersion: 2
+        x: 6734
+        y: 0
+        width: 481
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f01c494984264a72b4769b788e192f6
+      internalID: -6011250730300539795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idlehand2_15
+      rect:
+        serializedVersion: 2
+        x: 7215
+        y: 0
+        width: 481
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a94874b8359c4e1694c2a302e071fee
+      internalID: -8468668997375588316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idlehand2_16
+      rect:
+        serializedVersion: 2
+        x: 7696
+        y: 0
+        width: 481
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b471f60df89cb4786928433d959f93d1
+      internalID: -8220911285446939346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idlehand2_17
+      rect:
+        serializedVersion: 2
+        x: 8177
+        y: 0
+        width: 481
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67e66d726586a4a3d860fce1dd634587
+      internalID: 5136306304227086155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idlehand2_18
+      rect:
+        serializedVersion: 2
+        x: 8658
+        y: 0
+        width: 481
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 623828f5f6a574183bbcee9a141363c5
+      internalID: -6535594033791197854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idlehand2_19
+      rect:
+        serializedVersion: 2
+        x: 9139
+        y: 0
+        width: 481
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bd27d81411e5446c8e101f6072e4a43
+      internalID: 9082790657123471453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idlehand2_20
+      rect:
+        serializedVersion: 2
+        x: 9620
+        y: 0
+        width: 481
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29b60264302684762bf7511d56d098e0
+      internalID: -6270863252208939814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idlehand2_21
+      rect:
+        serializedVersion: 2
+        x: 10101
+        y: 0
+        width: 481
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dca0d131fa55439a970c3776488ffec
+      internalID: 6124263202456522406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idlehand2_22
+      rect:
+        serializedVersion: 2
+        x: 10582
+        y: 0
+        width: 481
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d481c628342474b6eacd3154d5fcf440
+      internalID: 5202811031577258527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idlehand2_23
+      rect:
+        serializedVersion: 2
+        x: 11063
+        y: 0
+        width: 481
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 330d602c6c2364a6f89ac21ed351de9c
+      internalID: 2902036661677982648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idlehand2_24
+      rect:
+        serializedVersion: 2
+        x: 11544
+        y: 0
+        width: 481
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6fe4cb8fe9494748a89fadf8232a72f
+      internalID: -646832890553380797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idlehand2_25
+      rect:
+        serializedVersion: 2
+        x: 12025
+        y: 0
+        width: 481
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07bc04f055a4042d9aea1e3151864e78
+      internalID: -6065065636647885806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idlehand2_26
+      rect:
+        serializedVersion: 2
+        x: 12506
+        y: 0
+        width: 481
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a2c9418b714540b1a62a624e244254c
+      internalID: 278939699695954439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idlehand2_27
+      rect:
+        serializedVersion: 2
+        x: 12987
+        y: 0
+        width: 481
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd16542addbac4f888b0e50290b0068d
+      internalID: 4004124692877694419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idlehand2_28
+      rect:
+        serializedVersion: 2
+        x: 13468
+        y: 0
+        width: 481
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 844899730d8fc4c47b6b52c9aa605182
+      internalID: -9208989488111255599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idlehand2_29
+      rect:
+        serializedVersion: 2
+        x: 13949
+        y: 0
+        width: 481
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55fe68a2d397645209079554c3160c87
+      internalID: 2872878831729806037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idlehand2_30
+      rect:
+        serializedVersion: 2
+        x: 14430
+        y: 0
+        width: 481
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d128612e41344f708e02ab4c05e9814
+      internalID: 481673159384779535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idlehand2_31
+      rect:
+        serializedVersion: 2
+        x: 14911
+        y: 0
+        width: 481
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5e04a83c3a1643d6a0c58e264272eb8
+      internalID: 1944685253015761975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
