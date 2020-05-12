@@ -8,6 +8,7 @@ To do
 28.04.20
 
 Level 1
+    - Figure out how to state parent variables from child in start
     - Stop the hand pushing when to high up the ball
     - Create bridge where axe is
     - buttons displayed and overlayed on world
@@ -33,4 +34,4 @@ Completed
 -     When zoomed out the ball can move a lot faster
 -     Hand flips to other way
 -     Hand does pushing motion when hitting ball
-    - Speed up roll animation when sped up
+-     Speed up roll animation when sped up

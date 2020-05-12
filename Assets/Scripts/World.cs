@@ -4,11 +4,20 @@ using UnityEngine;
 
 public class World : MonoBehaviour
 {
+    // World properties
     //public Sprite sprite;
     [SerializeField]
     private Vector3 rotation = new Vector3(0,0,1);
     private int fadeSpeed = 1;
     Color color;
+
+    // Level things properties that cross over each level
+    bool levelComplete = false;
+    public Vector3 worldView; // = new Vector3(0, 0, -450); // ()
+    public Vector3 monsterView; // = new Vector3(0, 8.5f, -80); // ()
+    public GameObject worldDoor;
+    public Collider2D monsterBlocker;
+
 
     // Start is called before the first frame update
     void Start()
@@ -25,7 +34,7 @@ public class World : MonoBehaviour
 
     public void Update()
     {
-
+        Debug.Log(monsterView);
     }
 
     public void FadeOut()

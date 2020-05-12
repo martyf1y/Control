@@ -7,25 +7,30 @@ public class GameManager : MonoBehaviour
 
     public static GameManager instance = null; //Static instance of GameManager which allows it to be accessed by any other script.
     public int level = 1;
-    bool level1Complete = false;
 
-    public GameObject level1, level2, level3, level4;
-    public GameObject player;
-    public GameObject monster;
-    public GameObject doorEntry; // The entry point to the next stage
 
+    //private GameObject currentLevel;
+    public GameObject level0, level1, level2, level3;
+    private GameObject worldDoor; 
+    //public GameObject player;
+    //public GameObject monster;
+
+    // If stage 1 is complete then move onto stage 2 things
+    // Go up in value of i plus one
+
+    bool levelComplete = false;
 
 
     // Camera shenanigans
-    private Vector3 worldView = new Vector3(0, 0.28f, -428.8f);
-    private Vector3 monsterView = new Vector3(0, 8, -80);
+    private Vector3 worldView; 
+    private Vector3 monsterView;
     private Vector3 zoomWhatWay;
     private readonly float camSpeed = .1f;
     private bool movingCam = false;
 
     // How we track collision between the objects
     private Collider2D playerCollider, monsterCollider;
-    private Collider2D worldCollider, objBlkrCollider;
+    private Collider2D worldCollider, monBlkrCollider;
     private Collider2D doorEntryCollider;
  
     // Start is called before the first frame update
@@ -38,12 +43,17 @@ public class GameManager : MonoBehaviour
 
         // Cursor.visible = false;
 
-        transform.position = monsterView;
-        objBlkrCollider = level1.GetComponentInChildren<BoxCollider2D>();
-        worldCollider = level2.GetComponent<Collider2D>();
-        playerCollider = player.GetComponent<Collider2D>();
-        monsterCollider = monster.GetComponent<Collider2D>();
-        doorEntryCollider = doorEntry.GetComponent<Collider2D>();
+
+        playerCollider = Player.instance.GetComponent<Collider2D>();
+        monsterCollider = Monster.instance.GetComponent<Collider2D>();
+
+        resetCurrentWorld(level1);
+
+        transform.position = monsterView; // Start us at right view
+
+        
+
+        
     }
 
     // Update is called once per frame
@@ -59,9 +69,10 @@ public class GameManager : MonoBehaviour
         // PLEASE TIDY THIS UP SO THE ANIMATIONS CAN CHECK THEIR OWN TRIGGERS
         if (Player.instance.GetPlayInteract())
         {
-            if (level1Complete == true) // When puzzle complete we take away the barrier
+            if (levelComplete == true) // When puzzle complete we take away the barrier
             {
-                objBlkrCollider = level3.GetComponentInChildren<BoxCollider2D>();
+                // This should change to something related to bigger picture. Maybe null until next level reached.
+                monBlkrCollider = level2.GetComponentInChildren<BoxCollider2D>();
                 
          
             }
@@ -73,15 +84,15 @@ public class GameManager : MonoBehaviour
 
                 if (AreAllObjectsTouching(worldCollider, monsterCollider, doorEntryCollider) != 'N')
                 { // We have hit the entry to next level.
-                    WorldBlocker.instance.changeSprite(1);
-                    WorldBlocker.instance.transform.position = new Vector3(WorldBlocker.instance.transform.position.x, WorldBlocker.instance.transform.position.y, -.4f);
+                    worldDoor.GetComponent<WorldDoor>().changeSprite(1); // Change to open door.
+                    worldDoor.transform.position = new Vector3(worldDoor.transform.position.x, worldDoor.transform.position.y, -.4f);
                     // todo
                     // Change all variables to next level.
                 }
 
 
-                char monWorldBlkrDir = AreAllObjectsTouching(worldCollider, monsterCollider, objBlkrCollider);
-                Debug.Log("collider " + monWorldBlkrDir);
+                char monWorldBlkrDir = AreAllObjectsTouching(worldCollider, monsterCollider, monBlkrCollider);
+               // Debug.Log("collider " + monWorldBlkrDir);
                 if (monWorldBlkrDir == monHandDir) // Are we touching the blocker?
                 // old way when axe went same was as world --- if (monWorldObjDir == monHandDir && monWorldObjDir != 'N'
                 //    || monWorldObjDir != monHandDir && monWorldObjDir == 'N') // Checks we are outside boundaries of the world walls
@@ -137,7 +148,7 @@ public class GameManager : MonoBehaviour
     void RotateWorlds(char rotateWhatWay)
     {
         float worldSpeed = 1;
-        Animator monsterAnimator = monster.gameObject.GetComponent<Animator>();
+        Animator monsterAnimator = Monster.instance.gameObject.GetComponent<Animator>();
 
         // Go faster when outer view or holding space bar
         if (Input.GetKey("space") || zoomWhatWay == worldView)
@@ -201,5 +212,19 @@ public class GameManager : MonoBehaviour
         {
             return true;
         }
+    }
+
+    void resetCurrentWorld(GameObject newWorld)
+    {
+       // currentLevel = newWorld;
+
+        monsterView = newWorld.GetComponent<World>().monsterView;
+        worldView = newWorld.GetComponent<World>().worldView;
+        worldCollider = newWorld.GetComponent<Collider2D>();
+        doorEntryCollider = newWorld.GetComponent<World>().worldDoor.GetComponent<Collider2D>();
+        monBlkrCollider = newWorld.GetComponent<World>().monsterBlocker.GetComponent<Collider2D>();
+
+        worldDoor = newWorld.GetComponent<World>().worldDoor;
+        
     }
 }

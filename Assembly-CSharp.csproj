@@ -63,12 +63,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Button.cs" />
     <Compile Include="Assets\Scripts\CameraFade.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\Levels\Level1Script.cs" />
     <Compile Include="Assets\Scripts\Monster.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\World.cs" />
-    <Compile Include="Assets\Scripts\WorldBlocker.cs" />
+    <Compile Include="Assets\Scripts\WorldDoor.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>/Users/myMarty/Documents/0.Programs&amp;Projects/Control 4 Unity/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>

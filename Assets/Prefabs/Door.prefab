@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 67434852502801752}
   - component: {fileID: 67434852502801753}
   - component: {fileID: 67434852502801732}
-  - component: {fileID: 67434852502801755}
+  - component: {fileID: 3086633795535626247}
   m_Layer: 0
-  m_Name: Bridge
+  m_Name: Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -108,7 +108,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.16, y: 0.62}
   m_EdgeRadius: 0
---- !u!114 &67434852502801755
+--- !u!114 &3086633795535626247
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -121,5 +121,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   WBSprite:
-  - {fileID: 21300000, guid: b6f718401e1c54bcf99fdf811cc587c8, type: 3}
-  - {fileID: 21300000, guid: f0f0b78b513264a1aafa5ba503ad2d84, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}

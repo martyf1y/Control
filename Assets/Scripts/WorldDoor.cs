@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WorldBlocker : MonoBehaviour
+public class WorldDoor : MonoBehaviour
 {
-    public static WorldBlocker instance;
     public Sprite[] WBSprite = new Sprite[5];
     private SpriteRenderer WBSpriteRenderer;
 
@@ -13,7 +12,6 @@ public class WorldBlocker : MonoBehaviour
     {
         WBSpriteRenderer = GetComponent<SpriteRenderer>();
         WBSpriteRenderer.sprite = WBSprite[0];
-        instance = this;
     }
 
     // Update is called once per frame
