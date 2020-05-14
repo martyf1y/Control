@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2572771038900088639}
   - component: {fileID: 2572771038900088638}
-  - component: {fileID: 900142950532949558}
+  - component: {fileID: 3546936996224863275}
   m_Layer: 0
   m_Name: Level2
   m_TagString: Untagged
@@ -81,7 +81,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &900142950532949558
+--- !u!114 &3546936996224863275
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -90,7 +90,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 2572771038900088636}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7be9bd7e8a7b948daae0781f94d2cd5c, type: 3}
+  m_Script: {fileID: 11500000, guid: 80480c50f1c604e5eb37bacdda5bd673, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  worldDoor: {fileID: 0}
+  monsterBlocker: {fileID: 0}
+  worldView: {x: 0, y: 0, z: 0}
+  monsterView: {x: 0, y: 0, z: 0}
+  levelComplete: 0
   rotation: {x: 0, y: 0, z: 1}

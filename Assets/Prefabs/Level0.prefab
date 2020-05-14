@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4887076251994466702}
   - component: {fileID: 4887076251994466689}
-  - component: {fileID: 2948835940895229533}
+  - component: {fileID: 2554323010746554531}
   m_Layer: 0
-  m_Name: Level1
+  m_Name: Level0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -81,7 +81,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2948835940895229533
+--- !u!114 &2554323010746554531
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -90,7 +90,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 4887076251994466703}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7be9bd7e8a7b948daae0781f94d2cd5c, type: 3}
+  m_Script: {fileID: 11500000, guid: ea9e7cb2ce35e4f9ab1175c938b4aea2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotation: {x: 0, y: 0, z: 10}
+  worldDoor: {fileID: 0}
+  monsterBlocker: {fileID: 0}
+  worldView: {x: 0, y: 0, z: 0}
+  monsterView: {x: 0, y: 0, z: 0}
+  levelComplete: 0
+  rotation: {x: 0, y: 0, z: 1}

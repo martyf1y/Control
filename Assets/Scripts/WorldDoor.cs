@@ -20,7 +20,7 @@ public class WorldDoor : MonoBehaviour
         
     }
 
-    public void changeSprite(int num)
+    public void ChangeSprite(int num)
     {
         WBSpriteRenderer.sprite = WBSprite[num];
     }

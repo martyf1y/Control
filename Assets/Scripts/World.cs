@@ -6,17 +6,19 @@ public class World : MonoBehaviour
 {
     // World properties
     //public Sprite sprite;
-    [SerializeField]
-    private Vector3 rotation = new Vector3(0,0,1);
+
+    // Fade world
     private int fadeSpeed = 1;
     Color color;
 
     // Level things properties that cross over each level
-    bool levelComplete = false;
-    public Vector3 worldView; // = new Vector3(0, 0, -450); // ()
-    public Vector3 monsterView; // = new Vector3(0, 8.5f, -80); // ()
     public GameObject worldDoor;
     public Collider2D monsterBlocker;
+    public Vector3 worldView  {get; set;}
+    public Vector3 monsterView { get; set; }
+    public bool puzzleSolved { get; set; }
+    public bool levelComplete { get; set; }
+    public Vector3 rotation { get; set; }
 
 
     // Start is called before the first frame update
@@ -29,14 +31,14 @@ public class World : MonoBehaviour
     public void Rotate(float whatWay)
     {
         transform.Rotate(rotation * Time.deltaTime * whatWay);
-
     }
 
     public void Update()
     {
-        Debug.Log(monsterView);
+        //Debug.Log(monsterView);
     }
 
+    
     public void FadeOut()
     {
         color.a -= Time.deltaTime * fadeSpeed;

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - World
   - Monster
+  - Button
   layers:
   - Default
   - TransparentFX

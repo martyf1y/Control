@@ -8,7 +8,7 @@ To do
 28.04.20
 
 Level 1
-    - Figure out how to state parent variables from child in start
+    - Put buttons in correct place based on world. And random
     - Stop the hand pushing when to high up the ball
     - Create bridge where axe is
     - buttons displayed and overlayed on world
@@ -35,3 +35,5 @@ Completed
 -     Hand flips to other way
 -     Hand does pushing motion when hitting ball
 -     Speed up roll animation when sped up
+-     Figure out how to state parent variables from child in start
+
