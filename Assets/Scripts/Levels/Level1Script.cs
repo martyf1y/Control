@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Level1Script : World
 {
@@ -18,7 +19,12 @@ public class Level1Script : World
     //public GameObject prefabButton;
     private GameObject[] buttons;
     private float posBasedOnWorld;
+    private float speed = 0.1f;
 
+    // Button related
+    TextMeshPro[] buttText;
+    private string[] passwordButtLib = {"P", "A", "S", "W", "O", "R", "D"};
+    string password = "PASSWORD"; // The Password to get right
 
     // Start is called before the first frame update
     void Start()
@@ -35,36 +41,78 @@ public class Level1Script : World
         worldView = new Vector3(0, 0, -450);
         rotation = new Vector3(0, 0, -10);
 
-        buttons = GameObject.FindGameObjectsWithTag("Button");
+        buttons = GameObject.FindGameObjectsWithTag("Password");
+        float angleAdjuster = Random.Range(-0.08f, 0.08f);
 
+        float worldEdge = this.transform.localScale.x * -7.4f; // fixed amount of where the world edge is
+        int num = 0;
+        buttText = new TextMeshPro[buttons.Length];
+        foreach (var button in buttons)
+        {
+            float angle = angleAdjuster * Mathf.PI * 2;
+            Vector3 pos = new Vector3(Mathf.Cos(angle) * worldEdge, Mathf.Sin(angle) * worldEdge, -1);
+            button.transform.position = pos;
+            button.transform.eulerAngles = new Vector3(0, 0, Mathf.Atan2(pos.y, pos.x) * 180 / Mathf.PI + 180);
+            // Change the text randomly
+            buttText[num] = button.GetComponentInChildren<TMPro.TextMeshPro>();
+            buttText[num].text = passwordButtLib[Random.Range(0, passwordButtLib.Length)];
+            angleAdjuster += 0.02f;
+            num++;
 
-        // ADD IN BUTTON POSITION HERE BASED ON WORLD SCALE
-        posBasedOnWorld = this.transform.localScale.x * 7.4f; // fixed amount of where the world edge is
-
-
+        }
     }
+
+
+ 
 
     // Update is called once per frame
     new void Update()
     {
-        //Debug.Log("Scale " + this.transform.localScale);
 
-        int i = 0;
-        Collider2D monsterCollider = Monster.instance.GetComponent<Collider2D>();
-        foreach (var button in buttons)
+        if (!puzzleSolved)
         {
-            Collider2D buttCollider = button.GetComponent<Collider2D>();
-            if (monsterCollider.IsTouching(buttCollider))
+            int i = 0;
+            int passCharCorrect = 0;
+
+            Collider2D monsterCollider = Monster.instance.GetComponent<Collider2D>();
+            foreach (var button in buttons)
             {
-                Debug.Log("Touching!! " + i + " " + button.transform.position);
+                Collider2D buttCollider = button.GetComponent<Collider2D>();
+                if (monsterCollider.IsTouching(buttCollider))
+                {
+                    Debug.Log("Touching!! " + i + " " + button.transform.position);
+                    // Change button only once
+                    int currentCharIndex = System.Array.IndexOf(passwordButtLib, buttText[i].text);
+                    if (currentCharIndex != passwordButtLib.Length-1)
+                    {
+                        buttText[i].text = passwordButtLib[currentCharIndex+1];
+                    }
+                    else
+                    {
+                        buttText[i].text = passwordButtLib[0];
+                    }
+                    
+                    // Check if Button is correct type
+                    // Have counter for all buttons that returns true
+                    if (buttText[i].text[0] == password[i])
+                    {
+                        passCharCorrect += 1;
+                        // colour is green
+                    }
+                    else
+                    {
+                        // colour is red
+                    }
+                }
+                i++;
             }
-            i++;
-        }
 
-        if (Input.GetKey("s")) // or if all buttons are correct
-        {
-            puzzleSolved = true;
+            if (Input.GetKey("s") || passCharCorrect >= password.Length) // or if all buttons are correct
+            {
+                puzzleSolved = true;
+            }
         }
+         
         //PuzzleAction();
     }
 
@@ -77,5 +125,10 @@ public class Level1Script : World
     {
 
 
+    }
+
+    void setupButton(GameObject thisbutton, int index, float thisRadius, float thisAngleAdj, TextMeshPro thisButtText)
+    {
+          
     }
 }
