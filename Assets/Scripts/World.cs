@@ -4,12 +4,8 @@ using UnityEngine;
 
 public class World : MonoBehaviour
 {
-    // World properties
-    //public Sprite sprite;
-
     // Fade world
-    private int fadeSpeed = 1;
-    Color color;
+    private const float fadeSpeed = 0.04f;
 
     // Level things properties that cross over each level
     public GameObject worldDoor;
@@ -20,32 +16,35 @@ public class World : MonoBehaviour
     public bool levelComplete { get; set; }
     public Vector3 rotation { get; set; }
 
-
-    // Start is called before the first frame update
     void Start()
     {
-        color = this.GetComponent<SpriteRenderer>().material.color;
+        levelComplete = false;
     }
 
-    // Update is called once per frame
     public void Rotate(float whatWay)
     {
         transform.Rotate(rotation * Time.deltaTime * whatWay);
     }
 
-    public void Update()
+    public void Update() // REMEMBER THIS IS OVERRIDDEN WHEN LEVEL HAS UPDATE
     {
-        //Debug.Log(monsterView);
+        if (levelComplete)
+            FadeOut();
     }
 
-    
     public void FadeOut()
     {
-        color.a -= Time.deltaTime * fadeSpeed;
-        this.GetComponent<SpriteRenderer>().material.color = color;
-        if(color.a <= 0)
+        Debug.Log("Goodbye Level");
+
+        SpriteRenderer[] allSprites = this.GetComponentsInChildren<SpriteRenderer>();
+        Color thisCol;
+        foreach (SpriteRenderer thisSprite in allSprites)
         {
-            this.gameObject.SetActive(false);
+            thisCol = thisSprite.color;
+            thisCol.a -= fadeSpeed;
+            thisSprite.color = thisCol;
         }
+        if(this.GetComponent<SpriteRenderer>().color.a <= 0) // Once world is gone, disappear
+            this.gameObject.SetActive(false);
     }
 }

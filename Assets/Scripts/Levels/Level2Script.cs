@@ -23,7 +23,7 @@ public class Level2Script : World
     }
 
     // Update is called once per frame
-    void Update()
+    new void Update()
     {
         
     }

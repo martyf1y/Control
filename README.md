@@ -11,7 +11,6 @@ Level 1
    
 - Stop the hand pushing when too high up the ball
 - Actual letters are put in place and turn green when are the correct letter
-- When all buttons are green the ball rolls to the bridge and breaks through
 - weird animation to dog occurs
 
 Level 2
@@ -26,6 +25,7 @@ Level 2
 
 Completed
 
+-     When all buttons are green the ball rolls to the bridge and breaks through
 -     When password is complete axe stops moving
 -     Buttons change colour/letter based on what it shows
 -     buttons displayed and overlayed on world
