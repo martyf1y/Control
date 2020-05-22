@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
     private bool movingCam = false;
 
     // Collision between the objects
-    private Collider2D playerCollider, monsterCollider;
+    private Collider2D playerCollider, monsterCollider, monsterLevelChecker;
     private Collider2D worldCollider, monBlkrCollider;
     private Collider2D doorEntryCollider;
 
@@ -35,6 +35,7 @@ public class GameManager : MonoBehaviour
 
         playerCollider = Player.instance.GetComponent<Collider2D>();
         monsterCollider = Monster.instance.GetComponent<Collider2D>();
+        monsterLevelChecker = Monster.instance.GetComponentInChildren<Collider2D>();
 
         currentLevel = level1; // Start at level 1
         ResetCurrentWorld(currentLevel);
@@ -119,20 +120,7 @@ public class GameManager : MonoBehaviour
         Player.instance.AnimateStopPush();
     }
 
-    bool MoveCamera(Vector3 targetPos)
-    {
-        transform.position = Vector3.Lerp(transform.position, targetPos, camSpeed);
-
-        if (Vector3.Distance(transform.position, targetPos) < .05)
-        {
-            transform.position = targetPos;
-            return false; // We have stopped moving so can stop calling this
-        }
-        else
-        {
-            return true;
-        }
-    }
+   
 
     void ResetCurrentWorld(GameObject newWorld)
     {
@@ -146,16 +134,28 @@ public class GameManager : MonoBehaviour
 
     void LevelCompleteCheck()// ------ THIS IS LEVEL COMPLETE ------ //
     {
-        if (AreAllObjectsTouching(worldCollider, monsterCollider, doorEntryCollider) != 'N')
+        if (AreAllObjectsTouching(worldCollider, monsterLevelChecker, doorEntryCollider) != 'N')
         { // We have hit the entry to next level.
-            worldDoor.GetComponent<WorldDoor>().ChangeSprite(1); // Change to open door.
-            worldDoor.transform.position = new Vector3(worldDoor.transform.position.x, worldDoor.transform.position.y, -.4f); // Send to behind monster
-            currentLevel.GetComponentInChildren<World>().levelComplete = true;
 
-            // todo
-            // Change all variables to next level.
-            // ResetCurrentWorld(level2);
-            // Fade out level
+            worldDoor.GetComponent<WorldDoor>().ChangeSprite(1); // Change to open door.
+            SpriteRenderer mSprite = Monster.instance.GetComponent<SpriteRenderer>();
+            mSprite.sortingOrder +=1;
+            currentLevel.GetComponentInChildren<World>().levelComplete = true;
+            currentLevel.GetComponentInChildren<Collider2D>().enabled = false;
+
+            if (currentLevel == level1)
+            { // Move us back to main view
+                Monster.instance.AnimateEvolve();
+                currentLevel = level2; // Move onto level2
+            }
+            else if (currentLevel == level2)
+            {
+                currentLevel = level3; // Move onto level3
+            }
+            ResetCurrentWorld(currentLevel);
+            movingCam = true; // Move camera to new view
+            zoomWhatWay = monsterViewMain;
+
         }
     }
 
@@ -165,7 +165,12 @@ public class GameManager : MonoBehaviour
         {
             if (currentLevel == level1)
             { // A one off thing for axe that needed higher access
-                level0.GetComponentInChildren<World>().levelComplete = true;
+                float zConv = level0.transform.rotation.z * Mathf.Rad2Deg; 
+                Debug.Log(zConv);
+                if (zConv > 52.5 && zConv < 52.8) { // Stops axe in the right place
+                    level0.GetComponentInChildren<World>().levelComplete = true;
+                    // level0.transform.rotation.z = 236.579;
+                }
             }
 
             // todo
@@ -213,5 +218,20 @@ public class GameManager : MonoBehaviour
         }
         if (movingCam)
             movingCam = MoveCamera(zoomWhatWay);
+    }
+
+    bool MoveCamera(Vector3 targetPos)
+    {
+        transform.position = Vector3.Lerp(transform.position, targetPos, camSpeed);
+
+        if (Vector3.Distance(transform.position, targetPos) < .05)
+        {
+            transform.position = targetPos;
+            return false; // We have stopped moving so can stop calling this
+        }
+        else
+        {
+            return true;
+        }
     }
 }

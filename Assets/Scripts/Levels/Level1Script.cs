@@ -21,14 +21,15 @@ public class Level1Script : World
         else if (instance != this)
             Destroy(gameObject);
 
-        monsterView = new Vector3(0, 8.5f, -80); // Change parent variables to the level settings.
-        worldView = new Vector3(0, 0, -450);
+        monsterView = new Vector3(0, 14, -150); // Change parent variables to the level settings.
+        worldView = new Vector3(0, 0, -700);
         rotation = new Vector3(0, 0, -10);
+        this.transform.eulerAngles = new Vector3(0,0,120);
 
         // Make the buttons
         buttons = GameObject.FindGameObjectsWithTag("Password");
         float angleAdjuster = Random.Range(-0.08f, 0.08f);
-        float worldEdge = this.transform.localScale.x * -7.4f; // fixed amount of where the world edge is
+        float worldEdge = this.transform.localScale.x * -12f; // fixed amount of where the world edge is
         int num = 0;
         buttText = new TextMeshPro[buttons.Length];
         buttonPressed = new bool[buttons.Length];
@@ -53,8 +54,13 @@ public class Level1Script : World
     new void Update()
     {
         if (levelComplete)
+        {
+            // Bring camera to monster view
+            // Change settings
+            // Animate
+            this.transform.eulerAngles = new Vector3(0, 0, -132.907f);
             FadeOut(); // When level is complete we fade out and remove the level
-
+        }
         if (!puzzleSolved)
         {
             int i = 0;

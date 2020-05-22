@@ -14,8 +14,10 @@ public class Level0Script : World
             Destroy(gameObject);
 
         rotation = new Vector3(0, 0, 12);
+        this.transform.eulerAngles = new Vector3(0, 0, 232.907f); // 172
+        
     }
 
 
-   
+
 }

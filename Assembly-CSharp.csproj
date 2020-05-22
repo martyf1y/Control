@@ -65,6 +65,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\CameraFade.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\Levels\EndLevelScript.cs" />
     <Compile Include="Assets\Scripts\Levels\Level0Script.cs" />
     <Compile Include="Assets\Scripts\Levels\Level1Script.cs" />
     <Compile Include="Assets\Scripts\Levels\Level2Script.cs" />

@@ -5,21 +5,34 @@ Based on the 2012 game.
 Players can push around a weird creature on a puzzle world. Aim is to solve each puzzle and try reach the center!  
 
 To do
-18.05.20
-
-Level 1
-   
-- Stop the hand pushing when too high up the ball
-- Actual letters are put in place and turn green when are the correct letter
-- weird animation to dog occurs
+22.05.20
 
 Level 2
+- weird animation to dog occurs
+- Scale house correctly
+- Prefab letterboxes and newspapers around the world
+- Dog animation
+- Hand movement correct
+- Leash calculation correct
+- Hand animation pull
+- Dog grab animation
+
+
+
 - Leash to hand algorithm
 - Dog animations left and right
 - hand animations on leash pull
 - news papers and letterboxes laid out around world
 - Dog pickup papers
 - Dog puts newspaper in letterboxes
+
+
+Level 1
+   
+- Stop the hand pushing when too high up the ball
+- Actual letters are put in place and turn green when are the correct letter
+
+
 -
 
 

@@ -5,7 +5,7 @@ using UnityEngine;
 public class World : MonoBehaviour
 {
     // Fade world
-    private const float fadeSpeed = 0.04f;
+    private const float fadeSpeed = 0.005f;
 
     // Level things properties that cross over each level
     public GameObject worldDoor;

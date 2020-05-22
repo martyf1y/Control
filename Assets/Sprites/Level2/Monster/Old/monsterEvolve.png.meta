@@ -1,0 +1,1543 @@
+fileFormatVersion: 2
+guid: fa404e8d81a374445889b42ce3db0844
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7968917879661503160
+    second: monsterEvolve_0
+  - first:
+      213: -8524102401796108350
+    second: monsterEvolve_1
+  - first:
+      213: 3972502016856580004
+    second: monsterEvolve_2
+  - first:
+      213: -5084513292225832341
+    second: monsterEvolve_3
+  - first:
+      213: 729895912347552472
+    second: monsterEvolve_4
+  - first:
+      213: 7126022837508198235
+    second: monsterEvolve_5
+  - first:
+      213: -943830787782384562
+    second: monsterEvolve_6
+  - first:
+      213: -3782163078948502057
+    second: monsterEvolve_7
+  - first:
+      213: -9082636868714068576
+    second: monsterEvolve_8
+  - first:
+      213: -4617442427866578487
+    second: monsterEvolve_9
+  - first:
+      213: 9128032897104578255
+    second: monsterEvolve_10
+  - first:
+      213: -1409543732883944361
+    second: monsterEvolve_11
+  - first:
+      213: 8025967203681698587
+    second: monsterEvolve_12
+  - first:
+      213: -4513941605034820122
+    second: monsterEvolve_13
+  - first:
+      213: 2431654301806598698
+    second: monsterEvolve_14
+  - first:
+      213: -2136260130398317197
+    second: monsterEvolve_15
+  - first:
+      213: 5328246654452343864
+    second: monsterEvolve_16
+  - first:
+      213: 7863412442714288546
+    second: monsterEvolve_17
+  - first:
+      213: 349714709701887502
+    second: monsterEvolve_18
+  - first:
+      213: -3488732391165392975
+    second: monsterEvolve_19
+  - first:
+      213: 3856058785487947586
+    second: monsterEvolve_20
+  - first:
+      213: -8494156101546516359
+    second: monsterEvolve_21
+  - first:
+      213: -2662880445564978122
+    second: monsterEvolve_22
+  - first:
+      213: 3750390491864028297
+    second: monsterEvolve_23
+  - first:
+      213: 218552939663361770
+    second: monsterEvolve_24
+  - first:
+      213: 4073788463507200333
+    second: monsterEvolve_25
+  - first:
+      213: -7853536832569920459
+    second: monsterEvolve_26
+  - first:
+      213: -7796472758954825432
+    second: monsterEvolve_27
+  - first:
+      213: 5425468387533654723
+    second: monsterEvolve_28
+  - first:
+      213: 3752366680434769837
+    second: monsterEvolve_29
+  - first:
+      213: -306554587964941132
+    second: monsterEvolve_30
+  - first:
+      213: 9072541638731645216
+    second: monsterEvolve_31
+  - first:
+      213: -7120859501965208507
+    second: monsterEvolve_32
+  - first:
+      213: -6509251921149725620
+    second: monsterEvolve_33
+  - first:
+      213: -5003947736264641323
+    second: monsterEvolve_34
+  - first:
+      213: -1217395629998076105
+    second: monsterEvolve_35
+  - first:
+      213: 3231432204554481546
+    second: monsterEvolve_36
+  - first:
+      213: 2362843558948397357
+    second: monsterEvolve_37
+  - first:
+      213: -7606008227528847876
+    second: monsterEvolve_38
+  - first:
+      213: -7013199421069054113
+    second: monsterEvolve_39
+  - first:
+      213: -6770413755613389755
+    second: monsterEvolve_40
+  - first:
+      213: 7733109017431414808
+    second: monsterEvolve_41
+  - first:
+      213: -7985329194782735766
+    second: monsterEvolve_42
+  - first:
+      213: -7572481454638724233
+    second: monsterEvolve_43
+  - first:
+      213: 6292909704748657203
+    second: monsterEvolve_44
+  - first:
+      213: -4281656538422891746
+    second: monsterEvolve_45
+  - first:
+      213: -6130720821215774035
+    second: monsterEvolve_46
+  - first:
+      213: -1717811705608496364
+    second: monsterEvolve_47
+  - first:
+      213: 6954479139065625720
+    second: monsterEvolve_48
+  - first:
+      213: 6599613999707031068
+    second: monsterEvolve_49
+  - first:
+      213: -2837996875812278545
+    second: monsterEvolve_50
+  - first:
+      213: 4939270708636849709
+    second: monsterEvolve_51
+  - first:
+      213: -6509076289843809371
+    second: monsterEvolve_52
+  - first:
+      213: 4092781675595147794
+    second: monsterEvolve_53
+  - first:
+      213: 6432897006095556638
+    second: monsterEvolve_54
+  - first:
+      213: 8670919471092496966
+    second: monsterEvolve_55
+  - first:
+      213: -8903789590590268103
+    second: monsterEvolve_56
+  - first:
+      213: 4242775593861844029
+    second: monsterEvolve_57
+  - first:
+      213: -427632157614078164
+    second: monsterEvolve_58
+  - first:
+      213: 8486288418584510672
+    second: monsterEvolve_59
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: monsterEvolve_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4527
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96eaca657f73e42e0b26072c9c2212a3
+      internalID: 7968917879661503160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsterEvolve_1
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 4527
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a6e75e02c0f3435e83afa4c12b3d922
+      internalID: -8524102401796108350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsterEvolve_2
+      rect:
+        serializedVersion: 2
+        x: 1710
+        y: 4527
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 917b9664422c64a96b0e8d108a416772
+      internalID: 3972502016856580004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsterEvolve_3
+      rect:
+        serializedVersion: 2
+        x: 2565
+        y: 4527
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f950c419d1d440aab86c32ed5b92df4
+      internalID: -5084513292225832341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsterEvolve_4
+      rect:
+        serializedVersion: 2
+        x: 3420
+        y: 4527
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20024d97bf0c448c9b23a9589e5e9ef5
+      internalID: 729895912347552472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsterEvolve_5
+      rect:
+        serializedVersion: 2
+        x: 4275
+        y: 4527
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8340877b83d547fbb08480c94787e11
+      internalID: 7126022837508198235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsterEvolve_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4024
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d732ff09306224fa5a3bdf37c7c2d507
+      internalID: -943830787782384562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsterEvolve_7
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 4024
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fa2c9dca9d6e4eddb237a1069cba10e
+      internalID: -3782163078948502057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsterEvolve_8
+      rect:
+        serializedVersion: 2
+        x: 1710
+        y: 4024
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 168b70cdc03cf4605813655bcba6560d
+      internalID: -9082636868714068576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsterEvolve_9
+      rect:
+        serializedVersion: 2
+        x: 2565
+        y: 4024
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f09ab947695842ad911e6e1f0262b44
+      internalID: -4617442427866578487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsterEvolve_10
+      rect:
+        serializedVersion: 2
+        x: 3420
+        y: 4024
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a5603da54f44426494c5feb35f6f86a
+      internalID: 9128032897104578255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsterEvolve_11
+      rect:
+        serializedVersion: 2
+        x: 4275
+        y: 4024
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5bcbbe1338594f9e873304bfc702735
+      internalID: -1409543732883944361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsterEvolve_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3521
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10460089c49d542b4a5e322b0764d384
+      internalID: 8025967203681698587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsterEvolve_13
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 3521
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f82d737e2c52466b8f0a0c02869a4e8
+      internalID: -4513941605034820122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsterEvolve_14
+      rect:
+        serializedVersion: 2
+        x: 1710
+        y: 3521
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1ec0d55da6554bfea194a67962f533c
+      internalID: 2431654301806598698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsterEvolve_15
+      rect:
+        serializedVersion: 2
+        x: 2565
+        y: 3521
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2ee4b9ce1c69494d9d6161ce808059b
+      internalID: -2136260130398317197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsterEvolve_16
+      rect:
+        serializedVersion: 2
+        x: 3420
+        y: 3521
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bbbb14b937a94a9e802cb4e13d33b87
+      internalID: 5328246654452343864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsterEvolve_17
+      rect:
+        serializedVersion: 2
+        x: 4275
+        y: 3521
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fb28c75fd02240c9b26e270e0205db1
+      internalID: 7863412442714288546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsterEvolve_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3018
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ad4185cf6a994c9e85f991a9dd52b5a
+      internalID: 349714709701887502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsterEvolve_19
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 3018
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d58e92f94e1f469c9be2a87a2d5e4c6
+      internalID: -3488732391165392975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsterEvolve_20
+      rect:
+        serializedVersion: 2
+        x: 1710
+        y: 3018
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc62fdb57555b48ff99c65deee606ffd
+      internalID: 3856058785487947586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsterEvolve_21
+      rect:
+        serializedVersion: 2
+        x: 2565
+        y: 3018
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f714e4adeedee4f6b993c39b5cd3b853
+      internalID: -8494156101546516359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsterEvolve_22
+      rect:
+        serializedVersion: 2
+        x: 3420
+        y: 3018
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4f5cfe535f364cd393e01916ba8a9bf
+      internalID: -2662880445564978122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsterEvolve_23
+      rect:
+        serializedVersion: 2
+        x: 4275
+        y: 3018
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c13135bc78c7740929144cbf117ecfbc
+      internalID: 3750390491864028297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsterEvolve_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2515
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c162d0f7478d84122aa900517ece8bb3
+      internalID: 218552939663361770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsterEvolve_25
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 2515
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dbc44f2834f04247b367be1de25c943
+      internalID: 4073788463507200333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsterEvolve_26
+      rect:
+        serializedVersion: 2
+        x: 1710
+        y: 2515
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5604e60969654addbb9d829907b473b
+      internalID: -7853536832569920459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsterEvolve_27
+      rect:
+        serializedVersion: 2
+        x: 2565
+        y: 2515
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c004103ef45849fc968a475a429d551
+      internalID: -7796472758954825432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsterEvolve_28
+      rect:
+        serializedVersion: 2
+        x: 3420
+        y: 2515
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48ebff0f07ce045189f3d93c320aaeeb
+      internalID: 5425468387533654723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsterEvolve_29
+      rect:
+        serializedVersion: 2
+        x: 4275
+        y: 2515
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 737efcb7c445a48e7a38c1b215cae291
+      internalID: 3752366680434769837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsterEvolve_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2012
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c4606336b7df4871b5932b749173aef
+      internalID: -306554587964941132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsterEvolve_31
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 2012
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 045de55fbeacb4ad5b4a2a2f4319347f
+      internalID: 9072541638731645216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsterEvolve_32
+      rect:
+        serializedVersion: 2
+        x: 1710
+        y: 2012
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27065fe00a0484c1395cf0b98e513ad4
+      internalID: -7120859501965208507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsterEvolve_33
+      rect:
+        serializedVersion: 2
+        x: 2565
+        y: 2012
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77617d3ee59464ae38b9b8d61ec9b41f
+      internalID: -6509251921149725620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsterEvolve_34
+      rect:
+        serializedVersion: 2
+        x: 3420
+        y: 2012
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d31ebf8d284243d58b75e9e6f30a4a7
+      internalID: -5003947736264641323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsterEvolve_35
+      rect:
+        serializedVersion: 2
+        x: 4275
+        y: 2012
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8d4c46f9062849e9916e56fec572c0b
+      internalID: -1217395629998076105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsterEvolve_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1509
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f37ab548dc0434f8eb9c9f4eec951374
+      internalID: 3231432204554481546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsterEvolve_37
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 1509
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5204957da44f14086aaf02c146d29447
+      internalID: 2362843558948397357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsterEvolve_38
+      rect:
+        serializedVersion: 2
+        x: 1710
+        y: 1509
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da13135bb508042d5b1369213c6d61ea
+      internalID: -7606008227528847876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsterEvolve_39
+      rect:
+        serializedVersion: 2
+        x: 2565
+        y: 1509
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01cd1da5cbead48c6af545f041f82e49
+      internalID: -7013199421069054113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsterEvolve_40
+      rect:
+        serializedVersion: 2
+        x: 3420
+        y: 1509
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01fb7abec96a54518b3042fd5ca5eae2
+      internalID: -6770413755613389755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsterEvolve_41
+      rect:
+        serializedVersion: 2
+        x: 4275
+        y: 1509
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc8ab06afd88346f2854cb489486f22a
+      internalID: 7733109017431414808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsterEvolve_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1006
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 225b9bbde228c402f8c0b3a1a82c256b
+      internalID: -7985329194782735766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsterEvolve_43
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 1006
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d44bf80d681a74a9f86acfee729ade04
+      internalID: -7572481454638724233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsterEvolve_44
+      rect:
+        serializedVersion: 2
+        x: 1710
+        y: 1006
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80b80b71ddcec4c07a44c9a100fba6c6
+      internalID: 6292909704748657203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsterEvolve_45
+      rect:
+        serializedVersion: 2
+        x: 2565
+        y: 1006
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d7abc20c06df4e139a31208ae3295a8
+      internalID: -4281656538422891746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsterEvolve_46
+      rect:
+        serializedVersion: 2
+        x: 3420
+        y: 1006
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06e5cfd18130f48e38eeebabb8b97d9c
+      internalID: -6130720821215774035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsterEvolve_47
+      rect:
+        serializedVersion: 2
+        x: 4275
+        y: 1006
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c67e270a7f2c049049906aeefc7c150b
+      internalID: -1717811705608496364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsterEvolve_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 503
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a20bc972397045378525c627db962ae
+      internalID: 6954479139065625720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsterEvolve_49
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 503
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f735a69c1d9114faa978daf0824ee8e8
+      internalID: 6599613999707031068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsterEvolve_50
+      rect:
+        serializedVersion: 2
+        x: 1710
+        y: 503
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c095e6caac6b4405aba6845dbed9dff8
+      internalID: -2837996875812278545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsterEvolve_51
+      rect:
+        serializedVersion: 2
+        x: 2565
+        y: 503
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbb952dd4d1aa44fcb58bfea20165113
+      internalID: 4939270708636849709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsterEvolve_52
+      rect:
+        serializedVersion: 2
+        x: 3420
+        y: 503
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61593fe554ab845f3bc0e4dc3bbd9152
+      internalID: -6509076289843809371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsterEvolve_53
+      rect:
+        serializedVersion: 2
+        x: 4275
+        y: 503
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45eb263d8d866472bb2102d5fb6ef8a2
+      internalID: 4092781675595147794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsterEvolve_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4402266cf3a44eebafe328030315ee0
+      internalID: 6432897006095556638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsterEvolve_55
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 0
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 481a8fe9338094eaabf1c7dea4b2c9fc
+      internalID: 8670919471092496966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsterEvolve_56
+      rect:
+        serializedVersion: 2
+        x: 1710
+        y: 0
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0d503949e7d54b66bbe7f3e3e6807c3
+      internalID: -8903789590590268103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsterEvolve_57
+      rect:
+        serializedVersion: 2
+        x: 2565
+        y: 0
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6baa11e0375dc48ef9ea62e1c0bd7a24
+      internalID: 4242775593861844029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsterEvolve_58
+      rect:
+        serializedVersion: 2
+        x: 3420
+        y: 0
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98fc10cad1ea141d6ab0ebab98b4a29c
+      internalID: -427632157614078164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monsterEvolve_59
+      rect:
+        serializedVersion: 2
+        x: 4275
+        y: 0
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c51f4a81862bd424ab75d82adad0b7b3
+      internalID: 8486288418584510672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

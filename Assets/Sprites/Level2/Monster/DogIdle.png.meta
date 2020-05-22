@@ -1,0 +1,1279 @@
+fileFormatVersion: 2
+guid: 920a084a1f1a6485094808297c4e8589
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1497166947140476013
+    second: DogIdle_0
+  - first:
+      213: 3056696222392258077
+    second: DogIdle_1
+  - first:
+      213: 2941163411028523198
+    second: DogIdle_2
+  - first:
+      213: 8066742761912276949
+    second: DogIdle_3
+  - first:
+      213: 8833750368348357758
+    second: DogIdle_4
+  - first:
+      213: 318695032176096704
+    second: DogIdle_5
+  - first:
+      213: -8204706066329139001
+    second: DogIdle_6
+  - first:
+      213: -1575808413932064207
+    second: DogIdle_7
+  - first:
+      213: 6669804701626780743
+    second: DogIdle_8
+  - first:
+      213: -7937984129040420725
+    second: DogIdle_9
+  - first:
+      213: -6964525757276454105
+    second: DogIdle_10
+  - first:
+      213: 5514453846980240520
+    second: DogIdle_11
+  - first:
+      213: -6959817836749474870
+    second: DogIdle_12
+  - first:
+      213: 8043888591247141579
+    second: DogIdle_13
+  - first:
+      213: -3538260554092594990
+    second: DogIdle_14
+  - first:
+      213: -4200531583035084832
+    second: DogIdle_15
+  - first:
+      213: -5111997283345787159
+    second: DogIdle_16
+  - first:
+      213: 5323532633622209223
+    second: DogIdle_17
+  - first:
+      213: 1372330774558096954
+    second: DogIdle_18
+  - first:
+      213: -7928576166364916272
+    second: DogIdle_19
+  - first:
+      213: 1022727912086170672
+    second: DogIdle_20
+  - first:
+      213: -5056203102758032407
+    second: DogIdle_21
+  - first:
+      213: 8681875519037828533
+    second: DogIdle_22
+  - first:
+      213: 893431184216795226
+    second: DogIdle_23
+  - first:
+      213: -6709062724451047914
+    second: DogIdle_24
+  - first:
+      213: 1736784326537810191
+    second: DogIdle_25
+  - first:
+      213: 7026345781371463790
+    second: DogIdle_26
+  - first:
+      213: -4361863900994117823
+    second: DogIdle_27
+  - first:
+      213: 2639590101134951684
+    second: DogIdle_28
+  - first:
+      213: -1325415894648931953
+    second: DogIdle_29
+  - first:
+      213: 5726124413516766940
+    second: DogIdle_30
+  - first:
+      213: 547788715888298276
+    second: DogIdle_31
+  - first:
+      213: -1438938915343151092
+    second: DogIdle_32
+  - first:
+      213: 1442590045423174786
+    second: DogIdle_33
+  - first:
+      213: -7846827405639049404
+    second: DogIdle_34
+  - first:
+      213: 4972133840425885384
+    second: DogIdle_35
+  - first:
+      213: 5118706487235167658
+    second: DogIdle_36
+  - first:
+      213: -5422977372045831942
+    second: DogIdle_37
+  - first:
+      213: 1656909556365005437
+    second: DogIdle_38
+  - first:
+      213: -5187806662282192105
+    second: DogIdle_39
+  - first:
+      213: 6720621942026219915
+    second: DogIdle_40
+  - first:
+      213: 2100640664526697423
+    second: DogIdle_41
+  - first:
+      213: -814321139412424054
+    second: DogIdle_42
+  - first:
+      213: -3281477902034011067
+    second: DogIdle_43
+  - first:
+      213: 6601084005891347407
+    second: DogIdle_44
+  - first:
+      213: 7256776583111538413
+    second: DogIdle_45
+  - first:
+      213: -5724485677255322572
+    second: DogIdle_46
+  - first:
+      213: -6144800442409349617
+    second: DogIdle_47
+  - first:
+      213: 4658904835007516380
+    second: DogIdle_48
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DogIdle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 714
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eb97f0d237f844858d56c1b0ac3031f
+      internalID: 1497166947140476013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdle_1
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 714
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eef9788e3428c457b8fc5a4dd04162b7
+      internalID: 3056696222392258077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdle_2
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 714
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e48fcc9268b3341cca2b8c3ea281f7cf
+      internalID: 2941163411028523198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdle_3
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 714
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b318d31aae42a4e558195938927054d9
+      internalID: 8066742761912276949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdle_4
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 714
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f2a67a202ffd41cdadf117897e06da5
+      internalID: 8833750368348357758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdle_5
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 714
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dd1da64912644e68918f3c26da4b3ed
+      internalID: 318695032176096704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdle_6
+      rect:
+        serializedVersion: 2
+        x: 1224
+        y: 714
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2483ffe2f9b54803a75014b3521aebf
+      internalID: -8204706066329139001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdle_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 595
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dfdb413fb573462fb8a39d8bea1066a
+      internalID: -1575808413932064207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdle_8
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 595
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9125c124184a46b3bb407c1af05c70f
+      internalID: 6669804701626780743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdle_9
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 595
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b42b26b5e16894871bc6b42702e2ff86
+      internalID: -7937984129040420725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdle_10
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 595
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7478f907cc4e494b8945ea1b5d0fedf
+      internalID: -6964525757276454105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdle_11
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 595
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62b178a1375df473fadd68a6583866bb
+      internalID: 5514453846980240520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdle_12
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 595
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c2f80749eb0d4bca801a2206b4c01bd
+      internalID: -6959817836749474870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdle_13
+      rect:
+        serializedVersion: 2
+        x: 1224
+        y: 595
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaffd0b90b16444ec96b25eaf2b852a7
+      internalID: 8043888591247141579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdle_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 476
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae9ea6f7b9d4d45b1a34d8a89c5975eb
+      internalID: -3538260554092594990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdle_15
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 476
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0aa338abd77b34a3794fbaced0d104bd
+      internalID: -4200531583035084832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdle_16
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 476
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d76927483417489b8c69b3fd07fa0fc
+      internalID: -5111997283345787159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdle_17
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 476
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f15fee6f1b014d27984f6cc003e2131
+      internalID: 5323532633622209223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdle_18
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 476
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c9b40a5433864ce6a3720ca4c9a959c
+      internalID: 1372330774558096954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdle_19
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 476
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78dfc7073f38f42f1a1628e6b43dc265
+      internalID: -7928576166364916272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdle_20
+      rect:
+        serializedVersion: 2
+        x: 1224
+        y: 476
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 090ff8c48476b4532a3c63943195bc62
+      internalID: 1022727912086170672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdle_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 357
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b57c4dd395cb412ea3467d6a738faf2
+      internalID: -5056203102758032407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdle_22
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 357
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8917d372e51d44e3e864ba0d923def0d
+      internalID: 8681875519037828533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdle_23
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 357
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fa369ff15e6b4cb5b452158c9b63c79
+      internalID: 893431184216795226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdle_24
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 357
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9832001ad76c346a9b3ca08dfea573db
+      internalID: -6709062724451047914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdle_25
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 357
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69562cb6755b148f5aecf5a672a015a3
+      internalID: 1736784326537810191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdle_26
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 357
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64475347099884b6cac93fb52933a88c
+      internalID: 7026345781371463790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdle_27
+      rect:
+        serializedVersion: 2
+        x: 1224
+        y: 357
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08b53473a61ed43ac933c0736a4110a8
+      internalID: -4361863900994117823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdle_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 238
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22d581ad38a994b1b8d545718d62ad18
+      internalID: 2639590101134951684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdle_29
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 238
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a74a82a2ef8824316942257a87cb7b3c
+      internalID: -1325415894648931953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdle_30
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 238
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad5cf114e38df4b3588fbdb9a54e27c9
+      internalID: 5726124413516766940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdle_31
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 238
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fd40c40929de4c1b96476b2f9b79a69
+      internalID: 547788715888298276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdle_32
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 238
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf64f931c070143f68150aafe72ca298
+      internalID: -1438938915343151092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdle_33
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 238
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dcf066655ce84f8eaaa660df49aea2d
+      internalID: 1442590045423174786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdle_34
+      rect:
+        serializedVersion: 2
+        x: 1224
+        y: 238
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6a495ddd61aa41d0a3469d49f2b42a3
+      internalID: -7846827405639049404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdle_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 119
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 341ef361e4922436ca70b6e37177edaa
+      internalID: 4972133840425885384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdle_36
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 119
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3332a7d300d654890b04ff295f2cb5c0
+      internalID: 5118706487235167658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdle_37
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 119
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3473d40387abe4e5eb83676f93dc1681
+      internalID: -5422977372045831942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdle_38
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 119
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbb86a497c9144197b7f7ff57845daef
+      internalID: 1656909556365005437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdle_39
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 119
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bfa5d31a6f0645db876d7164a5e9515
+      internalID: -5187806662282192105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdle_40
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 119
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec91e082e83fb4c85b0cf04959db3c37
+      internalID: 6720621942026219915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdle_41
+      rect:
+        serializedVersion: 2
+        x: 1224
+        y: 119
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 222bf2d6c4d3b418f802ba71dfda0236
+      internalID: 2100640664526697423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdle_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6687ea59d6ae74493b143015dc9105f5
+      internalID: -814321139412424054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdle_43
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 0
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84ee9e084c3244c5ebfdc114cfa3d662
+      internalID: -3281477902034011067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdle_44
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 0
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fe8a7fb2e95e4353bfed0d65855d424
+      internalID: 6601084005891347407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdle_45
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 0
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c96c828943b654b9084bd505e33c838d
+      internalID: 7256776583111538413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdle_46
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 0
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34919d2cff6d44dd8abc36dcfeae52c8
+      internalID: -5724485677255322572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdle_47
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 0
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aeb300887a4042ffb91999aedd5eb37
+      internalID: -6144800442409349617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdle_48
+      rect:
+        serializedVersion: 2
+        x: 1224
+        y: 0
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d302b50bb771040858adfcc4f8e08fd4
+      internalID: 4658904835007516380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

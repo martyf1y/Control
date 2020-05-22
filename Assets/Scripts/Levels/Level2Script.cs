@@ -17,8 +17,8 @@ public class Level2Script : World
             Destroy(gameObject);
 
 
-       // monsterView = new Vector3(0, 8.5f, -80); // Change parent variables to the level settings.
-       // worldView = new Vector3(0, 0, -450);
+        monsterView = new Vector3(0, 10f, -130); // Change parent variables to the level settings.
+        worldView = new Vector3(0, 0, -590);
         rotation = new Vector3(0, 0, 10);
     }
 
