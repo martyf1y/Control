@@ -55,13 +55,10 @@ public class Level1Script : World
     {
         if (levelComplete)
         {
-            // Bring camera to monster view
-            // Change settings
-            // Animate
             this.transform.eulerAngles = new Vector3(0, 0, -132.907f);
             FadeOut(); // When level is complete we fade out and remove the level
         }
-        if (!puzzleSolved)
+        if (!puzzleSolved && Monster.instance.GetComponent<Collider2D>() != null)
         {
             int i = 0;
             int totalCorrectButts = 0;

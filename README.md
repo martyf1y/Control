@@ -8,6 +8,7 @@ To do
 22.05.20
 
 Level 2
+- Continue on track of creating level 2 collider for hand - try make it inverse and size of camera  
 - weird animation to dog occurs
 - Scale house correctly
 - Prefab letterboxes and newspapers around the world

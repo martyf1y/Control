@@ -7,9 +7,7 @@ public class Monster : MonoBehaviour
 
     public static Monster instance = null;
     private Animator animator;
-    public bool makeMonsterBigger = false;
-    private float thisBig;
-    bool once = false;
+    char facingThisWay = 'R';
 
 
     // Start is called before the first frame update
@@ -25,8 +23,18 @@ public class Monster : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
+    // Update is called once per frame
+    void Update()
+    {
+        // raycast 2d
+        // DoWeMove();
 
-    
+        if (gameObject.GetComponent<PolygonCollider2D>() == null) // Bad fix to polygon collider reset not doable
+        {
+            gameObject.AddComponent<PolygonCollider2D>();
+        }
+    }
+
     public void Animate(char goThisWay){
         if (goThisWay == 'L')
         {
@@ -35,6 +43,15 @@ public class Monster : MonoBehaviour
         else if (goThisWay == 'R')
         {
             animator.SetTrigger("PushRight");
+        }
+    }
+
+    public void Flip(char nowFaceThisWay)
+    {
+        if (facingThisWay != nowFaceThisWay)
+        {
+            transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
+            facingThisWay = nowFaceThisWay;
         }
     }
 
@@ -47,30 +64,13 @@ public class Monster : MonoBehaviour
         animator.SetTrigger("Evolve");
     }
 
-    void MakeMonsterBigger(float howBig)
-    {
-        makeMonsterBigger = true;
-        thisBig = howBig;
-    }
-
-
-    // Update is called once per frame
-    void Update(){
-        // raycast 2d
-        // DoWeMove();
-
-        if (!gameObject.GetComponent<PolygonCollider2D>()) // Stupid fix to sprite sizing issue
-        {
-            gameObject.AddComponent<PolygonCollider2D>();
-            
-            once = true;
-        }
-    }
+   
 
     void GoBig() // Used in end of animation "Monster Evolve" in Animation controller
     {
-        Destroy(GetComponent<PolygonCollider2D>()); // MIGHT BE EASIER TO JUST LOAD A PREFAB THAT HAS ALL THE RIGHT STUFF
-        Destroy(GetComponentInChildren<CircleCollider2D>());
         this.transform.localScale = new Vector3(1.8f, 1.8f, 1);
+        Destroy(gameObject.GetComponent<PolygonCollider2D>()); // MIGHT BE EASIER TO JUST LOAD A PREFAB THAT HAS ALL THE RIGHT STUFF
+        Destroy(gameObject.GetComponentInChildren<CircleCollider2D>());
+        gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static; // No more moving the monster round
     }
 }

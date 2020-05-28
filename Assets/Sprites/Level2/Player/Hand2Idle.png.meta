@@ -1,0 +1,1135 @@
+fileFormatVersion: 2
+guid: cfdea3baa56664d58a3414d5923b8fed
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3093484525543811061
+    second: Hand2Idle_0
+  - first:
+      213: 6717664468703341062
+    second: Hand2Idle_1
+  - first:
+      213: 8939238813850527887
+    second: Hand2Idle_2
+  - first:
+      213: -7786988954724488569
+    second: Hand2Idle_3
+  - first:
+      213: 7939481025036375519
+    second: Hand2Idle_4
+  - first:
+      213: 6211153458908774239
+    second: Hand2Idle_5
+  - first:
+      213: 4878975831290374958
+    second: Hand2Idle_6
+  - first:
+      213: 2453557022751595160
+    second: Hand2Idle_7
+  - first:
+      213: -4411852632094366193
+    second: Hand2Idle_8
+  - first:
+      213: -2869366474552165240
+    second: Hand2Idle_9
+  - first:
+      213: 6472264783864757320
+    second: Hand2Idle_10
+  - first:
+      213: -2258999861470131838
+    second: Hand2Idle_11
+  - first:
+      213: -4825617200903781592
+    second: Hand2Idle_12
+  - first:
+      213: 7566618441824306804
+    second: Hand2Idle_13
+  - first:
+      213: 4948550515537420612
+    second: Hand2Idle_14
+  - first:
+      213: -6571528249222481972
+    second: Hand2Idle_15
+  - first:
+      213: -5316178874379479144
+    second: Hand2Idle_16
+  - first:
+      213: -353770279846065069
+    second: Hand2Idle_17
+  - first:
+      213: -4134251729921050917
+    second: Hand2Idle_18
+  - first:
+      213: 7665791244666491898
+    second: Hand2Idle_19
+  - first:
+      213: 9041060994298621755
+    second: Hand2Idle_20
+  - first:
+      213: 7267590317333958015
+    second: Hand2Idle_21
+  - first:
+      213: 6070867912450446321
+    second: Hand2Idle_22
+  - first:
+      213: 8168803830940227144
+    second: Hand2Idle_23
+  - first:
+      213: -1593877984686667850
+    second: Hand2Idle_24
+  - first:
+      213: 6310701864802251887
+    second: Hand2Idle_25
+  - first:
+      213: 1850182058182238576
+    second: Hand2Idle_26
+  - first:
+      213: 2539377428808240620
+    second: Hand2Idle_27
+  - first:
+      213: 8978793972915497232
+    second: Hand2Idle_28
+  - first:
+      213: 863597928953964767
+    second: Hand2Idle_29
+  - first:
+      213: 3295107505604307919
+    second: Hand2Idle_30
+  - first:
+      213: 848580038533935550
+    second: Hand2Idle_31
+  - first:
+      213: -2643367293913201468
+    second: Hand2Idle_32
+  - first:
+      213: 6969397261162209186
+    second: Hand2Idle_33
+  - first:
+      213: -7403816560640046265
+    second: Hand2Idle_34
+  - first:
+      213: -3657385201959626369
+    second: Hand2Idle_35
+  - first:
+      213: -6377619789207612467
+    second: Hand2Idle_36
+  - first:
+      213: 5123597341012711290
+    second: Hand2Idle_37
+  - first:
+      213: 6858446741174563212
+    second: Hand2Idle_38
+  - first:
+      213: 8145318373780204720
+    second: Hand2Idle_39
+  - first:
+      213: -2394285548981119749
+    second: Hand2Idle_40
+  - first:
+      213: 8907238882281178549
+    second: Hand2Idle_41
+  - first:
+      213: -3221630534722463636
+    second: Hand2Idle_42
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Hand2Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2000
+        width: 480
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8100aec8b75894d2da4cb6ee36b71e49
+      internalID: -3093484525543811061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand2Idle_1
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 2000
+        width: 480
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de860f572e74e47a3a51c4b12b3bba5e
+      internalID: 6717664468703341062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand2Idle_2
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 2000
+        width: 480
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 655e862ade3a54d0a98c87c4b0078851
+      internalID: 8939238813850527887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand2Idle_3
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 2000
+        width: 480
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08e7aebd460e14076ba285da36f5f37f
+      internalID: -7786988954724488569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand2Idle_4
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 2000
+        width: 480
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 170b4634324ff4797824b9650551f626
+      internalID: 7939481025036375519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand2Idle_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1750
+        width: 480
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fb3fdbbfdbb448a89d2544efaf4f2ad
+      internalID: 6211153458908774239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand2Idle_6
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 1750
+        width: 480
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e485056f9ad6e47c1834cf99ac6e7dd0
+      internalID: 4878975831290374958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand2Idle_7
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 1750
+        width: 480
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64a91c10df2f34cb5b5ed4145f740d5d
+      internalID: 2453557022751595160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand2Idle_8
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 1750
+        width: 480
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a764dbeacd25e4e59a228f62b607251b
+      internalID: -4411852632094366193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand2Idle_9
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1750
+        width: 480
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4aa5471b628d4f3c80c7dfc25383446
+      internalID: -2869366474552165240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand2Idle_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1500
+        width: 480
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6f08a01928e44418bce9c5ad7519ec0
+      internalID: 6472264783864757320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand2Idle_11
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 1500
+        width: 480
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd9702fb615c841f3a3f6ebe559ec1d7
+      internalID: -2258999861470131838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand2Idle_12
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 1500
+        width: 480
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 400e0cba079b5472aa1639e0be7355e7
+      internalID: -4825617200903781592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand2Idle_13
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 1500
+        width: 480
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26e1f847105124ba6b6eb3f41c4f9796
+      internalID: 7566618441824306804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand2Idle_14
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1500
+        width: 480
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87b2c1ebb4d854788a0254c9d50721ca
+      internalID: 4948550515537420612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand2Idle_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1250
+        width: 480
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67d86eaa2a304473b9b9a4e7d4dafc46
+      internalID: -6571528249222481972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand2Idle_16
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 1250
+        width: 480
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d78aee5f47b17480a84d3b95aff00fe6
+      internalID: -5316178874379479144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand2Idle_17
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 1250
+        width: 480
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a41c2cbc78ee84c98a6d4599aab9d18e
+      internalID: -353770279846065069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand2Idle_18
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 1250
+        width: 480
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e836376dc742342469e39d461a819089
+      internalID: -4134251729921050917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand2Idle_19
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1250
+        width: 480
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb94c00f82bf1427aa2cb386adf06c7f
+      internalID: 7665791244666491898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand2Idle_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1000
+        width: 480
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 617612111aef04615942bd47810e526a
+      internalID: 9041060994298621755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand2Idle_21
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 1000
+        width: 480
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf3550d8c83494ad99c69822f6055222
+      internalID: 7267590317333958015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand2Idle_22
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 1000
+        width: 480
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a33e51ad4e50483ca5df2bb78442a9a
+      internalID: 6070867912450446321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand2Idle_23
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 1000
+        width: 480
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56fb681989978453faf103aaaaa2c74e
+      internalID: 8168803830940227144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand2Idle_24
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1000
+        width: 480
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26ce24d73dcbb4054b78f9a45c90f14b
+      internalID: -1593877984686667850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand2Idle_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 750
+        width: 480
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7063f45d4967d4fd48b92bc19b8f1027
+      internalID: 6310701864802251887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand2Idle_26
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 750
+        width: 480
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57dc1ebd4c1474d0d902c85cec552bcd
+      internalID: 1850182058182238576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand2Idle_27
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 750
+        width: 480
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52eace341721649468558d4417d232ee
+      internalID: 2539377428808240620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand2Idle_28
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 750
+        width: 480
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 922802969a7694379826bf46e87793b3
+      internalID: 8978793972915497232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand2Idle_29
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 750
+        width: 480
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d9858aeff035408b9e2dcb182c2ae5a
+      internalID: 863597928953964767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand2Idle_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 500
+        width: 480
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3db8c1a7e373496a953ecf6ffc13e42
+      internalID: 3295107505604307919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand2Idle_31
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 500
+        width: 480
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88d1af4d6cb4a47b4ab900f7f824ce56
+      internalID: 848580038533935550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand2Idle_32
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 500
+        width: 480
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aa3cf36b12f04aefbeb987bca3b9d03
+      internalID: -2643367293913201468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand2Idle_33
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 500
+        width: 480
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a47ddf1080d444d04a353a79d80e56f3
+      internalID: 6969397261162209186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand2Idle_34
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 500
+        width: 480
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f4018f5a23f44cd7a4e26d1eb803ee4
+      internalID: -7403816560640046265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand2Idle_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 250
+        width: 480
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ca18d65e6d8049f782ee1e98f64098f
+      internalID: -3657385201959626369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand2Idle_36
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 250
+        width: 480
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5086e385d9aa74ff183ed578306338a9
+      internalID: -6377619789207612467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand2Idle_37
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 250
+        width: 480
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74e030bf3444e47e5b144dc1f6c6c530
+      internalID: 5123597341012711290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand2Idle_38
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 250
+        width: 480
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80774a19e2d494a5aa8b9a7620a6147f
+      internalID: 6858446741174563212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand2Idle_39
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 250
+        width: 480
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5939521a2f94247d9b4241058de2f4ed
+      internalID: 8145318373780204720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand2Idle_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 480
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08567a07c0dec46a5a9de945dc914246
+      internalID: -2394285548981119749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand2Idle_41
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 480
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c5770df8d86e42238e2ecc0ad0fa386
+      internalID: 8907238882281178549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand2Idle_42
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 0
+        width: 480
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d1961433f2044ec8b69b79e958b6626
+      internalID: -3221630534722463636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
