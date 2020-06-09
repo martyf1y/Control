@@ -1,0 +1,1543 @@
+fileFormatVersion: 2
+guid: fa745594870ea4b9e96ec5e8937019e3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 956505127570511486
+    second: DogEvolve_0
+  - first:
+      213: -4287584015227057051
+    second: DogEvolve_1
+  - first:
+      213: 3489241688542397759
+    second: DogEvolve_2
+  - first:
+      213: -8002591316374873754
+    second: DogEvolve_3
+  - first:
+      213: -8803107044722721882
+    second: DogEvolve_4
+  - first:
+      213: 8866893372933205695
+    second: DogEvolve_5
+  - first:
+      213: -2015964695359892334
+    second: DogEvolve_6
+  - first:
+      213: 7473784455849493479
+    second: DogEvolve_7
+  - first:
+      213: -760861164694427841
+    second: DogEvolve_8
+  - first:
+      213: -8604916381595728885
+    second: DogEvolve_9
+  - first:
+      213: 1444429344158458199
+    second: DogEvolve_10
+  - first:
+      213: 6753104669290462532
+    second: DogEvolve_11
+  - first:
+      213: -131971877746338599
+    second: DogEvolve_12
+  - first:
+      213: -5821163617519016808
+    second: DogEvolve_13
+  - first:
+      213: 7457537012504394476
+    second: DogEvolve_14
+  - first:
+      213: 612841540970288797
+    second: DogEvolve_15
+  - first:
+      213: -4215543175827742068
+    second: DogEvolve_16
+  - first:
+      213: 4386614566187106284
+    second: DogEvolve_17
+  - first:
+      213: -1127109979423899491
+    second: DogEvolve_18
+  - first:
+      213: -2261891770797183254
+    second: DogEvolve_19
+  - first:
+      213: 3925859902152773633
+    second: DogEvolve_20
+  - first:
+      213: -9218394032968150716
+    second: DogEvolve_21
+  - first:
+      213: -3386006801544432887
+    second: DogEvolve_22
+  - first:
+      213: -2697738705874948234
+    second: DogEvolve_23
+  - first:
+      213: 8937772487136035057
+    second: DogEvolve_24
+  - first:
+      213: -5510134274938279963
+    second: DogEvolve_25
+  - first:
+      213: 4354305973356739539
+    second: DogEvolve_26
+  - first:
+      213: 7701049823615330149
+    second: DogEvolve_27
+  - first:
+      213: -7883497352126702636
+    second: DogEvolve_28
+  - first:
+      213: -4915959167150125141
+    second: DogEvolve_29
+  - first:
+      213: -4130353180033127192
+    second: DogEvolve_30
+  - first:
+      213: 8793609765508508381
+    second: DogEvolve_31
+  - first:
+      213: -3964368251481133781
+    second: DogEvolve_32
+  - first:
+      213: -1379424201667589851
+    second: DogEvolve_33
+  - first:
+      213: -6329700890584174743
+    second: DogEvolve_34
+  - first:
+      213: 303772083570107426
+    second: DogEvolve_35
+  - first:
+      213: -3269933916714370159
+    second: DogEvolve_36
+  - first:
+      213: -5223807572790694487
+    second: DogEvolve_37
+  - first:
+      213: 4791899275208014226
+    second: DogEvolve_38
+  - first:
+      213: 3392778228462801555
+    second: DogEvolve_39
+  - first:
+      213: 623242835621600900
+    second: DogEvolve_40
+  - first:
+      213: 385350350436652970
+    second: DogEvolve_41
+  - first:
+      213: 8914794310607579957
+    second: DogEvolve_42
+  - first:
+      213: -2192250951601836766
+    second: DogEvolve_43
+  - first:
+      213: -579992061451249290
+    second: DogEvolve_44
+  - first:
+      213: -2799650545299169339
+    second: DogEvolve_45
+  - first:
+      213: 3463545629961639733
+    second: DogEvolve_46
+  - first:
+      213: -305540607066635069
+    second: DogEvolve_47
+  - first:
+      213: 3869840265238623401
+    second: DogEvolve_48
+  - first:
+      213: -7713810158637501698
+    second: DogEvolve_49
+  - first:
+      213: 7304092956673629714
+    second: DogEvolve_50
+  - first:
+      213: 7155293873487128807
+    second: DogEvolve_51
+  - first:
+      213: 2075129751857439087
+    second: DogEvolve_52
+  - first:
+      213: 5714436537926576300
+    second: DogEvolve_53
+  - first:
+      213: 260601244456280107
+    second: DogEvolve_54
+  - first:
+      213: -2649811936561949550
+    second: DogEvolve_55
+  - first:
+      213: -9206780129025857465
+    second: DogEvolve_56
+  - first:
+      213: 1043630096478012867
+    second: DogEvolve_57
+  - first:
+      213: 4534229608069979351
+    second: DogEvolve_58
+  - first:
+      213: 7202200017220269164
+    second: DogEvolve_59
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DogEvolve_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4527
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5428fbd2c2f7b42509440c99af52091f
+      internalID: 956505127570511486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogEvolve_1
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 4527
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eac5e37bc1d549d5a50719d8f1b08cd
+      internalID: -4287584015227057051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogEvolve_2
+      rect:
+        serializedVersion: 2
+        x: 1710
+        y: 4527
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b85808312495b4567be5fc4606bd9de7
+      internalID: 3489241688542397759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogEvolve_3
+      rect:
+        serializedVersion: 2
+        x: 2565
+        y: 4527
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acb76dd1887dd416389b0070835f2537
+      internalID: -8002591316374873754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogEvolve_4
+      rect:
+        serializedVersion: 2
+        x: 3420
+        y: 4527
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b896bcd879054bb7a37024d5b90b1d1
+      internalID: -8803107044722721882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogEvolve_5
+      rect:
+        serializedVersion: 2
+        x: 4275
+        y: 4527
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46f813020925548c793cb4ff0add7119
+      internalID: 8866893372933205695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogEvolve_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4024
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51caf61d714844b9b9af39616a05f81f
+      internalID: -2015964695359892334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogEvolve_7
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 4024
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60b087ebf20d14ae6bfdb4128936cf4c
+      internalID: 7473784455849493479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogEvolve_8
+      rect:
+        serializedVersion: 2
+        x: 1710
+        y: 4024
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b9eb90ab14774125b90cfffa3be2962
+      internalID: -760861164694427841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogEvolve_9
+      rect:
+        serializedVersion: 2
+        x: 2565
+        y: 4024
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f97eeaefff1d45b894a8a3a3a10aae7
+      internalID: -8604916381595728885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogEvolve_10
+      rect:
+        serializedVersion: 2
+        x: 3420
+        y: 4024
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4a724726e3cb42d893078c0b7ae3a8a
+      internalID: 1444429344158458199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogEvolve_11
+      rect:
+        serializedVersion: 2
+        x: 4275
+        y: 4024
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e1aeff8f391243519a5d7cf3f0bc14e
+      internalID: 6753104669290462532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogEvolve_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3521
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb3d04279a537420d9b3a70d1f233938
+      internalID: -131971877746338599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogEvolve_13
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 3521
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f92fbbfa196b04c53a0ca129a3bfc490
+      internalID: -5821163617519016808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogEvolve_14
+      rect:
+        serializedVersion: 2
+        x: 1710
+        y: 3521
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b244cf47ac43e433e9e5bfb6be3e6558
+      internalID: 7457537012504394476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogEvolve_15
+      rect:
+        serializedVersion: 2
+        x: 2565
+        y: 3521
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d290b8f29a444cf989872fa1f003aab
+      internalID: 612841540970288797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogEvolve_16
+      rect:
+        serializedVersion: 2
+        x: 3420
+        y: 3521
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 530ebcd305e47422698750424fd4715a
+      internalID: -4215543175827742068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogEvolve_17
+      rect:
+        serializedVersion: 2
+        x: 4275
+        y: 3521
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82b5d2a87283b4bdba05c8dc9b5a20a5
+      internalID: 4386614566187106284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogEvolve_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3018
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43779260758cd421a927e81ed1d11e52
+      internalID: -1127109979423899491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogEvolve_19
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 3018
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 062c783b789914ed8a8abc31b66fb577
+      internalID: -2261891770797183254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogEvolve_20
+      rect:
+        serializedVersion: 2
+        x: 1710
+        y: 3018
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8586993cb4144f2788c77f009b6d0f8
+      internalID: 3925859902152773633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogEvolve_21
+      rect:
+        serializedVersion: 2
+        x: 2565
+        y: 3018
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 031bef1f5843e4ebea94d707f967fcc4
+      internalID: -9218394032968150716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogEvolve_22
+      rect:
+        serializedVersion: 2
+        x: 3420
+        y: 3018
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff9486555979a4226b3ad09c3194df08
+      internalID: -3386006801544432887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogEvolve_23
+      rect:
+        serializedVersion: 2
+        x: 4275
+        y: 3018
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95d841f38679e450cbe7f5f3c43e7c2f
+      internalID: -2697738705874948234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogEvolve_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2515
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebfdc117585644757b527e1041c09ce1
+      internalID: 8937772487136035057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogEvolve_25
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 2515
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fae5d2a42c3343cd8f5bcbb7e1f0c0b
+      internalID: -5510134274938279963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogEvolve_26
+      rect:
+        serializedVersion: 2
+        x: 1710
+        y: 2515
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8773c18446ce4a90a6112fe06dd4d47
+      internalID: 4354305973356739539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogEvolve_27
+      rect:
+        serializedVersion: 2
+        x: 2565
+        y: 2515
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec35dc1abb81345978545aecef6e2259
+      internalID: 7701049823615330149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogEvolve_28
+      rect:
+        serializedVersion: 2
+        x: 3420
+        y: 2515
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1db35cf6847a469b988b4e146f3d54c
+      internalID: -7883497352126702636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogEvolve_29
+      rect:
+        serializedVersion: 2
+        x: 4275
+        y: 2515
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8df7eac7125f4cdea3831f2363994ed
+      internalID: -4915959167150125141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogEvolve_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2012
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f3bfcc3e6ccb4971a5997c1f5730638
+      internalID: -4130353180033127192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogEvolve_31
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 2012
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49390f669eb6e4a5a814e4ddce117854
+      internalID: 8793609765508508381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogEvolve_32
+      rect:
+        serializedVersion: 2
+        x: 1710
+        y: 2012
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd3548a0acee6454f803b9b689a1cb2e
+      internalID: -3964368251481133781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogEvolve_33
+      rect:
+        serializedVersion: 2
+        x: 2565
+        y: 2012
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d632420a60fad498198d34fb1a49bd83
+      internalID: -1379424201667589851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogEvolve_34
+      rect:
+        serializedVersion: 2
+        x: 3420
+        y: 2012
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c51695d22727e430cb1650d5bc404511
+      internalID: -6329700890584174743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogEvolve_35
+      rect:
+        serializedVersion: 2
+        x: 4275
+        y: 2012
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6ea832288bf84fd0b5f4cfb93c1838d
+      internalID: 303772083570107426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogEvolve_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1509
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e54f2837373844f418d94de96d673f7b
+      internalID: -3269933916714370159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogEvolve_37
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 1509
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cb2ea57f7ec2419d980e791a6201ca3
+      internalID: -5223807572790694487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogEvolve_38
+      rect:
+        serializedVersion: 2
+        x: 1710
+        y: 1509
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01edc7d08ed5943a1a2eec0f41d540aa
+      internalID: 4791899275208014226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogEvolve_39
+      rect:
+        serializedVersion: 2
+        x: 2565
+        y: 1509
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb04dbb834a044e738809b28751da725
+      internalID: 3392778228462801555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogEvolve_40
+      rect:
+        serializedVersion: 2
+        x: 3420
+        y: 1509
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8da91fcaae45141db92fd43c4fd119a1
+      internalID: 623242835621600900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogEvolve_41
+      rect:
+        serializedVersion: 2
+        x: 4275
+        y: 1509
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74b404dba9831417b9da5cfb3722e394
+      internalID: 385350350436652970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogEvolve_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1006
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb7077352f331409ea04202f04551e4e
+      internalID: 8914794310607579957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogEvolve_43
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 1006
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b9a227638a4a4f4fba1394dd8812b4d
+      internalID: -2192250951601836766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogEvolve_44
+      rect:
+        serializedVersion: 2
+        x: 1710
+        y: 1006
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e5175195591147a18c621e203db310f
+      internalID: -579992061451249290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogEvolve_45
+      rect:
+        serializedVersion: 2
+        x: 2565
+        y: 1006
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85d071cfa0ff945c9aef388218b962e7
+      internalID: -2799650545299169339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogEvolve_46
+      rect:
+        serializedVersion: 2
+        x: 3420
+        y: 1006
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84d3f6344de2447fa8afbb4f3c2cbd83
+      internalID: 3463545629961639733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogEvolve_47
+      rect:
+        serializedVersion: 2
+        x: 4275
+        y: 1006
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 884b8a2ba63374fba98609946e0f621b
+      internalID: -305540607066635069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogEvolve_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 503
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ae38327f578640b7b535ba2ba4337f6
+      internalID: 3869840265238623401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogEvolve_49
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 503
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cacad101ef1474caf8a954ba73310f99
+      internalID: -7713810158637501698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogEvolve_50
+      rect:
+        serializedVersion: 2
+        x: 1710
+        y: 503
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b8e378956a2e40cbb2ec786ada3a780
+      internalID: 7304092956673629714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogEvolve_51
+      rect:
+        serializedVersion: 2
+        x: 2565
+        y: 503
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29426ffcc368a4e278529b41dc91d2e6
+      internalID: 7155293873487128807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogEvolve_52
+      rect:
+        serializedVersion: 2
+        x: 3420
+        y: 503
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8fcea144891d4b069df3d8f20a61f33
+      internalID: 2075129751857439087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogEvolve_53
+      rect:
+        serializedVersion: 2
+        x: 4275
+        y: 503
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccc8baca552cf41b8a394879607c3dae
+      internalID: 5714436537926576300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogEvolve_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c72e24660d0a4e62bae56ccd0caf15e
+      internalID: 260601244456280107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogEvolve_55
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 0
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37a5e0a8ff37f43d09edf4c23526d763
+      internalID: -2649811936561949550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogEvolve_56
+      rect:
+        serializedVersion: 2
+        x: 1710
+        y: 0
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a421dd6045c9949b6b094fda070ad44c
+      internalID: -9206780129025857465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogEvolve_57
+      rect:
+        serializedVersion: 2
+        x: 2565
+        y: 0
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db6d31d5a854e4e49bcd7ae24c2b41fd
+      internalID: 1043630096478012867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogEvolve_58
+      rect:
+        serializedVersion: 2
+        x: 3420
+        y: 0
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cb14de18f1d84f10809f7ffc23a8806
+      internalID: 4534229608069979351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogEvolve_59
+      rect:
+        serializedVersion: 2
+        x: 4275
+        y: 0
+        width: 855
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2d50dccdbd7541a9960af85a0b1fd85
+      internalID: 7202200017220269164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

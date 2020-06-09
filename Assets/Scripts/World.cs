@@ -34,8 +34,6 @@ public class World : MonoBehaviour
 
     public void FadeOut()
     {
-        Debug.Log("Goodbye Level");
-
         SpriteRenderer[] allSprites = this.GetComponentsInChildren<SpriteRenderer>();
         Color thisCol;
         foreach (SpriteRenderer thisSprite in allSprites)

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4887076251994466702}
   - component: {fileID: 4887076251994466689}
   - component: {fileID: 2554323010746554531}
+  - component: {fileID: 613873438782970095}
   m_Layer: 0
   m_Name: Level0
   m_TagString: Untagged
@@ -69,7 +70,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 59c47efa8552c4e17b736164ca7aac55, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -95,7 +96,60 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   worldDoor: {fileID: 0}
   monsterBlocker: {fileID: 0}
-  worldView: {x: 0, y: 0, z: 0}
-  monsterView: {x: 0, y: 0, z: 0}
-  levelComplete: 0
-  rotation: {x: 0, y: 0, z: 1}
+--- !u!60 &613873438782970095
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4887076251994466703}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 30.000002, y: 30.000002}
+    newSize: {x: 30.000002, y: 30.000002}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 13.198243, y: 1.8164064}
+      - {x: 13.03711, y: 2.0214846}
+      - {x: 12.773438, y: 2.3291018}
+      - {x: 12.729493, y: 2.3291018}
+      - {x: 12.348634, y: 2.0507815}
+      - {x: 12.348634, y: 1.8896486}
+      - {x: 12.392579, y: 1.4501954}
+      - {x: 12.421876, y: 1.2304689}
+      - {x: 12.436524, y: 1.2158204}
+      - {x: 12.524415, y: 1.2158204}
+      - {x: 12.583009, y: 1.2451173}
+      - {x: 12.75879, y: 1.3916017}
+      - {x: 13.022462, y: 1.5820314}
+      - {x: 13.198243, y: 1.7578126}
+    - - {x: 13.212892, y: 2.7099612}
+      - {x: 13.271485, y: 2.768555}
+      - {x: 13.271485, y: 2.841797}
+      - {x: 13.081056, y: 3.0175784}
+      - {x: 12.94922, y: 3.105469}
+      - {x: 12.773438, y: 3.208008}
+      - {x: 12.48047, y: 3.2812502}
+      - {x: 12.260743, y: 3.310547}
+      - {x: 12.084962, y: 3.310547}
+      - {x: 12.070313, y: 3.2666018}
+      - {x: 12.114259, y: 3.105469}
+      - {x: 12.231446, y: 2.5927737}
+      - {x: 12.260743, y: 2.3583987}
+      - {x: 12.304688, y: 2.3437502}
+      - {x: 12.363282, y: 2.3437502}
+      - {x: 12.451173, y: 2.4609377}
+      - {x: 12.626954, y: 2.607422}
+      - {x: 12.919923, y: 2.6806643}

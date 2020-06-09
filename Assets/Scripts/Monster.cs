@@ -8,7 +8,7 @@ public class Monster : MonoBehaviour
     public static Monster instance = null;
     private Animator animator;
     char facingThisWay = 'R';
-
+    public bool scaleMonster = false;
 
     // Start is called before the first frame update
     void Start()
@@ -33,9 +33,14 @@ public class Monster : MonoBehaviour
         {
             gameObject.AddComponent<PolygonCollider2D>();
         }
+
+        if (scaleMonster)
+            scaleMonster = ScaleMonster(new Vector3(0.21f, 0.21f, 1));
     }
 
     public void Animate(char goThisWay){
+        //Flip(goThisWay);
+        animator.ResetTrigger("EndPush");
         if (goThisWay == 'L')
         {
             animator.SetTrigger("PushLeft");
@@ -56,21 +61,35 @@ public class Monster : MonoBehaviour
     }
 
     public void AnimationIdle(){
+        animator.speed = 1;
         animator.SetTrigger("EndPush");
+        animator.ResetTrigger("PushRight");
+        animator.ResetTrigger("PushLeft");
     }
 
     public void AnimateEvolve()
     {
+        gameObject.GetComponentInChildren<CircleCollider2D>().offset = new Vector2(0,-.32f);
+        animator.speed = 5;
         animator.SetTrigger("Evolve");
     }
 
-   
+   bool ScaleMonster(Vector3 targetScale)
+    {
+        this.transform.localScale = Vector3.Lerp(this.transform.localScale, targetScale, 0.09f);
+        if (this.transform.localScale == targetScale) {
+            return false;
+        }
+        
+        return true;
+    }
 
     void GoBig() // Used in end of animation "Monster Evolve" in Animation controller
     {
-        this.transform.localScale = new Vector3(1.8f, 1.8f, 1);
-        Destroy(gameObject.GetComponent<PolygonCollider2D>()); // MIGHT BE EASIER TO JUST LOAD A PREFAB THAT HAS ALL THE RIGHT STUFF
+        this.transform.localScale = new Vector3(1f, 1f, 1);
+        Destroy(gameObject.GetComponent<PolygonCollider2D>()); 
         Destroy(gameObject.GetComponentInChildren<CircleCollider2D>());
+        scaleMonster = false; // If ScaleMonster does not finish in time
         gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static; // No more moving the monster round
     }
 }

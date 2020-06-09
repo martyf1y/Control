@@ -21,7 +21,7 @@ public class Player : MonoBehaviour
 
     // Level 2 variables
     bool moveBackDown = false;
-    Vector3 moveHere = new Vector3(0, 15, 0);
+    Vector3 moveHere = new Vector3(0, 16, 0);
 
 
     // Start is called before the first frame update
@@ -40,8 +40,12 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonUp(1))
-            playInteract = !playInteract;
+        if (gameObject.GetComponent<PolygonCollider2D>() == null) // Bad fix to polygon collider reset not doable
+        {
+            gameObject.AddComponent<PolygonCollider2D>();
+        }
+
+        
 
         movement();
     }
@@ -81,6 +85,9 @@ public class Player : MonoBehaviour
 
     void GeneralMovement()
     {
+        if (Input.GetMouseButtonUp(1))
+            playInteract = !playInteract;
+
         if (playInteract)
         {
             rg2d.gravityScale = 0;
@@ -103,16 +110,19 @@ public class Player : MonoBehaviour
                 // spriteChange here
                 AnimateHandEvolve();
                 moveBackDown = true;
-                moveHere = new Vector3(moveHere.x, moveHere.y - 3, moveHere.z);
+
+                moveHere = new Vector3(moveHere.x, moveHere.y - 6, moveHere.z);
+                this.transform.rotation = Quaternion.Euler(0, 0, -90);
             }
             else
             {
+                Destroy(gameObject.GetComponent<PolygonCollider2D>());
                 movement = GeneralMovement; // Go back to normal movement
             }
         }
         else
         {
-            transform.position = Vector2.Lerp(transform.position, moveHere, 0.06f);                                                                   //   }
+            transform.position = Vector2.Lerp(transform.position, moveHere, 0.03f);                                                                   //   }
         }
     } 
 

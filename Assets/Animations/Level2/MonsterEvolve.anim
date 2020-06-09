@@ -307,6 +307,6 @@ AnimationClip:
     functionName: GoBig
     data: 
     objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
+    floatParameter: 5.13
     intParameter: 0
     messageOptions: 0
