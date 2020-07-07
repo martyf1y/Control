@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-
     public static GameManager instance = null; //Static instance of GameManager which allows it to be accessed by any other script.
     public int level = 1;
 
@@ -30,75 +29,91 @@ public class GameManager : MonoBehaviour
     // Level 2 Variables
     float leashLength = 2.5f;
 
+    void Awake()
+    {
+        QualitySettings.vSyncCount = 0;
+        Application.targetFrameRate = 30;
+    }
+
+    void ShortCut() // Debugging purposes
+    {
+        worldDoor.GetComponent<WorldDoor>().ChangeSprite(1); // Change to open door.
+        currentLevel.GetComponentInChildren<Collider2D>().enabled = false;
+        worldDoor.GetComponent<WorldDoor>().ChangeSpriteOrder(1); // Change to behind Monster.
+        level0.GetComponentInChildren<World>().levelComplete = true;
+        SpriteRenderer mSprite = Monster.instance.GetComponent<SpriteRenderer>();
+        mSprite.sortingOrder += 1;
+        Monster.instance.AnimateEvolve();
+        Monster.instance.scaleMonster = true; // Bad fix to scale issue between sprites
+        Monster.instance.transform.position = new Vector3(0, 8.539688f, 0); 
+        monsterMoveCheck = Lvl2MoveCheck;
+        Player.instance.movement = Player.instance.Lvl1ToLvl2Transition;
+        currentLevel = level2; // Move onto level2
+        Player.instance.StopInteract();
+        ResetCurrentWorld(currentLevel);
+        movingCam = true; // Move camera to new view
+        zoomWhatWay = monsterViewMain;
+
+        foreach (World world in FindObjectsOfType<World>()) world.rotation *= -1; // Rotate other way
+    }
+
     // Start is called before the first frame update
     void Start()
     {
-        if (instance == null) //Protection to make sure there is only one instance of GameManager         
-            instance = this;
-        else if (instance != this)
-            Destroy(gameObject);
+        //Protection to make sure there is only one instance of GameManager        
+        if (instance == null) instance = this;
+        else if (instance != this) Destroy(gameObject);
 
         // Cursor.visible = false;
 
         playerCollider = Player.instance.GetComponent<Collider2D>();
         monsterCollider = Monster.instance.GetComponent<Collider2D>();
+        monsterMoveCheck = Lvl1MoveCheck; // Make function the level 1 version
 
         currentLevel = level1; // Start at level 1
         ResetCurrentWorld(currentLevel);
-        monsterMoveCheck = Lvl1MoveCheck; // Make function the level 1 version
 
         transform.position = monsterViewMain; // Start us at right view
+
+        ShortCut();
     }
 
-    void Update()
+    private void Update()
     {
-
-        if (monsterCollider==null) // Bug fix for when monster animate changes
-            monsterCollider = Monster.instance.GetComponent<Collider2D>();
-        if (playerCollider == null) // Bug fix for when monster animate changes
-            playerCollider = Player.instance.GetComponent<Collider2D>();
+        // Collider bug fix for when animation changes
+        if (monsterCollider==null) monsterCollider = Monster.instance.GetComponent<Collider2D>();
+        if (playerCollider == null) playerCollider = Player.instance.GetComponent<Collider2D>();
 
         // All levels          
-        if (Player.instance.GetPlayInteract()) // Check to see if player is in interaction mode for interaction updates.
+        if (Player.instance.GetPlayInteract()) // Only when player is interacting do checks happen.
         {
             PuzzleSolvedCheck();
-
             LvlCompleteCheck();
-
             monsterMoveCheck();
         }
-        else // We need to stop things moving
-        {
-            StopMovement(); 
-        }
-
+        else StopMovement();
 
         MovingCameraCheck();
     }
 
-    void Lvl1MoveCheck()
+    private void Lvl1MoveCheck()
     {
         char monHandDir = TouchingObjectCheck(worldCollider, monsterCollider, playerCollider);
         if (monHandDir != 'N') // When monster on floor and hand is touching we can move monster and worlds
         {
             char monWorldBlkrDir = TouchingObjectCheck(worldCollider, monsterCollider, monBlkrCollider);
-            if (monWorldBlkrDir == monHandDir) // Debunk against the level barriers to stop monster going where it cant
-            {   // Stop animations when none of the actions are happening
-                StopMovement();
-            }
-            else
-            {   // Animate and move worlds based on which way hand is interacting from
+            if (monWorldBlkrDir != monHandDir) // Debunk against the level barriers to stop monster going where it cant
+            {
                 Monster.instance.Animate(monHandDir);
                 Player.instance.Flip(monHandDir);
                 Player.instance.AnimatePush();
                 RotateWorlds(monHandDir);
             }
+            else StopMovement();
         }
-        else
-        {
-                StopMovement();
-        }
+        else StopMovement();
     }
+
     void Lvl2MoveCheck()
     {
         Vector3 oldPlayerPos = Player.instance.transform.position;
@@ -111,28 +126,19 @@ public class GameManager : MonoBehaviour
             float leashPullDir = Monster.instance.transform.position.x - Player.instance.transform.position.x;
 
             char whichWayLeash = 'N';
-                if (leashPullDir < 0)
-            {
-                whichWayLeash = 'R';
-            }
-            else
-            {
-                whichWayLeash = 'L';
-            }
+            whichWayLeash = leashPullDir < 0? 'R' : 'L';
+
             if (whichWayLeash != 'N') // When monster on floor and hand is touching we can move monster and worlds
-            {
-                // ANIMATION TIME!!
+            { // ANIMATION TIME!!
                 Monster.instance.Flip(whichWayLeash);
                 Monster.instance.Animate(whichWayLeash);
                 Player.instance.Flip(whichWayLeash);
-                Player.instance.AnimatePush();
+
+                if (Input.GetKey("space")) Player.instance.AnimatePush();
                 RotateWorlds(whichWayLeash);
             }
         }
-        else
-        {
-                StopMovement();
-        }
+        else StopMovement();
     }
 
     Vector3 PullObjectCheck(Vector3 anchor, Vector3 endVector, float radius)
@@ -150,11 +156,7 @@ public class GameManager : MonoBehaviour
             && objectCol.IsTouching(pusherCol)) // Is the thing pushed being pushed?
         {
             float posDirection = objectCol.transform.position.x - pusherCol.transform.position.x;
-
-            if (posDirection < 0)
-                whichWay = 'L'; // Object is being moved Left
-            else
-                whichWay = 'R';
+            whichWay = posDirection < 0 ? 'L' : 'R';
         }
         return whichWay;
     }
@@ -182,21 +184,17 @@ public class GameManager : MonoBehaviour
         { // We have hit entry to next level.
             worldDoor.GetComponent<WorldDoor>().ChangeSprite(1); // Change to open door.
             currentLevel.GetComponentInChildren<Collider2D>().enabled = false;
-
+           
             if (currentLevel == level1)
             {
+                worldDoor.GetComponent<WorldDoor>().ChangeSpriteOrder(1); // Change to behind Monster.
                 level0.GetComponentInChildren<World>().levelComplete = true;
                 SpriteRenderer mSprite = Monster.instance.GetComponent<SpriteRenderer>();
-                mSprite.sortingOrder += 2;
+                mSprite.sortingOrder += 1;
                 Monster.instance.AnimateEvolve();
                 Monster.instance.scaleMonster = true; // Bad fix to scale issue between sprites
                 monsterMoveCheck = Lvl2MoveCheck;
-                Player.instance.movement = Player.instance.Lvl1ToLvl2Transition;
-                var worlds = FindObjectsOfType<World>();
-                foreach (var world in worlds)
-                {
-                    world.rotation *= -1; // Time to go the other way
-                }
+                Player.instance.movement = Player.instance.Lvl1ToLvl2Transition;     
                 currentLevel = level2; // Move onto level2
             }
             else if (currentLevel == level2)
@@ -205,11 +203,12 @@ public class GameManager : MonoBehaviour
                 currentLevel = level3; // Move onto level3
             }
 
+            foreach (World world in FindObjectsOfType<World>()) world.rotation *= -1; // Rotate other way
+
             Player.instance.StopInteract();
             ResetCurrentWorld(currentLevel);
             movingCam = true; // Move camera to new view
             zoomWhatWay = monsterViewMain;
-
         }
     }
 
@@ -220,15 +219,11 @@ public class GameManager : MonoBehaviour
             if (currentLevel == level1)
             { // A one off thing for axe that needed higher access
                 float zConv = level0.transform.rotation.z * Mathf.Rad2Deg;
-                if (zConv > 52.5 && zConv < 52.8)
-                { // Stops axe in the right place
+                if (zConv > 52.5 && zConv < 52.8) // Stops axe in the right place
                     level0.GetComponentInChildren<World>().rotation = new Vector3(0, 0, 0);
-                    // level0.transform.rotation.z = 236.579;
-                }
             }
         }
     }
-
 
     void MovingCameraCheck()
     {
@@ -241,29 +236,25 @@ public class GameManager : MonoBehaviour
             else if (transform.position == monsterViewMain)
                 zoomWhatWay = worldViewMain;
         }
-        if (movingCam)
-            movingCam = MoveCamera(zoomWhatWay);
+        if (movingCam) movingCam = MoveCamera(zoomWhatWay);
     }
 
     bool MoveCamera(Vector3 targetPos)
     {
         transform.position = Vector3.Lerp(transform.position, targetPos, camSpeed);
-
         if (Vector3.Distance(transform.position, targetPos) < .05)
         {
             transform.position = targetPos;
             return false; // We have stopped moving so can stop calling this
         }
-        else
-        {
             return true;
-        }
     }
 
     void RotateWorlds(char rotateWhatWay)
     {
         float worldSpeed = 1;
         Animator monsterAnimator = Monster.instance.gameObject.GetComponent<Animator>();
+        monsterAnimator.speed = 1;
 
         // Go faster when outer view or holding space bar
         if (Input.GetKey("space") || zoomWhatWay == worldViewMain)
@@ -271,18 +262,8 @@ public class GameManager : MonoBehaviour
             worldSpeed = 3;
             monsterAnimator.speed = 6;
         }
-        else
-        {
-            monsterAnimator.speed = 1;
-        }
-        var worlds = FindObjectsOfType<World>();
-        foreach (var world in worlds)
-        {
-            // Depending on which way we are moving we rotate the world
-            if (!world.levelComplete) // We stop moving once level complete
-            {
-                world.Rotate(rotateWhatWay == 'L' ? worldSpeed : -worldSpeed);
-            }
-        }
+            
+        foreach (World world in FindObjectsOfType<World>())
+            if (!world.levelComplete) world.Rotate(rotateWhatWay == 'L' ? worldSpeed : -worldSpeed);
     }
 }

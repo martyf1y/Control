@@ -5,18 +5,17 @@ Based on the 2012 game.
 Players can push around a weird creature on a puzzle world. Aim is to solve each puzzle and try reach the center!  
 
 To do
-09.06.20
+07.07.20
 
 Level 2
-- Fix animation to dog occurs (think its as good as it can get)
-- Fix dog animation triggers
-- Only request animation triggers once
+- Inherit the player and monster into a character parent
 - Scale house correctly
 - Blend of house lights
 - Prefab letterboxes and newspapers around the world
 - Leash calculation correct
 - Hand animation pull
 - Dog grab animation
+- Fix animation to dog occurs (think its as good as it can get)
 
 
 
@@ -39,7 +38,7 @@ End
 
 
 Level 1
-   
+
 - Stop the hand pushing when too high up the ball
 - Actual letters are put in place and turn green when are the correct letter
 
@@ -49,6 +48,8 @@ Level 1
 
 Completed
 
+-     Only request animation triggers once
+-     Fix dog animation triggers
 -     Hand movement correct
 -     Continue on track of creating level 2 collider for hand - try make it inverse and size of camera  
 -     Replace dog evolve with correct one with collar
@@ -65,4 +66,3 @@ Completed
 -     Hand does pushing motion when hitting ball
 -     Speed up roll animation when sped up
 -     Figure out how to state parent variables from child in start
-

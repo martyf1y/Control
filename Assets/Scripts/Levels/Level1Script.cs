@@ -16,10 +16,8 @@ public class Level1Script : World
 
     void Start()
     {
-        if (instance == null)
-            instance = this; //if not, set instance to this
-        else if (instance != this)
-            Destroy(gameObject);
+        if (instance == null) instance = this;
+        else if (instance != this) Destroy(gameObject);
 
         monsterView = new Vector3(0, 14, -150); // Change parent variables to the level settings.
         worldView = new Vector3(0, 0, -700);
@@ -33,7 +31,7 @@ public class Level1Script : World
         int num = 0;
         buttText = new TextMeshPro[buttons.Length];
         buttonPressed = new bool[buttons.Length];
-        foreach (var button in buttons)
+        foreach (GameObject button in buttons)
         {
             float angle = angleAdjuster * Mathf.PI * 2;
             Vector3 pos = new Vector3(Mathf.Cos(angle) * worldEdge, Mathf.Sin(angle) * worldEdge, -1);
@@ -64,7 +62,7 @@ public class Level1Script : World
             int totalCorrectButts = 0;
 
             Collider2D monsterCollider = Monster.instance.GetComponent<Collider2D>();
-            foreach (var button in buttons)
+            foreach (GameObject button in buttons)
             {
                 ButtonPressCheck(button, i, monsterCollider); // Check and change when button pressed
                 totalCorrectButts += ButtonCorrectChar(button, i); // Count all correct buttons chars
@@ -84,13 +82,9 @@ public class Level1Script : World
             {
                 int currentCharIndex = System.Array.IndexOf(passwordButtLib, buttText[index].text);
                 if (currentCharIndex != passwordButtLib.Length - 1)
-                {
                     buttText[index].text = passwordButtLib[currentCharIndex + 1];
-                }
                 else
-                {
                     buttText[index].text = passwordButtLib[0];
-                }
 
                 buttonPressed[index] = true;
             }
@@ -113,11 +107,5 @@ public class Level1Script : World
         }
     }
 
-    bool SolveCheck(int keys, int locks)
-    {
-        if (Input.GetKey("s") || keys >= locks) // or if all buttons are correct
-            return true;
-        else
-            return false;
-    }
+    bool SolveCheck(int keys, int locks) => Input.GetKey("s") || keys >= locks ? true : false;
 }

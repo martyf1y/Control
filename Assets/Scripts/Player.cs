@@ -28,65 +28,26 @@ public class Player : MonoBehaviour
     void Start()
     {
         //Check if instance already exists
-        if (instance == null)
-            instance = this; //if not, set instance to this
-        else if (instance != this)
-            Destroy(gameObject);
+        if (instance == null) instance = this;
+        else if (instance != this) Destroy(gameObject);
 
         rg2d = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         movement = GeneralMovement;
+        rg2d.gravityScale = 0;
     }
 
     void Update()
     {
         if (gameObject.GetComponent<PolygonCollider2D>() == null) // Bad fix to polygon collider reset not doable
-        {
             gameObject.AddComponent<PolygonCollider2D>();
-        }
-
-        
 
         movement();
     }
 
-
-    //public void Lvl2Movement()
-    //{
-      
-
-        
-    //    if (playInteract)
-    //    {
-    //        transform.rotation = Quaternion.Euler(0, 0, 0);
-    //        rg2d.gravityScale = 0;
-
-    //        if (!leashLimitReached) {
-    //            mousePosition = GetWorldPositionOnPlane(Input.mousePosition, 0); // This fixes persepctive issues with Z axis
-    //            transform.position = Vector2.Lerp(transform.position, mousePosition, moveSpeed); // Give a nice rubber band movement to mouse position                                                                                    //   }
-    //        }
-    //        else
-    //        {
-    //            //// point of origin to point of mouse by the amount of max magnitude
-    //            //Vector2 leashLimit = new Vector2();
-    //            //leashLimit.mag
-    //            //transform.position = Vector2.Lerp(transform.position, leashLimit, moveSpeed);
-    //        }
-    //    }
-    //    else if (!leashLimitReached)
-    //    {
-    //        rg2d.gravityScale = 0.1f;
-    //    }
-    //    else { // When leash is pulling hand back
-    //        rg2d.gravityScale = 0;
-    //    }
-
-    //}
-
     void GeneralMovement()
     {
-        if (Input.GetMouseButtonUp(1))
-            playInteract = !playInteract;
+        if (Input.GetMouseButtonUp(1)) playInteract = !playInteract;
 
         if (playInteract)
         {
@@ -95,10 +56,7 @@ public class Player : MonoBehaviour
             mousePosition = GetWorldPositionOnPlane(Input.mousePosition, 0); // This fixes persepctive issues with Z axis
             transform.position = Vector2.Lerp(transform.position, mousePosition, moveSpeed); // Give a nice rubber band movement to mouse position                                                                              //   }
         }
-        else
-        {
-            rg2d.gravityScale = 0.1f;
-        }
+        else rg2d.gravityScale = 0.1f;
     }
 
     public void Lvl1ToLvl2Transition()
@@ -106,13 +64,13 @@ public class Player : MonoBehaviour
         if (Vector3.Magnitude(transform.position - moveHere) < 0.5) // when we are close enough
         {
             if (!moveBackDown)
-            {
-                // spriteChange here
+            {  // spriteChange here
                 AnimateHandEvolve();
                 moveBackDown = true;
 
                 moveHere = new Vector3(moveHere.x, moveHere.y - 6, moveHere.z);
                 this.transform.rotation = Quaternion.Euler(0, 0, -90);
+                transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
             }
             else
             {
@@ -120,29 +78,14 @@ public class Player : MonoBehaviour
                 movement = GeneralMovement; // Go back to normal movement
             }
         }
-        else
-        {
-            transform.position = Vector2.Lerp(transform.position, moveHere, 0.03f);                                                                   //   }
-        }
-    } 
-
-    public bool GetPlayInteract()
-    {
-        return playInteract;
+        else transform.position = Vector2.Lerp(transform.position, moveHere, 0.03f);
     }
-
-    public void StopInteract()
-    {
-        playInteract = false;
-    }
-
 
     public Vector3 GetWorldPositionOnPlane(Vector3 screenPosition, float z)
     {
         Ray ray = Camera.main.ScreenPointToRay(screenPosition);
         Plane xy = new Plane(Vector3.forward, new Vector3(0, 0, z));
-        float distance;
-        xy.Raycast(ray, out distance);
+        xy.Raycast(ray, out float distance);
         return ray.GetPoint(distance);
     }
 
@@ -155,20 +98,13 @@ public class Player : MonoBehaviour
         }
     }
 
-    public void AnimatePush()
-    {
-        animator.SetTrigger("StartPush");
-    }
+    public bool GetPlayInteract() => playInteract;
 
-    public void AnimateStopPush()
-    {
-        animator.SetTrigger("EndPush");
-    }
+    public void StopInteract() => playInteract = false;
 
-    void AnimateHandEvolve()
-    {
-        animator.SetTrigger("Evolve");
-    }
+    public void AnimatePush() => animator.SetTrigger("StartPush");
 
+    public void AnimateStopPush() => animator.SetTrigger("EndPush");
 
+    void AnimateHandEvolve() => animator.SetTrigger("Evolve");
 }

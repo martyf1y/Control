@@ -4,24 +4,26 @@ using UnityEngine;
 
 public class WorldDoor : MonoBehaviour
 {
-    public Sprite[] WBSprite = new Sprite[5];
-    private SpriteRenderer WBSpriteRenderer;
+    public Sprite[] wBSprite = new Sprite[5];
+     SpriteRenderer WBSpriteRenderer;
+
+    public Sprite[] WBSprite { get => wBSprite; set => wBSprite = value; }
+    public SpriteRenderer WBSpriteRenderer1 { get => WBSpriteRenderer; set => WBSpriteRenderer = value; }
 
     // Start is called before the first frame update
     void Start()
     {
-        WBSpriteRenderer = GetComponent<SpriteRenderer>();
-        WBSpriteRenderer.sprite = WBSprite[0];
+        WBSpriteRenderer1 = GetComponent<SpriteRenderer>();
+        WBSpriteRenderer1.sprite = WBSprite[0];
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
-    public void ChangeSprite(int num)
-    {
-        WBSpriteRenderer.sprite = WBSprite[num];
-    }
+    public void ChangeSprite(int num) => WBSpriteRenderer1.sprite = WBSprite[num];
+
+    public void ChangeSpriteOrder(int num) => WBSpriteRenderer1.sortingOrder = num;
 }
