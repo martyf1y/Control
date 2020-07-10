@@ -6,6 +6,7 @@ public class Level0Script : World
 {
     public static Level0Script instance = null;
 
+
     void Start()
     {
         if (instance == null)
@@ -13,11 +14,10 @@ public class Level0Script : World
         else if (instance != this)
             Destroy(gameObject);
 
-        rotation = new Vector3(0, 0, 12);
+        Rotation = new Vector3(0, 0, 12);
         this.transform.eulerAngles = new Vector3(0, 0, 232.907f); // 172
         
     }
 
 
-
-}
+    }

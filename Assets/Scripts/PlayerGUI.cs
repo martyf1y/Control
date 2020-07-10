@@ -14,7 +14,7 @@ public class PlayerGUI : MonoBehaviour
 
     void Update()
     {
-        if (Player.instance.GetPlayInteract())
+        if (Player.instance.PlayInteract)
             sprRndr.color = Color.green;
         else
             sprRndr.color = Color.red;

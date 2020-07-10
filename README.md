@@ -5,16 +5,16 @@ Based on the 2012 game.
 Players can push around a weird creature on a puzzle world. Aim is to solve each puzzle and try reach the center!  
 
 To do
-07.07.20
+09.07.20
 
 Level 2
-- Inherit the player and monster into a character parent
+- Change hand animation pull to signal dog pickup
+- Object detect mail when dog is over (from head side)
+- Make sure only one mail is picked up each time
+- Drop off mail
 - Scale house correctly
 - Blend of house lights
-- Prefab letterboxes and newspapers around the world
 - Leash calculation correct
-- Hand animation pull
-- Dog grab animation
 - Fix animation to dog occurs (think its as good as it can get)
 
 
@@ -48,6 +48,11 @@ Level 1
 
 Completed
 
+- Hand animation pull
+- Prefab letterboxes and newspapers around the world
+- Blend mailbox colours
+- Fix bridge reappearing when zoom in and out
+- Inherit the player and monster into a character parent
 -     Only request animation triggers once
 -     Fix dog animation triggers
 -     Hand movement correct

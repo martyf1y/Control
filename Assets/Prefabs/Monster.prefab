@@ -70,8 +70,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1397044949
+  m_SortingLayer: 3
   m_SortingOrder: 1
   m_Sprite: {fileID: -8646839998584243239, guid: 4b1043a021e644e92a1abe2a9f370901,
     type: 3}
@@ -116,7 +116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fbc4b8b813024a9ba90fc98896e6d37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  makeMonsterBigger: 0
+  scaleMonster: 0
 --- !u!50 &466325057907300084
 Rigidbody2D:
   serializedVersion: 4
@@ -155,7 +155,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 4.85, y: 4.85}
+    oldSize: {x: 1.8653845, y: 1.8653845}
     newSize: {x: 4.85, y: 4.85}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

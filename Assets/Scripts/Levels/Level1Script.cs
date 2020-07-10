@@ -3,14 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
+
+
 public class Level1Script : World
 {
     public static Level1Script instance = null;
 
-    private GameObject[] buttons;
+    private GameObject[] buttons = new GameObject[6];
+    public GameObject buttonPrefab;
     // Our button object properties... even though they are not part of the objects
     TextMeshPro[] buttText;
-    bool[] buttonPressed; // This tells us if the button has already been pressed.
+    private bool[] buttonPressed; // This tells us if the button has already been pressed.
     private string[] passwordButtLib = { "P", "A", "S", "W", "O", "R", "D" };
     const string password = "ASWORD"; // The Password to get right
 
@@ -19,58 +22,63 @@ public class Level1Script : World
         if (instance == null) instance = this;
         else if (instance != this) Destroy(gameObject);
 
-        monsterView = new Vector3(0, 14, -150); // Change parent variables to the level settings.
-        worldView = new Vector3(0, 0, -700);
-        rotation = new Vector3(0, 0, -10);
-        this.transform.eulerAngles = new Vector3(0,0,120);
+        MonsterView = new Vector3(0, 14, -150); // Change parent variables to the level settings.
+        WorldView = new Vector3(0, 0, -700);
+        Rotation = new Vector3(0, 0, -10);
+        this.transform.eulerAngles = new Vector3(0, 0, 120);
 
-        // Make the buttons
-        buttons = GameObject.FindGameObjectsWithTag("Password");
+        // ---------------- Create the Buttons ---------------- //
         float angleAdjuster = Random.Range(-0.08f, 0.08f);
         float worldEdge = this.transform.localScale.x * -12f; // fixed amount of where the world edge is
-        int num = 0;
         buttText = new TextMeshPro[buttons.Length];
         buttonPressed = new bool[buttons.Length];
-        foreach (GameObject button in buttons)
+
+        for (int i = 0; i < buttons.Length; i++)
         {
+            buttons[i] = Instantiate(buttonPrefab, transform) as GameObject;    // Create and set to the parent level 1 with transform     
+            
             float angle = angleAdjuster * Mathf.PI * 2;
             Vector3 pos = new Vector3(Mathf.Cos(angle) * worldEdge, Mathf.Sin(angle) * worldEdge, -1);
-            button.transform.position = pos;
-            button.transform.eulerAngles = new Vector3(0, 0, Mathf.Atan2(pos.y, pos.x) * 180 / Mathf.PI + 180);
-
-            // REPLACE THIS WHEN DONE DEBUG
-            buttText[num] = button.GetComponentInChildren<TMPro.TextMeshPro>();
-            //buttText[num].text = passwordButtLib[Random.Range(0, passwordButtLib.Length)];
-
-            buttText[num].text = passwordButtLib[num];
-            buttonPressed[num] = false;
+            buttons[i].transform.position = pos;
+            buttons[i].transform.eulerAngles = new Vector3(0, 0, Mathf.Atan2(pos.y, pos.x) * 180 / Mathf.PI + 180);
+#if DEBUG
+            buttText[i] = buttons[i].GetComponentInChildren<TMPro.TextMeshPro>();
+#else
+            buttText[i].text = passwordButtLib[Random.Range(0, passwordButtLib.Length)];
+#endif
+            buttText[i].text = passwordButtLib[i];
+            buttonPressed[i] = false;
             angleAdjuster -= 0.02f;
-            num++;
         }
     }
 
-    new void Update()
+    public override void Update()
     {
-        if (levelComplete)
+        base.Update();
+        if (LevelComplete)
         {
             this.transform.eulerAngles = new Vector3(0, 0, -132.907f);
             FadeOut(); // When level is complete we fade out and remove the level
         }
-        if (!puzzleSolved && Monster.instance.GetComponent<Collider2D>() != null)
+    }
+
+    public override bool PuzzleChecker(Collider2D characterCollider)
+    {
+        if (!PuzzleSolved && characterCollider != null)
         {
             int i = 0;
             int totalCorrectButts = 0;
 
-            Collider2D monsterCollider = Monster.instance.GetComponent<Collider2D>();
             foreach (GameObject button in buttons)
             {
-                ButtonPressCheck(button, i, monsterCollider); // Check and change when button pressed
+                ButtonPressCheck(button, i, characterCollider); // Check and change when button pressed
                 totalCorrectButts += ButtonCorrectChar(button, i); // Count all correct buttons chars
                 i++;
             }
-
-            puzzleSolved = SolveCheck(totalCorrectButts, password.Length);
+            PuzzleSolved = SolveCheck(totalCorrectButts, password.Length);
+             
         }
+        return PuzzleSolved;
     }
 
     void ButtonPressCheck(GameObject thisButton, int index, Collider2D objectCollider)

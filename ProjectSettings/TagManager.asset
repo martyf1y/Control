@@ -45,3 +45,18 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: World
+    uniqueID: 4075010079
+    locked: 0
+  - name: Back Object
+    uniqueID: 642177599
+    locked: 0
+  - name: Monster
+    uniqueID: 2897922347
+    locked: 0
+  - name: Front Object
+    uniqueID: 727303847
+    locked: 0
+  - name: Player
+    uniqueID: 2539669645
+    locked: 0
