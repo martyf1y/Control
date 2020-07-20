@@ -19,6 +19,8 @@ public class World : MonoBehaviour
     void Start()
     {
         LevelComplete = false;
+
+        MonsterView = new Vector3(0, 4, -150);
     }
 
     public void Rotate(float whatWay)
@@ -32,7 +34,12 @@ public class World : MonoBehaviour
             FadeOut();
     }
 
-    public virtual bool PuzzleChecker(Collider2D characterCollider)
+    public virtual void PuzzleInteraction(Collider2D monCollider, Collider2D playerCollider)
+    {
+       // return false;
+    }
+
+    public virtual bool PuzzleSolvedChecker()
     {
         return false;
     }

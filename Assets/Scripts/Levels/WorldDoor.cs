@@ -25,5 +25,5 @@ public class WorldDoor : MonoBehaviour
 
     public void ChangeSprite(int num) => WBSpriteRenderer1.sprite = WBSprite[num];
 
-    public void ChangeSpriteOrder(int num) => WBSpriteRenderer1.sortingLayerName = "Back Object";
+    public void ChangeSpriteOrder(string sortLayer) => WBSpriteRenderer1.sortingLayerName = sortLayer;
 }

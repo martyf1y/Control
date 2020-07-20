@@ -5,7 +5,7 @@ using UnityEngine;
 public class Level0Script : World
 {
     public static Level0Script instance = null;
-
+   
 
     void Start()
     {

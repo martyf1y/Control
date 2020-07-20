@@ -62,23 +62,37 @@ public class Level1Script : World
         }
     }
 
-    public override bool PuzzleChecker(Collider2D characterCollider)
+    public override void PuzzleInteraction(Collider2D monCollider, Collider2D playerCollider)
     {
-        if (!PuzzleSolved && characterCollider != null)
+        if (monCollider != null) {
+            int i = 0;
+            foreach (GameObject button in buttons)
+            {
+                ButtonPressCheck(button, i, monCollider); // Check and change when button pressed
+                i++;
+            }
+        }
+    }
+
+    public override bool PuzzleSolvedChecker()
+    {
+        if (!PuzzleSolved)
         {
             int i = 0;
             int totalCorrectButts = 0;
 
-            foreach (GameObject button in buttons)
+            foreach(GameObject button in buttons)
             {
-                ButtonPressCheck(button, i, characterCollider); // Check and change when button pressed
                 totalCorrectButts += ButtonCorrectChar(button, i); // Count all correct buttons chars
                 i++;
             }
-            PuzzleSolved = SolveCheck(totalCorrectButts, password.Length);
-             
+            return PuzzleSolved = (Input.GetKeyUp("s") || totalCorrectButts >= password.Length) ? true : false;
         }
-        return PuzzleSolved;
+        else
+        {
+            return PuzzleSolved;
+        }
+
     }
 
     void ButtonPressCheck(GameObject thisButton, int index, Collider2D objectCollider)
@@ -114,6 +128,4 @@ public class Level1Script : World
             return 0;
         }
     }
-
-    bool SolveCheck(int keys, int locks) => Input.GetKey("s") || keys >= locks ? true : false;
 }

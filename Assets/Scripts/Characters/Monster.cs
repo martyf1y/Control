@@ -43,6 +43,7 @@ public class Monster : Character
     {
         if (levelNum == 1)
         {
+            scaleMonster = true; // Bad fix to scale issue between sprites
             gameObject.GetComponentInChildren<CircleCollider2D>().offset = new Vector2(0, -.32f);
             animator.speed = 5;
             AnimateEvolve();
@@ -61,7 +62,7 @@ public class Monster : Character
         Destroy(gameObject.GetComponent<PolygonCollider2D>());
         Destroy(gameObject.GetComponentInChildren<CircleCollider2D>());
         scaleMonster = false; // If ScaleMonster does not finish in time
-      //  gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static; // No more moving the monster round
+        gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static; // No more moving the monster round
     }
     // ------------------------------ Level 1 Evolve Function ---------------------------------- //
 

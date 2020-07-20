@@ -7,12 +7,13 @@ public class Level2Script : World
     public static Level2Script instance = null;
 
     // Generate 6 letterboxes
-    public GameObject[] mailBoxes = new GameObject[6];
+    private GameObject[] mailBoxes = new GameObject[6];
     public GameObject mailBoxPrefab;
     private GameObject[] newspapers;
     public GameObject newspaperPrefab;
     private bool[] mailDelivered; // This tells us if the button has already been pressed.
-
+    private bool[] thisNewspaperInMouth;
+    private bool newspaperInMouth = false;
     
 
 
@@ -30,6 +31,7 @@ public class Level2Script : World
         // ---------------- Create the Mail ---------------- //
         newspapers = new GameObject[mailBoxes.Length];
         mailDelivered = new bool[mailBoxes.Length];
+        thisNewspaperInMouth = new bool[mailBoxes.Length];
         List<Color> mailColours = new List<Color>();
         mailColours.Add(Color.red);
         mailColours.Add(Color.green);
@@ -50,6 +52,7 @@ public class Level2Script : World
 
                 start += increment;
                 mailDelivered[i] = false;
+                thisNewspaperInMouth[i] = false;
             }
         }
 
@@ -81,11 +84,53 @@ public class Level2Script : World
         }
     }
 
-    public override bool PuzzleChecker(Collider2D characterCollider)
+
+    public override void PuzzleInteraction(Collider2D monCollider, Collider2D playerCollider)
     {
-        Debug.Log("YYOYOYOYOY");
+        if (HandHitDogFromAbove(monCollider, playerCollider) ) // Optional - add speed of hit check
+        {
+            int i = 0;
+            foreach (GameObject newspaper in newspapers)
+            {
+                if (!newspaperInMouth)
+                {
+                    // Optional - check dog head is on right side of newspaper (if dog facing right and newspaper x is less than dog
+                    if (monCollider.IsTouching(newspaper.GetComponent<Collider2D>()))
+                    {
+                        // Change Dog sprite 
+                        // Change dog colour
+                        // Disappear newspaper
+                        newspaperInMouth = true;
+                        thisNewspaperInMouth[i] = true;
+                    }
+                }
+                else if(thisNewspaperInMouth[i])
+                {
+                    // Place it down
+                    // Change Dig Sprite
+                    thisNewspaperInMouth[i] = false;
+                }
+                i++;
+            }
+            
+        }
+        foreach (GameObject newspaper in newspapers)
+        {
+
+        }
+
+        }
+
+    public override bool PuzzleSolvedChecker()
+    {
+       
         return false;
     }
+
+    private bool HandHitDogFromAbove(Collider2D cColl, Collider2D pColl) =>
+    pColl.IsTouching(cColl) && (pColl.transform.position.y > cColl.transform.position.y) ? true : false; // Is player hitting dog from above?
+
+    
 
         GameObject MailMaker(GameObject prefab, List<Color> tempColors, float tempStart, float tempIncrement, float tempEdge)
     {
