@@ -10,8 +10,9 @@ public class Player : Character
     // Movement variables
     private const float moveSpeed = .1f;
     private Vector3 mousePosition;
-
+    private Vector3 prevPos;
     public bool PlayInteract {get;set;}
+    public bool AttemptedHit { get; set;}
 
     public delegate void Movement(); // What we swap between types of movement
     public Movement movement;
@@ -19,7 +20,7 @@ public class Player : Character
     // Level 2 variables
     bool moveBackDown = false;
     Vector3 moveHere = new Vector3(0, 16, 0);
-
+    public float Force { get; set; }
 
     // Start is called before the first frame update
     void Start()
@@ -44,22 +45,40 @@ public class Player : Character
 
     void GeneralMovement()
     {
-        if (Input.GetMouseButtonUp(1)) PlayInteract = !PlayInteract;
+        if (Input.GetMouseButtonUp(1)) PlayInteract = !PlayInteract; //rg2d.velocity = Vector3.zero; //rg2d.angularVelocity = 0;
 
         if (PlayInteract)
         {
-            rg2d.gravityScale = 0;
-            transform.rotation = Quaternion.Euler(0, 0, 0);
-            mousePosition = GetWorldPositionOnPlane(Input.mousePosition, 0); // This fixes persepctive issues with Z axis
-            transform.position = Vector2.Lerp(transform.position, mousePosition, moveSpeed); // Give a nice rubber band movement to mouse position                                                                              //   }
+            if (Force < 10)
+            {
+                rg2d.velocity = new Vector2(0, 0);
+                rg2d.angularVelocity = 0;
+                rg2d.gravityScale = 0;
+                transform.rotation = Quaternion.Euler(0, 0, 0);
+                mousePosition = GetWorldPositionOnPlane(Input.mousePosition, 0); // This fixes persepctive issues with Z axis
+                transform.position = Vector2.Lerp(transform.position, mousePosition, moveSpeed); // Give a nice rubber band movement to mouse position  
+                mousePosition = mousePosition.normalized;
+                prevPos = transform.position;
+            }
+            else ApplyForce();
+
         }
         else rg2d.gravityScale = 0.1f;
     }
 
-    public void Evolve()
+    public void HitAttack()
     {
-       // if (levelNum == 1) {
-            if (Vector3.Magnitude(transform.position - moveHere) < 0.5) // when we are close enough
+        if (Force<10)
+        Force = 300;
+    }
+
+    private void ApplyForce() => rg2d.AddForce(new Vector2(0, -(Force *= .88f)));
+
+public void Evolve()
+    {
+        // if (levelNum == 1) {
+        rg2d.velocity = new Vector2(0, 0);
+        if (Vector3.Magnitude(transform.position - moveHere) < 0.5) // when we are close enough
             {
                 if (!moveBackDown)
                 {  // spriteChange here

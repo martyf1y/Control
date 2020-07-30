@@ -15,8 +15,8 @@ public class GameManager : MonoBehaviour
     // General Level Functions
     delegate bool WorldPuzzleCheck();
     WorldPuzzleCheck IsWorldPuzzleSolved;
-    delegate void WorldInteraction(Collider2D monCollider, Collider2D playerCollider);
-    WorldInteraction WorldPuzzleInteraction;
+    delegate void WorldInteraction();
+    WorldInteraction WorldPreSolvedInteractions;
     // Monster Functions
     delegate char MonsterMoveCheck();
     MonsterMoveCheck GetMonMoveDir, BarrierCheck;
@@ -47,7 +47,7 @@ public class GameManager : MonoBehaviour
     void ShortCut() // Debugging purposes
     {
         LevelUp();
-        Monster.instance.transform.position = new Vector3(0, 8.539688f, 0);
+        Monster.instance.transform.position = new Vector3(0, 8.490003f, 0);
     }
 
     void Start()
@@ -63,13 +63,14 @@ public class GameManager : MonoBehaviour
         GetMonMoveDir = Lvl1PlayerPushMonCheck; // Make function the level 1 version
         BarrierCheck = Lvl1BarrierCheck;
         MoveMonAnim = Lvl1MoveMon;
+        WorldPreSolvedInteractions = Lvl1PuzzleInteraction;
         currentLevel = level1; // Start at level 1
         ResetCurrentWorld(currentLevel);
 
 
         transform.position = monViewCoordinates; // Start us at right view
 #if DEBUG
-          ShortCut();
+        ShortCut();
 #endif
     }
 
@@ -82,15 +83,17 @@ public class GameManager : MonoBehaviour
         if (Player.instance.PlayInteract) // Only when player is interacting do checks happen.
         {
             char monMoveDirection = GetMonMoveDir(); // Based on current world factors
+
             if (monMoveDirection != 'N' && monMoveDirection != BarrierCheck())
             {
                 MoveMonAnim(monMoveDirection);
                 RotateWorlds(monMoveDirection);
             }
+            else if (Input.GetKeyDown("space")) Player.instance.HitAttack(); // Hand slam
             else StopMoveAnim();
 
             if (!IsWorldPuzzleSolved())
-                WorldPuzzleInteraction(monCollider, playerCollider);
+                WorldPreSolvedInteractions();
             else
                 WorldPuzzleSolvedEvents();
 
@@ -105,51 +108,19 @@ public class GameManager : MonoBehaviour
         if (movingCam || WantToMoveCameraCheck()) movingCam = MoveCamera(newViewCoordinates);
     }
 
-    // If moster has collided with door it means they have ccompleted level
-    private bool IsLevelCompleted => TriObjectCollCheck(worldCollider, monCollider, doorEntryCollider) != 'N' ? true : false;
-
-    void LevelUp()
-    {
-        worldDoor.GetComponent<WorldDoor>().ChangeSprite(1); // Change to open door.
-        currentLevel.GetComponentInChildren<Collider2D>().enabled = false; // Remove door blocker
-
-        foreach (World world in FindObjectsOfType<World>()) world.Rotation *= -1; // Rotate other way
-
-        if (currentLevel == level1)
-        {
-            level0.GetComponentInChildren<World>().LevelComplete = true;
-            worldDoor.GetComponent<WorldDoor>().ChangeSpriteOrder("Back Object"); // Change to behind Monster.
-            Monster.instance.Evolve(1);
-            GetMonMoveDir = Lvl2PlayerPullMonCheck;
-            MoveMonAnim = Lvl2MoveMon;
-            BarrierCheck = Lvl2BarrierCheck;
-            Player.instance.movement = Player.instance.Evolve;
-            currentLevel = level2; // Move onto level2
-        }
-        else if (currentLevel == level2)
-        {
-            level1.GetComponentInChildren<World>().LevelComplete = true;
-            currentLevel = level3; // Move onto level3
-        }
-        ResetCurrentWorld(currentLevel);
-    }
-
-    char Lvl1BarrierCheck() => TriObjectCollCheck(worldCollider, monCollider, monBlkrCollider);
-
-    char Lvl2BarrierCheck() => DoubObjectCollCheck(monCollider, monBlkrCollider);
-
-    void Lvl1MoveMon(char monsterDir)
+    private void Lvl1MoveMon(char monsterDir)
     {
         Monster.instance.AnimatePush(monsterDir);
         Player.instance.Flip(monsterDir);
         Player.instance.AnimatePush();
     }
 
-    void Lvl2MoveMon(char monsterDir)
+    private void Lvl2MoveMon(char monsterDir)
     {
         Monster.instance.AnimatePush(monsterDir);
         Player.instance.Flip(monsterDir);
         Monster.instance.Flip(monsterDir);
+
         if (Input.GetKey("space") || newViewCoordinates == worldViewCoordinates) // Fast pull
             Player.instance.AnimatePush();
         else
@@ -166,16 +137,59 @@ public class GameManager : MonoBehaviour
         if (oldPlayerPos != playerPullLimit)
         {
             Player.instance.transform.position = playerPullLimit;
-            return monsterPos.x < playerPullLimit.x ? 'R' : 'L';
+            if (!playerCollider.IsTouching(worldCollider)) // Player cannot pull if touching ground
+                return monsterPos.x < playerPullLimit.x ? 'R' : 'L';
         }
         return 'N';
     }
+
+    char Lvl1BarrierCheck() => TriObjectCollCheck(worldCollider, monCollider, monBlkrCollider);
+
+    char Lvl2BarrierCheck() => DoubObjectCollCheck(playerCollider, monBlkrCollider);
+
+    private void Lvl1PuzzleInteraction() => currentLevel.GetComponent<World>().PuzzleInteraction(monCollider);
+
+    private void Lvl2PuzzleInteraction()
+    {
+        SpriteRenderer monColor = Monster.instance.GetComponent<SpriteRenderer>();
+        if (monColor.color != Color.white)
+            currentLevel.GetComponent<Level2Script>().UpdatePickedUpPaper(monCollider, monColor.color);
+
+        if (HandHitDogFromAbove(monCollider, playerCollider, Player.instance.GetComponent<Rigidbody2D>().velocity.magnitude))
+        {
+            Player.instance.Force = 0;
+            if (monColor.color == Color.white) // Check to see if dog is already holding paper
+            {
+                monColor.color = currentLevel.GetComponent<Level2Script>().PickupPaper(monCollider, monColor.color);
+                if (monColor.color != Color.white) // If the dog picked up a paper 
+                    Monster.instance.AnimateGrabNewspaper();
+            }
+            else
+            {
+                if (currentLevel.GetComponent<Level2Script>().PaperDropped(monCollider, monColor.color) != null)
+                {
+                    // Switch on light in house
+                }
+                monColor.color = Color.white;
+                Monster.instance.AnimateDropNewspaper(); // Change to dog without paper
+            }
+        }
+    }
+
+    private bool HandHitDogFromAbove(Collider2D mTransform, Collider2D pTransform, float speed) =>
+        playerCollider.IsTouching(monCollider) &&
+        pTransform.transform.position.y > mTransform.transform.position.y &&
+        ((mTransform.transform.localScale.x == -1 && pTransform.transform.position.x < mTransform.transform.position.x) ||
+        (mTransform.transform.localScale.x == 1 && pTransform.transform.position.x > mTransform.transform.position.x)) &&
+        speed > 1f ? true : false; // Is player hitting dog from above?
 
     void StopMoveAnim()
     {
         Monster.instance.AnimateStopPush();
         Player.instance.AnimateStopPush();
     }
+
+    // ------- Collider Checks Changes ------ //
 
     Vector3 PullObjectLimitCalc(Vector3 anchor, Vector3 pullVector, float radius)
     {
@@ -188,13 +202,19 @@ public class GameManager : MonoBehaviour
     public char TriObjectCollCheck(Collider2D groundCol, Collider2D objectCol, Collider2D pusherCol) =>
          objectCol.IsTouching(groundCol) // Is object on the floor?
          && objectCol.IsTouching(pusherCol)
-            ? objectCol.transform.position.x < pusherCol.transform.position.x 
+            ? objectCol.transform.position.x < pusherCol.transform.position.x
                 ? 'L' : 'R' : 'N';
 
-    public char DoubObjectCollCheck(Collider2D objectCol, Collider2D pusherCol) =>
-        objectCol.IsTouching(pusherCol) // Is object being pushed?
-            ? objectCol.transform.position.x < pusherCol.transform.position.x // If less thean object is hitting wall from right
-                ? 'R' : 'L' : 'N';
+    public char DoubObjectCollCheck(Collider2D objectCol, Collider2D pusherCol) => // SHOULD BE WORKING BUT IS NOT? MIGHT BE RELATED TO LINKING ISSUE WITH SCRIPTS
+         objectCol.IsTouching(pusherCol) ? // Is object being pushed?
+            objectCol.transform.position.x < pusherCol.transform.position.x ?
+                'R' : 'L' : 'N';
+
+
+    // If moster has collided with door it means they have ccompleted level
+    private bool IsLevelCompleted => TriObjectCollCheck(worldCollider, monCollider, doorEntryCollider) != 'N' ? true : false;
+
+    // ------- World Changes ------ //
 
     void ResetCurrentWorld(GameObject newWorld)
     {
@@ -204,7 +224,6 @@ public class GameManager : MonoBehaviour
         worldDoor = newWorld.GetComponent<World>().worldDoor;
         doorEntryCollider = newWorld.GetComponent<World>().worldDoor.GetComponent<Collider2D>();
         monBlkrCollider = newWorld.GetComponent<World>().monsterBlocker.GetComponent<Collider2D>();
-        WorldPuzzleInteraction = currentLevel.GetComponent<World>().PuzzleInteraction;
         IsWorldPuzzleSolved = currentLevel.GetComponent<World>().PuzzleSolvedChecker;
         movingCam = true; // Move camera to new view
         newViewCoordinates = monViewCoordinates;
@@ -218,6 +237,33 @@ public class GameManager : MonoBehaviour
             if (zConv > 52.5 && zConv < 52.8) // Stops axe in the right place
                 level0.GetComponentInChildren<World>().Rotation = new Vector3(0, 0, 0);
         }
+    }
+
+    void LevelUp()
+    {
+        worldDoor.GetComponent<WorldDoor>().ChangeSprite(1); // Change to open door.
+        currentLevel.GetComponentInChildren<Collider2D>().enabled = false; // Remove door blocker
+
+        foreach (World world in FindObjectsOfType<World>()) world.Rotation *= -1; // Rotate other way
+
+        if (currentLevel == level1)
+        {
+            level0.GetComponentInChildren<World>().LevelComplete = true;
+            worldDoor.GetComponent<WorldDoor>().ChangeSpriteOrder("Back Object"); // Change to behind Monster.
+            Monster.instance.Evolve(1);
+            GetMonMoveDir = Lvl2PlayerPullMonCheck;
+            MoveMonAnim = Lvl2MoveMon;
+            BarrierCheck = Lvl2BarrierCheck;
+            WorldPreSolvedInteractions = Lvl2PuzzleInteraction;
+            Player.instance.movement = Player.instance.Evolve;
+            currentLevel = level2; // Move onto level2
+        }
+        else if (currentLevel == level2)
+        {
+            level1.GetComponentInChildren<World>().LevelComplete = true;
+            currentLevel = level3; // Move onto level3
+        }
+        ResetCurrentWorld(currentLevel);
     }
 
     bool WantToMoveCameraCheck()

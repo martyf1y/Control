@@ -27,18 +27,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 297515138049866601}
-  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 910024701864375348}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.17, y: 0.11}
-  m_SizeDelta: {x: 1.572, y: 1.601}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.6159916, y: 0.9}
+  m_SizeDelta: {x: 1.2539799, y: 1.601}
+  m_Pivot: {x: 1, y: 1}
 --- !u!23 &8904058766795187432
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -53,6 +53,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -74,8 +75,8 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 727303847
-  m_SortingLayer: 4
+  m_SortingLayerID: 642177599
+  m_SortingLayer: 2
   m_SortingOrder: 1
 --- !u!222 &1285781797863923076
 CanvasRenderer:
@@ -108,6 +109,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -139,12 +141,12 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 30.9
+  m_fontSize: 4
   m_fontSizeBase: 12
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMin: 2
+  m_fontSizeMax: 4
   m_fontStyle: 0
   m_textAlignment: 514
   m_characterSpacing: 0
@@ -177,7 +179,7 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0.031665564, z: -0.0000019073486, w: -1.8851881}
+  m_margin: {x: 0, y: 0.23560333, z: -0.0000019073486, w: 0.28124642}
   m_textInfo:
     textComponent: {fileID: 8496030743078370546}
     characterCount: 1
@@ -229,14 +231,14 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5443367632625763136}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.39999992, y: 0.39999992, z: 1}
+  m_LocalScale: {x: 1, y: 0.7, z: 1}
   m_Children:
   - {fileID: 767783755856487218}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 14.2695675, y: 42.302788}
@@ -256,6 +258,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -277,15 +280,15 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 727303847
-  m_SortingLayer: 4
+  m_SortingLayerID: 642177599
+  m_SortingLayer: 2
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 776e37510fb314575a6c067235c3dd92, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.041672707, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 01a5a30bac963d74598ce81cdb82aead, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 4.8, y: 2.5}
+  m_Size: {x: 9, y: 9}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -308,84 +311,20 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 4.8, y: 2.5}
-    newSize: {x: 4.8, y: 2.5}
+    oldSize: {x: 0.74, y: 0.87}
+    newSize: {x: 9, y: 9}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.68, y: -0.85999995}
-      - {x: 0.84, y: -0.83}
-      - {x: 1.3, y: -0.74}
-      - {x: 1.48, y: -0.68}
-      - {x: 1.6899999, y: -0.59}
-      - {x: 2.01, y: -0.42}
-      - {x: 2.1599998, y: -0.31}
-      - {x: 2.37, y: -0.35}
-      - {x: 2.3999999, y: -0.35}
-      - {x: 2.3999999, y: 0.87}
-      - {x: 2.3799999, y: 0.87}
-      - {x: 2.29, y: 0.85999995}
-      - {x: 2.04, y: 0.84999996}
-      - {x: 1.8199999, y: 0.83}
-      - {x: 1.29, y: 0.79999995}
-      - {x: 0.96999997, y: 0.83}
-      - {x: 0.78999996, y: 0.9}
-      - {x: 0.59999996, y: 0.96}
-      - {x: 0.26999998, y: 0.95}
-      - {x: 0.089999996, y: 0.91999996}
-      - {x: 0.089999996, y: 0.94}
-      - {x: -0.13, y: 0.93}
-      - {x: -0.26999998, y: 0.91999996}
-      - {x: -0.35, y: 0.95}
-      - {x: -0.5, y: 1.02}
-      - {x: -0.68, y: 1.14}
-      - {x: -0.76, y: 1.14}
-      - {x: -0.82, y: 1.11}
-      - {x: -0.84, y: 0.97999996}
-      - {x: -0.81, y: 0.91999996}
-      - {x: -0.75, y: 0.83}
-      - {x: -0.7, y: 0.77}
-      - {x: -0.81, y: 0.69}
-      - {x: -1.11, y: 0.59999996}
-      - {x: -1.1899999, y: 0.56}
-      - {x: -1.66, y: 0.32}
-      - {x: -1.88, y: 0.19}
-      - {x: -1.9599999, y: 0.14999999}
-      - {x: -2.05, y: 0.08}
-      - {x: -2.05, y: -0.03}
-      - {x: -2.02, y: -0.07}
-      - {x: -1.93, y: -0.11}
-      - {x: -1.8299999, y: -0.099999994}
-      - {x: -1.63, y: -0.06}
-      - {x: -1.5, y: -0.01}
-      - {x: -1.35, y: 0.049999997}
-      - {x: -1.06, y: 0.14999999}
-      - {x: -0.74, y: 0.22}
-      - {x: -0.55, y: 0.25}
-      - {x: -0.68, y: 0.14999999}
-      - {x: -0.94, y: -0.12}
-      - {x: -0.96999997, y: -0.21}
-      - {x: -0.96999997, y: -0.52}
-      - {x: -0.90999997, y: -0.71999997}
-      - {x: -0.84999996, y: -0.83}
-      - {x: -0.71, y: -0.93}
-      - {x: -0.45, y: -1.02}
-      - {x: -0.34, y: -1.06}
-      - {x: -0.31, y: -1.13}
-      - {x: -0.25, y: -1.1899999}
-      - {x: -0.14999999, y: -1.24}
-      - {x: -0.01, y: -1.24}
-      - {x: 0.089999996, y: -1.18}
-      - {x: 0.42999998, y: -0.93}
-      - {x: 0.57, y: -0.88}
-    - - {x: -0.21, y: -0.71}
-      - {x: -0.19999999, y: -0.71}
-      - {x: -0.12, y: -0.65}
-      - {x: -0.17999999, y: -0.69}
-      - {x: -0.22999999, y: -0.74}
+    - - {x: -0.187706, y: 0.41958132}
+      - {x: -0.20546727, y: -0.15724449}
+      - {x: 0.18866731, y: -0.16818734}
+      - {x: 0.1908646, y: -0.0954247}
+      - {x: 0.19728857, y: 0.39887288}
+      - {x: 0.16252904, y: 0.4116467}
 --- !u!222 &6898364410370878503
 CanvasRenderer:
   m_ObjectHideFlags: 0

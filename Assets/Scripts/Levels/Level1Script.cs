@@ -13,7 +13,8 @@ public class Level1Script : World
     public GameObject buttonPrefab;
     // Our button object properties... even though they are not part of the objects
     TextMeshPro[] buttText;
-    private bool[] buttonPressed; // This tells us if the button has already been pressed.
+    private bool[] buttPressed; // This tells us if the button has already been pressed.
+    public Sprite[] buttSprite = new Sprite[2];
     private string[] passwordButtLib = { "P", "A", "S", "W", "O", "R", "D" };
     const string password = "ASWORD"; // The Password to get right
 
@@ -29,26 +30,26 @@ public class Level1Script : World
 
         // ---------------- Create the Buttons ---------------- //
         float angleAdjuster = Random.Range(-0.08f, 0.08f);
-        float worldEdge = this.transform.localScale.x * -12f; // fixed amount of where the world edge is
+        float worldEdge = this.transform.localScale.x * -12.32f; // fixed amount of where the world edge is
         buttText = new TextMeshPro[buttons.Length];
-        buttonPressed = new bool[buttons.Length];
+        buttPressed = new bool[buttons.Length];
 
         for (int i = 0; i < buttons.Length; i++)
         {
             buttons[i] = Instantiate(buttonPrefab, transform) as GameObject;    // Create and set to the parent level 1 with transform     
             
             float angle = angleAdjuster * Mathf.PI * 2;
-            Vector3 pos = new Vector3(Mathf.Cos(angle) * worldEdge, Mathf.Sin(angle) * worldEdge, -1);
+            Vector3 pos = new Vector3(Mathf.Cos(angle) * worldEdge, Mathf.Sin(angle) * worldEdge, 0);
             buttons[i].transform.position = pos;
-            buttons[i].transform.eulerAngles = new Vector3(0, 0, Mathf.Atan2(pos.y, pos.x) * 180 / Mathf.PI + 180);
+            buttons[i].transform.eulerAngles = new Vector3(0, 0, Mathf.Atan2(pos.y, pos.x) * 180 / Mathf.PI + 270);
 #if DEBUG
             buttText[i] = buttons[i].GetComponentInChildren<TMPro.TextMeshPro>();
 #else
             buttText[i].text = passwordButtLib[Random.Range(0, passwordButtLib.Length)];
 #endif
             buttText[i].text = passwordButtLib[i];
-            buttonPressed[i] = false;
-            angleAdjuster -= 0.02f;
+            buttPressed[i] = false;
+            angleAdjuster -= 0.015f;
         }
     }
 
@@ -62,16 +63,14 @@ public class Level1Script : World
         }
     }
 
-    public override void PuzzleInteraction(Collider2D monCollider, Collider2D playerCollider)
+    public override void PuzzleInteraction(Collider2D monCollider)
     {
-        if (monCollider != null) {
             int i = 0;
             foreach (GameObject button in buttons)
             {
                 ButtonPressCheck(button, i, monCollider); // Check and change when button pressed
                 i++;
             }
-        }
     }
 
     public override bool PuzzleSolvedChecker()
@@ -100,7 +99,8 @@ public class Level1Script : World
         Collider2D buttCollider = thisButton.GetComponent<Collider2D>();
         if (objectCollider.IsTouching(buttCollider))
         {
-            if (!buttonPressed[index]) // Have we already pressed?
+            thisButton.GetComponent<SpriteRenderer>().sprite = buttSprite[1]; // Change to butt down.
+            if (!buttPressed[index]) // Have we already pressed?
             {
                 int currentCharIndex = System.Array.IndexOf(passwordButtLib, buttText[index].text);
                 if (currentCharIndex != passwordButtLib.Length - 1)
@@ -108,10 +108,10 @@ public class Level1Script : World
                 else
                     buttText[index].text = passwordButtLib[0];
 
-                buttonPressed[index] = true;
+                buttPressed[index] = true;
             }
         }
-        else { buttonPressed[index] = false; } // Button can be pressed again
+        else { buttPressed[index] = false; thisButton.GetComponent<SpriteRenderer>().sprite = buttSprite[0]; } // Butt up. Can be pressed again
     }
 
     int ButtonCorrectChar(GameObject thisButton, int index)
@@ -120,11 +120,12 @@ public class Level1Script : World
         if (buttText[index].text[0] == password[index])
         {
             buttsprRndr.color = Color.green;
+            thisButton.GetComponent<SpriteRenderer>().sprite = buttSprite[1]; // Change to butt down. Has them all go down once puzzle finished.
             return 1;
         }
         else
         {
-            buttsprRndr.color = Color.red;
+            buttsprRndr.color = Color.white;
             return 0;
         }
     }

@@ -34,7 +34,7 @@ public class World : MonoBehaviour
             FadeOut();
     }
 
-    public virtual void PuzzleInteraction(Collider2D monCollider, Collider2D playerCollider)
+    public virtual void PuzzleInteraction(Collider2D monCollider)
     {
        // return false;
     }

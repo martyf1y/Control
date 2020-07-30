@@ -39,8 +39,7 @@ End
 
 Level 1
 
-- Stop the hand pushing when too high up the ball
-- Actual letters are put in place and turn green when are the correct letter
+- When on button it goes to press down (with sound)
 
 
 -
@@ -48,6 +47,7 @@ Level 1
 
 Completed
 
+- Actual letters are put in place and turn green when are the correct letter
 - Hand animation pull
 - Prefab letterboxes and newspapers around the world
 - Blend mailbox colours
@@ -71,3 +71,4 @@ Completed
 -     Hand does pushing motion when hitting ball
 -     Speed up roll animation when sped up
 -     Figure out how to state parent variables from child in start
+-     Stop the hand pushing when too high up the ball

@@ -1,9 +1,279 @@
 fileFormatVersion: 2
 guid: dd930f515af8a7f418c1f5681d5c6564
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 8289447559414551755
+    second: DogIdleNewspaper_0
+  - first:
+      213: 6962211159243389139
+    second: DogIdleNewspaper_1
+  - first:
+      213: -6470028748721268950
+    second: DogIdleNewspaper_2
+  - first:
+      213: -9206048778734499901
+    second: DogIdleNewspaper_3
+  - first:
+      213: 6230773548900517909
+    second: DogIdleNewspaper_4
+  - first:
+      213: 6952177588421865586
+    second: DogIdleNewspaper_5
+  - first:
+      213: -6276579720405410418
+    second: DogIdleNewspaper_6
+  - first:
+      213: 6501680449881060260
+    second: DogIdleNewspaper_7
+  - first:
+      213: -6123027278786537531
+    second: DogIdleNewspaper_8
+  - first:
+      213: -439120342498670957
+    second: DogIdleNewspaper_9
+  - first:
+      213: -6816498589273184041
+    second: DogIdleNewspaper_10
+  - first:
+      213: -2555869617986905825
+    second: DogIdleNewspaper_11
+  - first:
+      213: -532517181289255667
+    second: DogIdleNewspaper_12
+  - first:
+      213: 4262910344998815736
+    second: DogIdleNewspaper_13
+  - first:
+      213: -2930693046816694130
+    second: DogIdleNewspaper_14
+  - first:
+      213: -2077811133107807295
+    second: DogIdleNewspaper_15
+  - first:
+      213: -8283394042464947865
+    second: DogIdleNewspaper_16
+  - first:
+      213: 4899280452155425439
+    second: DogIdleNewspaper_17
+  - first:
+      213: 3391459861788225040
+    second: DogIdleNewspaper_18
+  - first:
+      213: -3508875386347980571
+    second: DogIdleNewspaper_19
+  - first:
+      213: 9203402079943362650
+    second: DogIdleNewspaper_20
+  - first:
+      213: -600792363321427357
+    second: DogIdleNewspaper_21
+  - first:
+      213: 6203855830357668918
+    second: DogIdleNewspaper_22
+  - first:
+      213: -4057083852960916102
+    second: DogIdleNewspaper_23
+  - first:
+      213: -1860541614673184468
+    second: DogIdleNewspaper_24
+  - first:
+      213: -8883246175531304336
+    second: DogIdleNewspaper_25
+  - first:
+      213: 225772239286973735
+    second: DogIdleNewspaper_26
+  - first:
+      213: -4599544227007142849
+    second: DogIdleNewspaper_27
+  - first:
+      213: -3102142073301871444
+    second: DogIdleNewspaper_28
+  - first:
+      213: 6458992741993806504
+    second: DogIdleNewspaper_29
+  - first:
+      213: 547286579133221611
+    second: DogIdleNewspaper_30
+  - first:
+      213: 8237945939419954877
+    second: DogIdleNewspaper_31
+  - first:
+      213: -8915969866363175656
+    second: DogIdleNewspaper_32
+  - first:
+      213: 3177090798575746014
+    second: DogIdleNewspaper_33
+  - first:
+      213: -1800501683716827650
+    second: DogIdleNewspaper_34
+  - first:
+      213: -7063390018080393015
+    second: DogIdleNewspaper_35
+  - first:
+      213: -4093869033878325936
+    second: DogIdleNewspaper_36
+  - first:
+      213: -2288887330315074455
+    second: DogIdleNewspaper_37
+  - first:
+      213: 6640889519571792036
+    second: DogIdleNewspaper_38
+  - first:
+      213: -5884855418619459922
+    second: DogIdleNewspaper_39
+  - first:
+      213: -5627321819158487629
+    second: DogIdleNewspaper_40
+  - first:
+      213: -84849300808255636
+    second: DogIdleNewspaper_0
+  - first:
+      213: 5163607841700540786
+    second: DogIdleNewspaper_1
+  - first:
+      213: 2688664900800845709
+    second: DogIdleNewspaper_2
+  - first:
+      213: -82504353757924984
+    second: DogIdleNewspaper_3
+  - first:
+      213: -3273474303158671572
+    second: DogIdleNewspaper_4
+  - first:
+      213: 9166729481973808724
+    second: DogIdleNewspaper_5
+  - first:
+      213: -3388699752079466877
+    second: DogIdleNewspaper_6
+  - first:
+      213: -1104790573238087839
+    second: DogIdleNewspaper_7
+  - first:
+      213: -5938376574627570330
+    second: DogIdleNewspaper_8
+  - first:
+      213: 7762204147505384910
+    second: DogIdleNewspaper_9
+  - first:
+      213: 8017046424629702977
+    second: DogIdleNewspaper_10
+  - first:
+      213: 2848679445158287143
+    second: DogIdleNewspaper_11
+  - first:
+      213: -7190331077620809286
+    second: DogIdleNewspaper_12
+  - first:
+      213: 5359093101071507272
+    second: DogIdleNewspaper_13
+  - first:
+      213: -1767121124782242956
+    second: DogIdleNewspaper_14
+  - first:
+      213: 2710050506636949588
+    second: DogIdleNewspaper_15
+  - first:
+      213: 7354824846174840046
+    second: DogIdleNewspaper_16
+  - first:
+      213: -4645668671234615091
+    second: DogIdleNewspaper_17
+  - first:
+      213: -6528999862371194500
+    second: DogIdleNewspaper_18
+  - first:
+      213: -7105968870593024892
+    second: DogIdleNewspaper_19
+  - first:
+      213: 5829555729116793517
+    second: DogIdleNewspaper_20
+  - first:
+      213: -6283086290054445451
+    second: DogIdleNewspaper_21
+  - first:
+      213: -6158650970231553772
+    second: DogIdleNewspaper_22
+  - first:
+      213: 8863384074287428014
+    second: DogIdleNewspaper_23
+  - first:
+      213: -3007834335396348933
+    second: DogIdleNewspaper_24
+  - first:
+      213: -8903432695160024866
+    second: DogIdleNewspaper_25
+  - first:
+      213: -5702859874129241968
+    second: DogIdleNewspaper_26
+  - first:
+      213: 8788439262453058777
+    second: DogIdleNewspaper_27
+  - first:
+      213: -7829937019819381892
+    second: DogIdleNewspaper_28
+  - first:
+      213: -7960161739725086762
+    second: DogIdleNewspaper_29
+  - first:
+      213: 2102659957947590048
+    second: DogIdleNewspaper_30
+  - first:
+      213: 928269567338203974
+    second: DogIdleNewspaper_31
+  - first:
+      213: -1060826375329346822
+    second: DogIdleNewspaper_32
+  - first:
+      213: 3080916733233808333
+    second: DogIdleNewspaper_33
+  - first:
+      213: -4954932304919485780
+    second: DogIdleNewspaper_34
+  - first:
+      213: -71147388890386705
+    second: DogIdleNewspaper_35
+  - first:
+      213: -7057795844146609585
+    second: DogIdleNewspaper_36
+  - first:
+      213: 436967801918135999
+    second: DogIdleNewspaper_37
+  - first:
+      213: 6837420438769835632
+    second: DogIdleNewspaper_38
+  - first:
+      213: 5241847131993929400
+    second: DogIdleNewspaper_39
+  - first:
+      213: 6720266668582475111
+    second: DogIdleNewspaper_40
+  - first:
+      213: -3285506833936956974
+    second: DogIdleNewspaper_41
+  - first:
+      213: 8556500441832915863
+    second: DogIdleNewspaper_42
+  - first:
+      213: -5188098896707552748
+    second: DogIdleNewspaper_43
+  - first:
+      213: -6210660086856411256
+    second: DogIdleNewspaper_44
+  - first:
+      213: -645505866714318472
+    second: DogIdleNewspaper_45
+  - first:
+      213: -6249927086790177979
+    second: DogIdleNewspaper_46
+  - first:
+      213: -2344520663781263493
+    second: DogIdleNewspaper_47
+  - first:
+      213: -5334762965328604034
+    second: DogIdleNewspaper_48
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -40,7 +310,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -57,6 +327,7 @@ TextureImporter:
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  applyGammaDecoding: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -70,9 +341,1050 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: DogIdleNewspaper_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 952
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6732eda20e82def0800000000000000
+      internalID: -84849300808255636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdleNewspaper_1
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 952
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2717bfb59f1d8a740800000000000000
+      internalID: 5163607841700540786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdleNewspaper_2
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 952
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d879b4c6b7e005520800000000000000
+      internalID: 2688664900800845709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdleNewspaper_3
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 952
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 881f5d53ab2eadef0800000000000000
+      internalID: -82504353757924984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdleNewspaper_4
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 952
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c27abd207784292d0800000000000000
+      internalID: -3273474303158671572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdleNewspaper_5
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 952
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45e362d75e3c63f70800000000000000
+      internalID: 9166729481973808724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdleNewspaper_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 833
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38e59d2978be8f0d0800000000000000
+      internalID: -3388699752079466877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdleNewspaper_7
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 833
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16f81fab3defaa0f0800000000000000
+      internalID: -1104790573238087839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdleNewspaper_8
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 833
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66d92ded7f5a69da0800000000000000
+      internalID: -5938376574627570330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdleNewspaper_9
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 833
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecd4f16db83e8bb60800000000000000
+      internalID: 7762204147505384910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdleNewspaper_10
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 833
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1417edf3f35424f60800000000000000
+      internalID: 8017046424629702977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdleNewspaper_11
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 833
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 727dd97ccda888720800000000000000
+      internalID: 2848679445158287143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdleNewspaper_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 714
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab1c5fc1bffc63c90800000000000000
+      internalID: -7190331077620809286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdleNewspaper_13
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 714
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84f1d9f18c25f5a40800000000000000
+      internalID: 5359093101071507272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdleNewspaper_14
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 714
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 473044a13bce977e0800000000000000
+      internalID: -1767121124782242956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdleNewspaper_15
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 714
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 458767bc3980c9520800000000000000
+      internalID: 2710050506636949588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdleNewspaper_16
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 714
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee4e775ea36911660800000000000000
+      internalID: 7354824846174840046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdleNewspaper_17
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 714
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc856e215f4478fb0800000000000000
+      internalID: -4645668671234615091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdleNewspaper_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 595
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c796ac0a7355465a0800000000000000
+      internalID: -6528999862371194500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdleNewspaper_19
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 595
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48ca15316f6826d90800000000000000
+      internalID: -7105968870593024892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdleNewspaper_20
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 595
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daa8950ac0eb6e050800000000000000
+      internalID: 5829555729116793517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdleNewspaper_21
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 595
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5768d24fe4efdc8a0800000000000000
+      internalID: -6283086290054445451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdleNewspaper_22
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 595
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 411cbbf8293188aa0800000000000000
+      internalID: -6158650970231553772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdleNewspaper_23
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 595
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea1b1c7fad0110b70800000000000000
+      internalID: 8863384074287428014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdleNewspaper_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 476
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfb3a7fab960246d0800000000000000
+      internalID: -3007834335396348933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdleNewspaper_25
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 476
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed0536bd227a07480800000000000000
+      internalID: -8903432695160024866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdleNewspaper_26
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 476
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09892b6d82f5bd0b0800000000000000
+      internalID: -5702859874129241968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdleNewspaper_27
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 476
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dc4c9032fec6f970800000000000000
+      internalID: 8788439262453058777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdleNewspaper_28
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 476
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7b2cf7e3c9765390800000000000000
+      internalID: -7829937019819381892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdleNewspaper_29
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 476
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dfd70d8213d78190800000000000000
+      internalID: -7960161739725086762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdleNewspaper_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 357
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a567e467162e2d10800000000000000
+      internalID: 2102659957947590048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdleNewspaper_31
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 357
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64bcff8d040e1ec00800000000000000
+      internalID: 928269567338203974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdleNewspaper_32
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 357
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afa012a38003741f0800000000000000
+      internalID: -1060826375329346822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdleNewspaper_33
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 357
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc345fa027d91ca20800000000000000
+      internalID: 3080916733233808333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdleNewspaper_34
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 357
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca2aa2f225b8c3bb0800000000000000
+      internalID: -4954932304919485780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdleNewspaper_35
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 357
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: feeed76a3db330ff0800000000000000
+      internalID: -71147388890386705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdleNewspaper_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 238
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f42c964d21cad0e90800000000000000
+      internalID: -7057795844146609585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdleNewspaper_37
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 238
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbe1d9396eb601600800000000000000
+      internalID: 436967801918135999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdleNewspaper_38
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 238
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07e1fd0b9a563ee50800000000000000
+      internalID: 6837420438769835632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdleNewspaper_39
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 238
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b6f56da138ceb840800000000000000
+      internalID: 5241847131993929400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdleNewspaper_40
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 238
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76591c8fdee234d50800000000000000
+      internalID: 6720266668582475111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdleNewspaper_41
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 238
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d1c11021f88762d0800000000000000
+      internalID: -3285506833936956974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdleNewspaper_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 119
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7938ceb41dbceb670800000000000000
+      internalID: 8556500441832915863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdleNewspaper_43
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 119
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41a762a8a8b2008b0800000000000000
+      internalID: -5188098896707552748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdleNewspaper_44
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 119
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8871a367e8d4fc9a0800000000000000
+      internalID: -6210660086856411256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdleNewspaper_45
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 119
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 879ff0295d3ba07f0800000000000000
+      internalID: -645505866714318472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdleNewspaper_46
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 119
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54b87c79d6cc349a0800000000000000
+      internalID: -6249927086790177979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdleNewspaper_47
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 119
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7731cac0e6967fd0800000000000000
+      internalID: -2344520663781263493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogIdleNewspaper_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e74ddaa095d17f5b0800000000000000
+      internalID: -5334762965328604034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

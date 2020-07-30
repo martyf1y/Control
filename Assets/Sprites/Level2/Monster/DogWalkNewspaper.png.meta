@@ -1,9 +1,81 @@
 fileFormatVersion: 2
 guid: ce2da25c69a32224ab50bd29112c620a
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -7367183571258807790
+    second: DogWalkNewspaper_0
+  - first:
+      213: -4318229936861143191
+    second: DogWalkNewspaper_1
+  - first:
+      213: 239566897760123717
+    second: DogWalkNewspaper_2
+  - first:
+      213: -837004127767168500
+    second: DogWalkNewspaper_3
+  - first:
+      213: 6984583844961997049
+    second: DogWalkNewspaper_4
+  - first:
+      213: -1546042421200257620
+    second: DogWalkNewspaper_5
+  - first:
+      213: -56602039855026961
+    second: DogWalkNewspaper_6
+  - first:
+      213: -2052506153594687767
+    second: DogWalkNewspaper_7
+  - first:
+      213: -9085432027735604758
+    second: DogWalkNewspaper_8
+  - first:
+      213: -9123962722637259956
+    second: DogWalkNewspaper_9
+  - first:
+      213: 5348759573726580756
+    second: DogWalkNewspaper_10
+  - first:
+      213: -929347722809259107
+    second: DogWalkNewspaper_11
+  - first:
+      213: 6181623683645285498
+    second: DogWalkNewspaper_12
+  - first:
+      213: 7222374849525476294
+    second: DogWalkNewspaper_13
+  - first:
+      213: 3944597319085691679
+    second: DogWalkNewspaper_14
+  - first:
+      213: -2696203312702726015
+    second: DogWalkNewspaper_15
+  - first:
+      213: 8518924017939187469
+    second: DogWalkNewspaper_16
+  - first:
+      213: -183092730516848144
+    second: DogWalkNewspaper_17
+  - first:
+      213: -7092860322324958128
+    second: DogWalkNewspaper_18
+  - first:
+      213: -7815082547462949512
+    second: DogWalkNewspaper_19
+  - first:
+      213: 1394255357445160093
+    second: DogWalkNewspaper_20
+  - first:
+      213: 3773432542194306520
+    second: DogWalkNewspaper_21
+  - first:
+      213: 474004749905798749
+    second: DogWalkNewspaper_22
+  - first:
+      213: 1591297161219126903
+    second: DogWalkNewspaper_23
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -40,7 +112,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -57,6 +129,7 @@ TextureImporter:
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  applyGammaDecoding: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -70,9 +143,525 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: DogWalkNewspaper_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 595
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21a6600339182c990800000000000000
+      internalID: -7367183571258807790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogWalkNewspaper_1
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 595
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96f1fea50c09214c0800000000000000
+      internalID: -4318229936861143191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogWalkNewspaper_2
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 595
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54b3fe003dc135300800000000000000
+      internalID: 239566897760123717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogWalkNewspaper_3
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 595
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0af6e03e2d5264f0800000000000000
+      internalID: -837004127767168500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogWalkNewspaper_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 476
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f054e6400a3ee060800000000000000
+      internalID: 6984583844961997049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogWalkNewspaper_5
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 476
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cad7ca4fb9a5b8ae0800000000000000
+      internalID: -1546042421200257620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogWalkNewspaper_6
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 476
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fece0e0aeb8e63ff0800000000000000
+      internalID: -56602039855026961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogWalkNewspaper_7
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 476
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ee6fa727880483e0800000000000000
+      internalID: -2052506153594687767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogWalkNewspaper_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 357
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae1ccdb15bf0ae180800000000000000
+      internalID: -9085432027735604758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogWalkNewspaper_9
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 357
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4bdc4d9e3c216180800000000000000
+      internalID: -9123962722637259956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogWalkNewspaper_10
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 357
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41051fc4e7c9a3a40800000000000000
+      internalID: 5348759573726580756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogWalkNewspaper_11
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 357
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9bc2258b2b4a13f0800000000000000
+      internalID: -929347722809259107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogWalkNewspaper_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 238
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a74a1d61df989c550800000000000000
+      internalID: 6181623683645285498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogWalkNewspaper_13
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 238
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cb6eace8a70b3460800000000000000
+      internalID: 7222374849525476294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogWalkNewspaper_14
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 238
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f139f02cc560eb630800000000000000
+      internalID: 3944597319085691679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogWalkNewspaper_15
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 238
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1806f184f59259ad0800000000000000
+      internalID: -2696203312702726015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogWalkNewspaper_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 119
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d070fc5524c493670800000000000000
+      internalID: 8518924017939187469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogWalkNewspaper_17
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 119
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f14694b126857df0800000000000000
+      internalID: -183092730516848144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogWalkNewspaper_18
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 119
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 054bb5ecd19119d90800000000000000
+      internalID: -7092860322324958128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogWalkNewspaper_19
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 119
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 875bd1444df3b8390800000000000000
+      internalID: -7815082547462949512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogWalkNewspaper_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9c34ba4cd3695310800000000000000
+      internalID: 1394255357445160093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogWalkNewspaper_21
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 0
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dd046597eced5430800000000000000
+      internalID: 3773432542194306520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogWalkNewspaper_22
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 0
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d56abf30fc0049600800000000000000
+      internalID: 474004749905798749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DogWalkNewspaper_23
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 0
+        width: 204
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 776bd8a465c651610800000000000000
+      internalID: 1591297161219126903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

@@ -5,7 +5,7 @@ using UnityEngine;
 public class Monster : Character
 {
     public static Monster instance = null;
-
+    public bool holdingNewspaper = false;
     [HideInInspector] public bool scaleMonster = false;
 
     void Start()
@@ -15,7 +15,6 @@ public class Monster : Character
         else if (instance != this) Destroy(gameObject);
 
         facingThisWay = 'R';
-
         animator = GetComponent<Animator>();
     }
 
@@ -36,6 +35,10 @@ public class Monster : Character
         animator.SetBool("PushLeftB", false);
     }
 
+    public void AnimateGrabNewspaper() => animator.SetBool("HoldingNewspaperB", true);
+
+    public void AnimateDropNewspaper() => animator.SetBool("HoldingNewspaperB", false);
+
 
     // ------------------------------ Level 1 Evolve Function ---------------------------------- //
 
@@ -53,7 +56,7 @@ public class Monster : Character
     bool ScaleMonster(Vector3 targetScale)
     {
         this.transform.localScale = Vector3.Lerp(this.transform.localScale, targetScale, 0.09f);
-        return (this.transform.localScale == targetScale ? false : true);
+        return this.transform.localScale == targetScale ? false : true;
     }
 
     void GoBig() // Used in end of animation "Monster Evolve" in Animation controller
@@ -62,7 +65,10 @@ public class Monster : Character
         Destroy(gameObject.GetComponent<PolygonCollider2D>());
         Destroy(gameObject.GetComponentInChildren<CircleCollider2D>());
         scaleMonster = false; // If ScaleMonster does not finish in time
-        gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static; // No more moving the monster round
+        gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic; // No more moving the monster round
+        gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
+        transform.position = new Vector3(0, 8.48f, 0);
+
     }
     // ------------------------------ Level 1 Evolve Function ---------------------------------- //
 
