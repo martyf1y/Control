@@ -5,25 +5,16 @@ Based on the 2012 game.
 Players can push around a weird creature on a puzzle world. Aim is to solve each puzzle and try reach the center!  
 
 To do
-09.07.20
+30.07.20
 
 Level 2
-- Change hand animation pull to signal dog pickup
-- Object detect mail when dog is over (from head side)
-- Make sure only one mail is picked up each time
-- Drop off mail
+
+- Have newspapers collide with each other
+- Solve puzzle function 
 - Scale house correctly
 - Blend of house lights
 - Leash calculation correct
 - Fix animation to dog occurs (think its as good as it can get)
-
-
-
-- Dog animations left and right
-- hand animations on leash pull
-- news papers and letterboxes laid out around world
-- Dog pickup papers
-- Dog puts newspaper in letterboxes
 
 Level 3
 
@@ -36,17 +27,22 @@ End
 - Animation
 - Fade
 
-
 Level 1
 
 - When on button it goes to press down (with sound)
 
-
--
-
-
 Completed
 
+- Dog animations left and right
+- hand animations on leash pull
+- news papers and letterboxes laid out around world
+- Dog pickup papers
+- Dog puts newspaper in letterboxes
+- New hit dog action with space bar
+- Object detect mail when dog is over (from head side)
+- Make sure only one mail is picked up each time
+- Drop off mail
+- Change hand animation pull to signal dog pickup
 - Actual letters are put in place and turn green when are the correct letter
 - Hand animation pull
 - Prefab letterboxes and newspapers around the world
