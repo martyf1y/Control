@@ -21,19 +21,20 @@ public class Player : Character
     bool moveBackDown = false;
     Vector3 moveHere = new Vector3(0, 16, 0);
     public float Force { get; set; }
+    public Transform attachCollarHere;
+    [SerializeField] private GameObject leash = null;
 
     // Start is called before the first frame update
     void Start()
     {
         //Check if instance already exists
         if (instance == null) instance = this;
-        else if (instance != this) Destroy(gameObject);
+        else if (instance != this) Destroy(this);
 
         rg2d = GetComponent<Rigidbody2D>();
         movement = GeneralMovement;
         rg2d.gravityScale = 0;
         animator = GetComponent<Animator>();
-
     }
 
     public override void Update()
@@ -76,27 +77,44 @@ public class Player : Character
 
 public void Evolve()
     {
-        // if (levelNum == 1) {
-        rg2d.velocity = new Vector2(0, 0);
-        if (Vector3.Magnitude(transform.position - moveHere) < 0.5) // when we are close enough
-            {
-                if (!moveBackDown)
-                {  // spriteChange here
-                    AnimateEvolve();
-                    moveBackDown = true;
+    // if (levelNum == 1) {
+    rg2d.velocity = new Vector2(0, 0);
+    if (Vector3.Magnitude(transform.position - moveHere) < 0.3) // when we are close enough
+        {
+            if (!moveBackDown)
+            {  // spriteChange here
+                AnimateEvolve();
+                moveBackDown = true;
 
-                    moveHere = new Vector3(moveHere.x, moveHere.y - 6, moveHere.z);
-                    this.transform.rotation = Quaternion.Euler(0, 0, -90);
-                    transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
-                }
-                else
-                {
-                    Destroy(gameObject.GetComponent<PolygonCollider2D>());
-                    movement = GeneralMovement; // Go back to normal movement
-                }
+                this.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic; // No more moving the monster round
+               // moveHere = new Vector3(0.59f, 8.6f, 0);
+               moveHere = attachCollarHere.position;
+                this.transform.rotation = Quaternion.Euler(0, 0, 270);
+                transform.localScale = new Vector3(-Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
+                    
             }
-            else transform.position = Vector2.Lerp(transform.position, moveHere, 0.03f);
-      //  }
+            else
+            {
+                Destroy(this.GetComponent<PolygonCollider2D>());
+                this.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
+                AddLeash();
+                movement = GeneralMovement; // Go back to normal movement
+                PlayInteract = true;
+            }
+        }
+        else transform.position = Vector2.Lerp(transform.position, moveHere, 0.04f);
+    //  }
+    }
+
+    void AddLeash()
+    {
+        leash = Instantiate(leash, transform) as GameObject;
+
+        //try add gameobject to dog with offset to head
+        // set transforms to dog and hand
+
+        leash.SetActive(true);
+        //leash.transform.position = this.transform.position;
     }
 
     public Vector3 GetWorldPositionOnPlane(Vector3 screenPosition, float z)

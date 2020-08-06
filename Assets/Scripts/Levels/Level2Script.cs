@@ -20,7 +20,7 @@ public class Level2Script : World
     {
         //Check if instance already exists
         if (instance == null) instance = this;
-        else if (instance != this) Destroy(gameObject);
+        else if (instance != this) Destroy(this);
 
         MonsterView = new Vector3(0, 10f, -130); // Change parent variables to the level settings.
         WorldView = new Vector3(0, 0, -590);
@@ -42,7 +42,7 @@ public class Level2Script : World
 
         List<Color> paperColour = new List<Color>(mailColours);
         mailBoxWorldEdge = this.transform.localScale.x * -9f; // fixed amount of where the world edge is
-        newspaperWorldEdge = this.transform.localScale.x * -8f; // fixed amount of where the world edge is
+        newspaperWorldEdge = this.transform.localScale.x * -7.8f; // fixed amount of where the world edge is
         float start = 0.42f; // Left side of house
         float increment = .9f / mailBoxes.Length; // 90% of world is open
         for (int i = 0; i < mailBoxes.Length; i++)

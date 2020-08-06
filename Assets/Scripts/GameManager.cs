@@ -8,8 +8,10 @@ public class GameManager : MonoBehaviour
                                                // private int level = 1;
 
     private GameObject currentLevel;
-    public GameObject level0;
-    public GameObject level1, level2, level3;
+    [SerializeField] private GameObject level0 = null;
+    [SerializeField] private GameObject level1 = null;
+    [SerializeField] private GameObject level2 = null;
+    [SerializeField] private GameObject level3 = null;
     private GameObject worldDoor;
 
     // General Level Functions
@@ -54,7 +56,7 @@ public class GameManager : MonoBehaviour
     {
         //Protection to make sure there is only one instance of GameManager        
         if (instance == null) instance = this;
-        else if (instance != this) Destroy(gameObject);
+        else if (instance != this) Destroy(this);
 
         // Cursor.visible = false;
 
@@ -122,9 +124,15 @@ public class GameManager : MonoBehaviour
         Monster.instance.Flip(monsterDir);
 
         if (Input.GetKey("space") || newViewCoordinates == worldViewCoordinates) // Fast pull
+        {
             Player.instance.AnimatePush();
+            Player.instance.GetComponentInChildren<Rope>().CheckRopeAdjust(Rope.maxLength - 5);
+        }
         else
+        {
             Player.instance.AnimateStopPush();
+            Player.instance.GetComponentInChildren<Rope>().CheckRopeAdjust(Rope.maxLength);
+        }
     }
 
     private char Lvl1PlayerPushMonCheck() => TriObjectCollCheck(worldCollider, monCollider, playerCollider);
@@ -256,6 +264,7 @@ public class GameManager : MonoBehaviour
             BarrierCheck = Lvl2BarrierCheck;
             WorldPreSolvedInteractions = Lvl2PuzzleInteraction;
             Player.instance.movement = Player.instance.Evolve;
+            Player.instance.attachCollarHere = Monster.instance.transform.Find("Collar").transform;
             currentLevel = level2; // Move onto level2
         }
         else if (currentLevel == level2)
@@ -294,7 +303,7 @@ public class GameManager : MonoBehaviour
     void RotateWorlds(char rotateWhatWay)
     {
         float worldSpeed = 1;
-        Animator monsterAnimator = Monster.instance.gameObject.GetComponent<Animator>();
+        Animator monsterAnimator = Monster.instance.GetComponent<Animator>();
         monsterAnimator.speed = 1;
 
         // Go faster when outer view or holding space bar

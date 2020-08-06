@@ -12,7 +12,7 @@ public class Monster : Character
     {
         //Check if instance already exists
         if (instance == null) instance = this;
-        else if (instance != this) Destroy(gameObject);
+        else if (instance != this) Destroy(this);
 
         facingThisWay = 'R';
         animator = GetComponent<Animator>();
@@ -23,7 +23,7 @@ public class Monster : Character
         base.Update();
 
         if (scaleMonster) // One off fix for sprite size difference
-            scaleMonster = ScaleMonster(new Vector3(0.21f, 0.21f, 1));
+            scaleMonster = ScaleMonster(new Vector3(0.22f, 0.22f, 1));
     }
 
     public void AnimatePush(char goThisWay) => animator.SetBool(goThisWay == 'L' ? "PushLeftB" : "PushRightB", true);
@@ -47,7 +47,8 @@ public class Monster : Character
         if (levelNum == 1)
         {
             scaleMonster = true; // Bad fix to scale issue between sprites
-            gameObject.GetComponentInChildren<CircleCollider2D>().offset = new Vector2(0, -.32f);
+            this.GetComponent<CircleCollider2D>().offset = new Vector2(0, -2f); // Has dog bounce higher up
+            this.GetComponent<CircleCollider2D>().sharedMaterial = null; // Has dog bounce higher up
             animator.speed = 5;
             AnimateEvolve();
         }
@@ -62,11 +63,11 @@ public class Monster : Character
     void GoBig() // Used in end of animation "Monster Evolve" in Animation controller
     {
         this.transform.localScale = new Vector3(1f, 1f, 1);
-        Destroy(gameObject.GetComponent<PolygonCollider2D>());
-        Destroy(gameObject.GetComponentInChildren<CircleCollider2D>());
+        Destroy(this.GetComponent<PolygonCollider2D>());
+        Destroy(this.GetComponent<CircleCollider2D>());
         scaleMonster = false; // If ScaleMonster does not finish in time
-        gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic; // No more moving the monster round
-        gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
+        this.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic; // No more moving the monster round
+        this.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
         transform.position = new Vector3(0, 8.48f, 0);
 
     }

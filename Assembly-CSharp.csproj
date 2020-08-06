@@ -66,6 +66,8 @@
     <Compile Include="Assets\Scripts\Characters\Character.cs" />
     <Compile Include="Assets\Scripts\Characters\Monster.cs" />
     <Compile Include="Assets\Scripts\Characters\Player.cs" />
+    <Compile Include="Assets\Scripts\Characters\Rope.cs" />
+    <Compile Include="Assets\Scripts\CircularGravity.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\Levels\EndLevelScript.cs" />
     <Compile Include="Assets\Scripts\Levels\Level0Script.cs" />

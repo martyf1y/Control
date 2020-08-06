@@ -21,7 +21,7 @@ public class Level1Script : World
     void Start()
     {
         if (instance == null) instance = this;
-        else if (instance != this) Destroy(gameObject);
+        else if (instance != this) Destroy(this);
 
         MonsterView = new Vector3(0, 14, -150); // Change parent variables to the level settings.
         WorldView = new Vector3(0, 0, -700);
