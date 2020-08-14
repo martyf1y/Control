@@ -11,14 +11,22 @@ public class Rope : MonoBehaviour
     private int segmentLength = maxLength;
     private float lineWidth = 0.06f;
     private float gravity = -8f;
-    [SerializeField] private Transform startPoint = null;
-    [SerializeField] private Transform endPoint = null;
+    public Transform startPoint;
+    public Transform endPoint;
     private int expectedRopeSize;
 
     // Use this for initialization
     void Start()
     {
         this.lineRenderer = this.GetComponent<LineRenderer>();
+
+        startPoint = this.transform.parent;
+        
+        endPoint = GameObject.Find("Monster/Collar").transform;
+        Debug.Log(startPoint);
+        Debug.Log(endPoint);
+
+        //  Vector3 ropeStartPoint = startPoint.transform.position;
         Vector3 ropeStartPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
         for (int i = 0; i < segmentLength; i++)

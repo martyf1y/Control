@@ -52,6 +52,7 @@ public class Player : Character
         {
             if (Force < 10)
             {
+                this.GetComponent<CircularGravity>().enabled = false;
                 rg2d.velocity = new Vector2(0, 0);
                 rg2d.angularVelocity = 0;
                 rg2d.gravityScale = 0;
@@ -64,7 +65,7 @@ public class Player : Character
             else ApplyForce();
 
         }
-        else rg2d.gravityScale = 0.1f;
+        else this.GetComponent<CircularGravity>().enabled = true;
     }
 
     public void HitAttack()
@@ -78,8 +79,9 @@ public class Player : Character
 public void Evolve()
     {
     // if (levelNum == 1) {
-    rg2d.velocity = new Vector2(0, 0);
-    if (Vector3.Magnitude(transform.position - moveHere) < 0.3) // when we are close enough
+        rg2d.velocity = new Vector2(0, 0);
+        this.GetComponent<CircularGravity>().enabled = false;
+    if (Vector3.Magnitude(transform.position - moveHere) < 0.5) // when we are close enough
         {
             if (!moveBackDown)
             {  // spriteChange here
@@ -88,7 +90,7 @@ public void Evolve()
 
                 this.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic; // No more moving the monster round
                // moveHere = new Vector3(0.59f, 8.6f, 0);
-               moveHere = attachCollarHere.position;
+                moveHere = attachCollarHere.position;
                 this.transform.rotation = Quaternion.Euler(0, 0, 270);
                 transform.localScale = new Vector3(-Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
                     
@@ -99,6 +101,7 @@ public void Evolve()
                 this.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
                 AddLeash();
                 movement = GeneralMovement; // Go back to normal movement
+                this.GetComponent<CircularGravity>().enabled = true;
                 PlayInteract = true;
             }
         }
@@ -106,16 +109,7 @@ public void Evolve()
     //  }
     }
 
-    void AddLeash()
-    {
-        leash = Instantiate(leash, transform) as GameObject;
-
-        //try add gameobject to dog with offset to head
-        // set transforms to dog and hand
-
-        leash.SetActive(true);
-        //leash.transform.position = this.transform.position;
-    }
+    void AddLeash() => leash = Instantiate(leash, transform) as GameObject;
 
     public Vector3 GetWorldPositionOnPlane(Vector3 screenPosition, float z)
     {

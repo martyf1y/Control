@@ -143,8 +143,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02af9fc0e0933da4ca51d6b552b1f8e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startPoint: {fileID: 0}
-  endPoint: {fileID: 0}
+  startPoint: {fileID: 3325687136527461071, guid: afe3ac32306d42e49995e00648267d8c,
+    type: 3}
+  endPoint: {fileID: 2807190448810292585, guid: e9b5b68659551184b8d79321b13814ea,
+    type: 3}
 --- !u!1 &6699378701769669427
 GameObject:
   m_ObjectHideFlags: 0

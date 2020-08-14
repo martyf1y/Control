@@ -8,7 +8,6 @@ using TMPro;
 public class Level1Script : World
 {
     public static Level1Script instance = null;
-
     private GameObject[] buttons = new GameObject[6];
     public GameObject buttonPrefab;
     // Our button object properties... even though they are not part of the objects

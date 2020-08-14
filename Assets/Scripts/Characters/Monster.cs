@@ -68,8 +68,10 @@ public class Monster : Character
         scaleMonster = false; // If ScaleMonster does not finish in time
         this.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic; // No more moving the monster round
         this.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
-        transform.position = new Vector3(0, 8.48f, 0);
 
+        transform.position = new Vector3(0, 8.48f, 0);
+        transform.GetChild(0).gameObject.SetActive(true); // Collar
+        transform.GetChild(0).gameObject.transform.position = new Vector3((transform.position.x+.54f), (transform.position.y + .24f), 0f);
     }
     // ------------------------------ Level 1 Evolve Function ---------------------------------- //
 

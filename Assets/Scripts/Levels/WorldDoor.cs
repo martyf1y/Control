@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class WorldDoor : MonoBehaviour
 {
-    public Sprite[] wBSprite = new Sprite[5];
+    public Sprite[] wBSprite = new Sprite[2];
      SpriteRenderer WBSpriteRenderer;
 
     public Sprite[] WBSprite { get => wBSprite; set => wBSprite = value; }
