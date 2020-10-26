@@ -58,7 +58,7 @@ public class GameManager : MonoBehaviour
         if (instance == null) instance = this;
         else if (instance != this) Destroy(this);
 
-         Cursor.visible = false;
+        Cursor.visible = false;
 
         playerCollider = Player.instance.GetComponent<Collider2D>();
         monCollider = Monster.instance.GetComponent<Collider2D>();
@@ -72,7 +72,7 @@ public class GameManager : MonoBehaviour
 
         transform.position = monViewCoordinates; // Start us at right view
 #if DEBUG
-       // ShortCut();
+        // ShortCut();
 #endif
     }
 
