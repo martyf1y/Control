@@ -5,40 +5,31 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance = null; //Static instance of GameManager which allows it to be accessed by any other script.
-                                               // private int level = 1;
-
-    private GameObject currentLevel;
-    [SerializeField] private GameObject level0 = null;
-    [SerializeField] private GameObject level1 = null;
-    [SerializeField] private GameObject level2 = null;
-    [SerializeField] private GameObject level3 = null;
+    Monster monster;
+    Player player;
+    private GameObject currentWorld;
+    [SerializeField] private GameObject level0, level1, level2, level3;
     private GameObject worldDoor;
 
     // General Level Functions
-    delegate bool WorldPuzzleCheck();
-    WorldPuzzleCheck IsWorldPuzzleSolved;
-    delegate void WorldInteraction();
-    WorldInteraction WorldPreSolvedInteractions;
-    // Monster Functions
-    delegate char MonsterMoveCheck();
-    MonsterMoveCheck GetMonMoveDir, BarrierCheck;
-    delegate void MoveMonsterType(char direction);
-    MoveMonsterType MoveMonAnim;
+    delegate bool PuzzleSolved();
+    PuzzleSolved isPuzzleSolved;
+    delegate void WorldEvents();
+    WorldEvents worldInteraction, worldCompleted;
+
+    // Collider Functions
+    delegate char DirectionCheck();
+    DirectionCheck moveDirection, barrierDirection;
 
     // Camera shenanigans
-    private Vector3 worldViewCoordinates;
-    private Vector3 monViewCoordinates;
-    private Vector3 newViewCoordinates;
+    private Vector3 worldView, monsterView, targetView;
     private readonly float camSpeed = .1f;
-    private bool movingCam = false;
 
-    // Collision between the objects
-    private Collider2D playerCollider, monCollider;
-    private Collider2D worldCollider, monBlkrCollider;
-    private Collider2D doorEntryCollider;
+    // Collision between objects
+    private Collider2D playerCol, monCol, worldCol, barrierCol, doorCol;
 
     // Level 2 Variables
-    readonly float leashLength = 2.5f;
+    const float leashLength = 2.5f;
 
     void Awake()
     {
@@ -49,273 +40,222 @@ public class GameManager : MonoBehaviour
     void ShortCut() // Debugging purposes
     {
         LevelUp();
-        Monster.instance.transform.position = new Vector3(0, 8.490003f, 0);
+        monster.transform.position = new Vector3(0, 8.490003f, 0);
     }
 
     void Start()
     {
-        //Protection to make sure there is only one instance of GameManager        
-        if (instance == null) instance = this;
-        else if (instance != this) Destroy(this);
-
         Cursor.visible = false;
-
-        playerCollider = Player.instance.GetComponent<Collider2D>();
-        monCollider = Monster.instance.GetComponent<Collider2D>();
-        GetMonMoveDir = Lvl1PlayerPushMonCheck; // Make function the level 1 version
-        BarrierCheck = Lvl1BarrierCheck;
-        MoveMonAnim = Lvl1MoveMon;
-        WorldPreSolvedInteractions = Lvl1PuzzleInteraction;
-        currentLevel = level1; // Start at level 1
-        ResetCurrentWorld(currentLevel);
+        if (instance == null) instance = this; // Protection to make sure there is only one instance of GameManager        
+        else if (instance != this) Destroy(this);
+        monster = Monster.instance;
+        player = Player.instance;
 
 
-        transform.position = monViewCoordinates; // Start us at right view
+        moveDirection = L1PushMonsterCheck; // Make function the level 1 version
+        barrierDirection = L1BarrierCheck;
+        worldInteraction = L1PuzzleInteraction;
+        currentWorld = level1; // Start at level 1
+        ResetToWorld(currentWorld);
+        worldCompleted = level0.GetComponent<World>().PuzzleSolvedEvents;
+        transform.position = monsterView; // Start us at right view
+
 #if DEBUG
-        // ShortCut();
+        ShortCut();
 #endif
     }
 
     private void Update()
     {
         // Collider bug fix for when animation changes
-        if (monCollider == null) monCollider = Monster.instance.GetComponent<Collider2D>();
-        if (playerCollider == null) playerCollider = Player.instance.GetComponent<Collider2D>();
+        if (monCol == null) monCol = monster.GetComponent<Collider2D>();
+        if (playerCol == null) playerCol = player.GetComponent<Collider2D>();
 
-        if (Player.instance.PlayInteract) // Only when player is interacting do checks happen.
+        char direction = 'N';
+        if (player.Interact) // Only when player is interacting do checks happen.
         {
-            char monMoveDirection = GetMonMoveDir(); // Based on current world factors
+            if (targetView == worldView) player.moveSpeed = .02f;
+            else player.moveSpeed = .08f;
 
-            if (monMoveDirection != 'N' && monMoveDirection != BarrierCheck())
-            {
-                MoveMonAnim(monMoveDirection);
-                RotateWorlds(monMoveDirection);
-            }
-            else if (Input.GetKeyDown("space")) Player.instance.HitAttack(); // Hand slam
-            else StopMoveAnim();
-
-            if (!IsWorldPuzzleSolved())
-                WorldPreSolvedInteractions();
-            else
-                WorldPuzzleSolvedEvents();
-
-            if (IsLevelCompleted)
-            {
-                Player.instance.PlayInteract = false; // Stops player moving
-                LevelUp();
-            }
+            direction = moveDirection(); // Based on current world factors
+            if (direction == barrierDirection()) direction = 'N';
+            if (direction == 'N' && Input.GetKeyDown("space")) player.HandSlam();
         }
-        else StopMoveAnim();
 
-        if (movingCam || WantToMoveCameraCheck()) movingCam = MoveCamera(newViewCoordinates);
+        if (direction != 'N')
+        {
+            player.move(direction);
+            monster.move(direction);
+            RotateWorlds(direction);
+        }
+        else IdleAnimation();
+
+        if (!UpdatingCamera(targetView) && Input.GetKeyUp("x")) ChangeCameraView();
+
+        if (!isPuzzleSolved()) worldInteraction();
+        else worldCompleted();
+        if (IsLevelCompleted) LevelUp();
     }
 
-    private void Lvl1MoveMon(char monsterDir)
+    private char L1PushMonsterCheck() => GetObjectDirection(monCol, playerCol, worldCol);
+
+    private char L2PullMonsterCheck()
     {
-        Monster.instance.AnimatePush(monsterDir);
-        Player.instance.Flip(monsterDir);
-        Player.instance.AnimatePush();
-    }
-
-    private void Lvl2MoveMon(char monsterDir)
-    {
-        Monster.instance.AnimatePush(monsterDir);
-        Player.instance.Flip(monsterDir);
-        Monster.instance.Flip(monsterDir);
-
-        if (Input.GetKey("space") || newViewCoordinates == worldViewCoordinates) // Fast pull
+        Vector3 oldPlayerPos = player.transform.position;
+        Vector3 monsterPos = monster.transform.position;
+        Vector3 pullLimit = PullObjectLimit(monsterPos, oldPlayerPos, leashLength);
+        if (oldPlayerPos != pullLimit)
         {
-            Player.instance.AnimatePush();
-            Player.instance.GetComponentInChildren<Rope>().CheckRopeAdjust(Rope.maxLength - 5);
-        }
-        else
-        {
-            Player.instance.AnimateStopPush();
-            Player.instance.GetComponentInChildren<Rope>().CheckRopeAdjust(Rope.maxLength);
-        }
-    }
-
-    private char Lvl1PlayerPushMonCheck() => TriObjectCollCheck(worldCollider, monCollider, playerCollider);
-
-    private char Lvl2PlayerPullMonCheck()
-    {
-        Vector3 oldPlayerPos = Player.instance.transform.position;
-        Vector3 monsterPos = Monster.instance.transform.position;
-        Vector3 playerPullLimit = PullObjectLimitCalc(monsterPos, oldPlayerPos, leashLength); // Calculates player leash limit and place
-        if (oldPlayerPos != playerPullLimit)
-        {
-            Player.instance.transform.position = playerPullLimit;
-            if (!playerCollider.IsTouching(worldCollider)) // Player cannot pull if touching ground
-                return monsterPos.x < playerPullLimit.x ? 'R' : 'L';
+            player.transform.position = pullLimit;
+            // Player cannot pull if touching ground
+            if (!playerCol.IsTouching(worldCol)) return monsterPos.x < pullLimit.x ? 'R' : 'L';
         }
         return 'N';
     }
 
-    char Lvl1BarrierCheck() => TriObjectCollCheck(worldCollider, monCollider, monBlkrCollider);
+    char L1BarrierCheck() => GetObjectDirection(monCol, barrierCol, worldCol);
+    char L2BarrierCheck() => GetObjectDirection(playerCol, barrierCol);
 
-    char Lvl2BarrierCheck() => DoubObjectCollCheck(playerCollider, monBlkrCollider);
+    private void L1PuzzleInteraction() => currentWorld.GetComponent<World>().PuzzleInteraction(monCol);
 
-    private void Lvl1PuzzleInteraction() => currentLevel.GetComponent<World>().PuzzleInteraction(monCollider);
-
-    private void Lvl2PuzzleInteraction()
+    private void L2PuzzleInteraction()
     {
-        SpriteRenderer monColor = Monster.instance.GetComponent<SpriteRenderer>();
-        if (monColor.color != Color.white)
-            currentLevel.GetComponent<Level2Script>().UpdatePickedUpPaper(monCollider, monColor.color);
+        Color dogColor = monster.GetComponent<SpriteRenderer>().color;
+        Level2Script L2 = currentWorld.GetComponent<Level2Script>();
 
-        if (HandHitDogFromAbove(monCollider, playerCollider, Player.instance.GetComponent<Rigidbody2D>().velocity.magnitude))
+        float slamSpeed = player.GetComponent<Rigidbody2D>().velocity.magnitude;
+        if (monster.HitOnHead(playerCol, slamSpeed) && player.Interact)
         {
-            Player.instance.Force = 0;
-            if (monColor.color == Color.white) // Check to see if dog is already holding paper
+            player.Force = 0;
+            if (dogColor == Color.white) // Check to see if dog is already holding paper
             {
-                monColor.color = currentLevel.GetComponent<Level2Script>().PickupPaper(monCollider, monColor.color);
-                if (monColor.color != Color.white) // If the dog picked up a paper 
-                    Monster.instance.AnimateGrabNewspaper();
+                dogColor = L2.PickupPaper(monCol, dogColor);
+                if (dogColor != Color.white) monster.GrabNewspaper();
             }
             else
             {
-                if (currentLevel.GetComponent<Level2Script>().PaperDropped(monCollider, monColor.color) != null)
-                {
-                    // Switch on light in house
-                }
-                monColor.color = Color.white;
-                Monster.instance.AnimateDropNewspaper(); // Change to dog without paper
+                Color returnedMailColor = L2.DropPaper(monCol, dogColor);
+                if (returnedMailColor != Color.white) L2.TurnOnLight(returnedMailColor);
+                dogColor = Color.white;
+                monster.DropNewspaper(); // Change to dog without paper
             }
+            monster.GetComponent<SpriteRenderer>().color = dogColor;
         }
+        if (monster.GetComponent<Animator>().GetBool("WithPaperB"))
+            L2.UpdatePickedUpPaper(monCol, dogColor);
     }
 
-    private bool HandHitDogFromAbove(Collider2D mTransform, Collider2D pTransform, float speed) =>
-        playerCollider.IsTouching(monCollider) &&
-        pTransform.transform.position.y > mTransform.transform.position.y &&
-        ((mTransform.transform.localScale.x == -1 && pTransform.transform.position.x < mTransform.transform.position.x) ||
-        (mTransform.transform.localScale.x == 1 && pTransform.transform.position.x > mTransform.transform.position.x)) &&
-        speed > 1f ? true : false; // Is player hitting dog from above?
 
-    void StopMoveAnim()
+    void IdleAnimation()
     {
-        Monster.instance.AnimateStopPush();
-        Player.instance.AnimateStopPush();
+        monster.StopPush();
+        player.StopPush();
     }
 
     // ------- Collider Checks Changes ------ //
 
-    Vector3 PullObjectLimitCalc(Vector3 anchor, Vector3 pullVector, float radius)
+    Vector3 PullObjectLimit(Vector3 anchor, Vector3 pullVector, float radius)
     {
         Vector3 offset = pullVector - anchor;
-        // Limits the distance the player can go from the monster with leash
         pullVector = anchor + Vector3.ClampMagnitude(offset, radius);
         return pullVector;
     }
 
-    public char TriObjectCollCheck(Collider2D groundCol, Collider2D objectCol, Collider2D pusherCol) =>
-         objectCol.IsTouching(groundCol) // Is object on the floor?
-         && objectCol.IsTouching(pusherCol)
-            ? objectCol.transform.position.x < pusherCol.transform.position.x
+    public char GetObjectDirection(Collider2D obj, Collider2D pusher, Collider2D ground) =>
+         obj.IsTouching(ground) // Is object on the floor?
+         && obj.IsTouching(pusher)
+            ? obj.transform.position.x < pusher.transform.position.x
                 ? 'L' : 'R' : 'N';
 
-    public char DoubObjectCollCheck(Collider2D objectCol, Collider2D pusherCol) => // SHOULD BE WORKING BUT IS NOT? MIGHT BE RELATED TO LINKING ISSUE WITH SCRIPTS
-         objectCol.IsTouching(pusherCol) ? // Is object being pushed?
-            objectCol.transform.position.x < pusherCol.transform.position.x ?
+    public char GetObjectDirection(Collider2D obj, Collider2D pusher) => // SHOULD BE WORKING BUT IS NOT? MIGHT BE RELATED TO LINKING ISSUE WITH SCRIPTS
+         obj.IsTouching(pusher) ? // Is object being pushed?
+            obj.transform.position.x < pusher.transform.position.x ?
                 'R' : 'L' : 'N';
 
 
-    // If moster has collided with door it means they have ccompleted level
-    private bool IsLevelCompleted => TriObjectCollCheck(worldCollider, monCollider, doorEntryCollider) != 'N' ? true : false;
+    // If monster has collided with door then level complete
+    private bool IsLevelCompleted => GetObjectDirection(monCol, doorCol, worldCol) != 'N' ? true : false;
 
     // ------- World Changes ------ //
-
-    void ResetCurrentWorld(GameObject newWorld)
+    void ResetToWorld(GameObject level)
     {
-        monViewCoordinates = newWorld.GetComponent<World>().MonsterView;
-        worldViewCoordinates = newWorld.GetComponent<World>().WorldView;
-        worldCollider = newWorld.GetComponent<Collider2D>();
-        worldDoor = newWorld.GetComponent<World>().worldDoor;
-        doorEntryCollider = newWorld.GetComponent<World>().worldDoor.GetComponent<Collider2D>();
-        monBlkrCollider = newWorld.GetComponent<World>().monsterBlocker.GetComponent<Collider2D>();
-        IsWorldPuzzleSolved = currentLevel.GetComponent<World>().PuzzleSolvedChecker;
-        movingCam = true; // Move camera to new view
-        newViewCoordinates = monViewCoordinates;
+        World newWorld = level.GetComponent<World>();
+        monsterView = newWorld.MonsterView;
+        worldView = newWorld.WorldView;
+        worldCol = level.GetComponent<Collider2D>();
+        worldDoor = newWorld.worldDoor;
+        doorCol = newWorld.worldDoor.GetComponent<Collider2D>();
+        barrierCol = newWorld.monsterBlocker.GetComponent<Collider2D>();
+        isPuzzleSolved = newWorld.PuzzleSolvedChecker;
+        worldCompleted = newWorld.PuzzleSolvedEvents;
+        targetView = monsterView;
+        player.UpdateMove(newWorld.Level);
+        monster.UpdateMove(newWorld.Level);
     }
 
-    void WorldPuzzleSolvedEvents()
-    {
-        if (currentLevel == level1)
-        { // A one off thing for axe that needed higher access
-            float zConv = level0.transform.rotation.z * Mathf.Rad2Deg;
-            if (zConv > 52.5 && zConv < 52.8) // Stops axe in the right place
-                level0.GetComponentInChildren<World>().Rotation = new Vector3(0, 0, 0);
-        }
-    }
+    
 
     void LevelUp()
     {
+        player.Interact = false; // Stops player moving
         worldDoor.GetComponent<WorldDoor>().ChangeSprite(1); // Change to open door.
-        currentLevel.GetComponentInChildren<Collider2D>().enabled = false; // Remove door blocker
+        currentWorld.GetComponentInChildren<Collider2D>().enabled = false; // Remove door blocker
 
         foreach (World world in FindObjectsOfType<World>()) world.Rotation *= -1; // Rotate other way
 
-        if (currentLevel == level1)
+        if (currentWorld == level1)
         {
             level0.GetComponentInChildren<World>().LevelComplete = true;
             worldDoor.GetComponent<WorldDoor>().ChangeSpriteOrder("Back Object"); // Change to behind Monster.
             worldDoor.transform.GetChild(0).gameObject.SetActive(false); // Mask
 
-            Monster.instance.Evolve(1);
-            GetMonMoveDir = Lvl2PlayerPullMonCheck;
-            MoveMonAnim = Lvl2MoveMon;
-            BarrierCheck = Lvl2BarrierCheck;
-            WorldPreSolvedInteractions = Lvl2PuzzleInteraction;
-            Player.instance.movement = Player.instance.Evolve;
-            Player.instance.attachCollarHere = Monster.instance.transform.Find("Collar").transform;
-            currentLevel = level2; // Move onto level2
+            moveDirection = L2PullMonsterCheck;
+            barrierDirection = L2BarrierCheck;
+            worldInteraction = L2PuzzleInteraction;
+
+            monster.Evolve(1);
+            player.movement = player.Evolve;
+            player.attachCollarHere = monster.transform.Find("Collar").transform;
+
+            currentWorld = level2;
         }
-        else if (currentLevel == level2)
+        else if (currentWorld == level2)
         {
             level1.GetComponentInChildren<World>().LevelComplete = true;
-            currentLevel = level3; // Move onto level3
+            currentWorld = level3;
         }
-        ResetCurrentWorld(currentLevel);
+        ResetToWorld(currentWorld);
     }
 
-    bool WantToMoveCameraCheck()
+    void ChangeCameraView()
     {
-        if (Input.GetKeyUp("x"))
+        if (transform.position == worldView) targetView = monsterView;
+        else if (transform.position == monsterView) targetView = worldView;
+    }
+
+    bool UpdatingCamera(Vector3 tPos)
+    {
+        if (Vector3.Distance(transform.position, tPos) > .05)
         {
-            // Decide which way to move camera
-            if (transform.position == worldViewCoordinates)
-                newViewCoordinates = monViewCoordinates;
-            else if (transform.position == monViewCoordinates)
-                newViewCoordinates = worldViewCoordinates;
+            transform.position = Vector3.Lerp(transform.position, tPos, camSpeed);
             return true;
         }
-        return false;
+
+        transform.position = tPos;
+        return false; // We have stopped moving so can stop calling this
     }
 
-    bool MoveCamera(Vector3 targetPos)
+    void RotateWorlds(char dir)
     {
-        transform.position = Vector3.Lerp(transform.position, targetPos, camSpeed);
-        if (Vector3.Distance(transform.position, targetPos) < .05)
-        {
-            transform.position = targetPos;
-            return false; // We have stopped moving so can stop calling this
-        }
-        return true;
-    }
-
-    void RotateWorlds(char rotateWhatWay)
-    {
-        float worldSpeed = 1;
-        Animator monsterAnimator = Monster.instance.GetComponent<Animator>();
+        float speed = 1;
+        Animator monsterAnimator = monster.GetComponent<Animator>();
         monsterAnimator.speed = 1;
-
-        // Go faster when outer view or holding space bar
-        if (Input.GetKey("space") || newViewCoordinates == worldViewCoordinates)
+        if (Input.GetKey("space") || targetView == worldView) // Go faster when outer view or holding space bar
         {
-            worldSpeed = 3;
+            speed = 3;
             monsterAnimator.speed = 6;
         }
-
         foreach (World world in FindObjectsOfType<World>())
-            if (!world.LevelComplete) world.Rotate(rotateWhatWay == 'L' ? worldSpeed : -worldSpeed);
+            if (!world.LevelComplete) world.Rotate(dir == 'L' ? speed : -speed);
     }
 }

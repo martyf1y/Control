@@ -4,23 +4,28 @@ using UnityEngine;
 
 public class Character : MonoBehaviour
 {
-
     protected char facingThisWay = 'L';
     protected Animator animator;
+    public delegate void Move(char direction);
+    public Move move;
+    void Start() { }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-       
-    }
-
-    // Update is called once per frame
     public virtual void Update()
     {
         if (gameObject.GetComponent<PolygonCollider2D>() == null) // Bad fix to polygon collider reset not doable
             gameObject.AddComponent<PolygonCollider2D>();
     }
 
+    public void UpdateMove(int level)
+    {
+        if (level == 1) move = L1Move;
+        else if (level == 2) move = L2Move;
+        else if (level == 3) { }
+        else move = L1Move;
+    }
+
+    public virtual void L1Move(char direction) { }
+    public virtual void L2Move(char direction) { }
 
     public void AnimateEvolve() => animator.SetTrigger("Evolve");
 

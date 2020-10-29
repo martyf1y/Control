@@ -22,6 +22,7 @@ public class Level1Script : World
         if (instance == null) instance = this;
         else if (instance != this) Destroy(this);
 
+        level = 1;
         MonsterView = new Vector3(0, 14, -150); // Change parent variables to the level settings.
         WorldView = new Vector3(0, 0, -700);
         Rotation = new Vector3(0, 0, -10);
@@ -36,7 +37,7 @@ public class Level1Script : World
         for (int i = 0; i < buttons.Length; i++)
         {
             buttons[i] = Instantiate(buttonPrefab, transform) as GameObject;    // Create and set to the parent level 1 with transform     
-            
+
             float angle = angleAdjuster * Mathf.PI * 2;
             Vector3 pos = new Vector3(Mathf.Cos(angle) * worldEdge, Mathf.Sin(angle) * worldEdge, 0);
             buttons[i].transform.position = pos;
@@ -64,12 +65,12 @@ public class Level1Script : World
 
     public override void PuzzleInteraction(Collider2D monCollider)
     {
-            int i = 0;
-            foreach (GameObject button in buttons)
-            {
-                ButtonPressCheck(button, i, monCollider); // Check and change when button pressed
-                i++;
-            }
+        int i = 0;
+        foreach (GameObject button in buttons)
+        {
+            ButtonPressCheck(button, i, monCollider); // Check and change when button pressed
+            i++;
+        }
     }
 
     public override bool PuzzleSolvedChecker()
@@ -79,18 +80,14 @@ public class Level1Script : World
             int i = 0;
             int totalCorrectButts = 0;
 
-            foreach(GameObject button in buttons)
+            foreach (GameObject button in buttons)
             {
                 totalCorrectButts += ButtonCorrectChar(button, i); // Count all correct buttons chars
                 i++;
             }
             return PuzzleSolved = (Input.GetKeyUp("s") || totalCorrectButts >= password.Length) ? true : false;
         }
-        else
-        {
-            return PuzzleSolved;
-        }
-
+        else return PuzzleSolved;
     }
 
     void ButtonPressCheck(GameObject thisButton, int index, Collider2D objectCollider)
@@ -104,13 +101,16 @@ public class Level1Script : World
                 int currentCharIndex = System.Array.IndexOf(passwordButtLib, buttText[index].text);
                 if (currentCharIndex != passwordButtLib.Length - 1)
                     buttText[index].text = passwordButtLib[currentCharIndex + 1];
-                else
-                    buttText[index].text = passwordButtLib[0];
+                else buttText[index].text = passwordButtLib[0];
 
                 buttPressed[index] = true;
             }
         }
-        else { buttPressed[index] = false; thisButton.GetComponent<SpriteRenderer>().sprite = buttSprite[0]; } // Butt up. Can be pressed again
+        else
+        {
+            buttPressed[index] = false;
+            thisButton.GetComponent<SpriteRenderer>().sprite = buttSprite[0];
+        } 
     }
 
     int ButtonCorrectChar(GameObject thisButton, int index)

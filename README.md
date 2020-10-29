@@ -5,14 +5,13 @@ Based on the 2012 game.
 Players can push around a weird creature on a puzzle world. Aim is to solve each puzzle and try reach the center!  
 
 To do
-06.08.20
+29.10.20
 
 Level 2
 
-- Have newspapers collide with each other
-- Solve puzzle function
-- Blend of house lights
+- Complete level trigger
 - Fix animation to dog occurs (think its as good as it can get)
+- Properly go over newspapers
 
 Level 3
 
@@ -31,6 +30,9 @@ Level 1
 
 Completed
 
+- Solve puzzle function
+- Blend of house lights
+- Have newspapers collide with each other
 - Leash calculation correct
 - Dog animations left and right
 - hand animations on leash pull

@@ -10,7 +10,9 @@ public class World : MonoBehaviour
     // Level things properties that cross over each level
     public GameObject worldDoor;
     public Collider2D monsterBlocker;
-    public Vector3 WorldView  {get; set;}
+    public int level = 0;
+    public int Level { get{return level;} }
+    public Vector3 WorldView { get; set; }
     public Vector3 MonsterView { get; set; }
     public bool PuzzleSolved { get; set; }
     public bool LevelComplete { get; set; }
@@ -19,7 +21,6 @@ public class World : MonoBehaviour
     void Start()
     {
         LevelComplete = false;
-
         MonsterView = new Vector3(0, 4, -150);
     }
 
@@ -36,12 +37,17 @@ public class World : MonoBehaviour
 
     public virtual void PuzzleInteraction(Collider2D monCollider)
     {
-       // return false;
+        // return false;
     }
 
     public virtual bool PuzzleSolvedChecker()
     {
         return false;
+    }
+
+    public virtual void PuzzleSolvedEvents()
+    {
+
     }
 
     public void FadeOut()
@@ -54,7 +60,7 @@ public class World : MonoBehaviour
             thisCol.a -= fadeSpeed;
             thisSprite.color = thisCol;
         }
-        if(this.GetComponent<SpriteRenderer>().color.a <= 0) // Once world is gone, disappear
+        if (this.GetComponent<SpriteRenderer>().color.a <= 0) // Once world is gone, disappear
             this.gameObject.SetActive(false);
     }
 }

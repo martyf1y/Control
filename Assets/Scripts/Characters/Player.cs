@@ -8,11 +8,10 @@ public class Player : Character
     private Rigidbody2D rg2d;
 
     // Movement variables
-    private const float moveSpeed = .1f;
-    private Vector3 mousePosition;
-    private Vector3 prevPos;
-    public bool PlayInteract {get;set;}
-    public bool AttemptedHit { get; set;}
+    public float moveSpeed = .08f;
+    private Vector3 mousePos, prevPos;
+    public bool Interact { get; set; }
+    public bool AttemptedHit { get; set; }
 
     public delegate void Movement(); // What we swap between types of movement
     public Movement movement;
@@ -44,11 +43,34 @@ public class Player : Character
         movement();
     }
 
+
+    public override void L1Move(char direction)
+    {
+        Flip(direction);
+        Push();
+    }
+
+    public override void L2Move(char direction)
+    {
+        Player.instance.Flip(direction);
+
+        if (Input.GetKey("space") ) // Fast pull
+        { // || targetView == worldView
+            Push();
+            GetComponentInChildren<Rope>().CheckRopeAdjust(Rope.maxLength - 5);
+        }
+        else
+        {
+            StopPush();
+            GetComponentInChildren<Rope>().CheckRopeAdjust(Rope.maxLength);
+        }
+    }
+
     void GeneralMovement()
     {
-        if (Input.GetMouseButtonUp(1)) PlayInteract = !PlayInteract; //rg2d.velocity = Vector3.zero; //rg2d.angularVelocity = 0;
+        if (Input.GetMouseButtonUp(1)) Interact = !Interact; //rg2d.velocity = Vector3.zero; //rg2d.angularVelocity = 0;
 
-        if (PlayInteract)
+        if (Interact)
         {
             if (Force < 10)
             {
@@ -57,9 +79,9 @@ public class Player : Character
                 rg2d.angularVelocity = 0;
                 rg2d.gravityScale = 0;
                 transform.rotation = Quaternion.Euler(0, 0, 0);
-                mousePosition = GetWorldPositionOnPlane(Input.mousePosition, 0); // This fixes persepctive issues with Z axis
-                transform.position = Vector2.Lerp(transform.position, mousePosition, moveSpeed); // Give a nice rubber band movement to mouse position  
-                mousePosition = mousePosition.normalized;
+                mousePos = GetWorldPositionOnPlane(Input.mousePosition, 0); // This fixes persepctive issues with Z axis
+                transform.position = Vector2.Lerp(transform.position, mousePos, moveSpeed); // Give a nice rubber band movement to mouse position  
+                mousePos = mousePos.normalized;
                 prevPos = transform.position;
             }
             else ApplyForce();
@@ -68,20 +90,19 @@ public class Player : Character
         else this.GetComponent<CircularGravity>().enabled = true;
     }
 
-    public void HitAttack()
+    public void HandSlam()
     {
-        if (Force<10)
-        Force = 300;
+        if (Force < 10) Force = 300;
     }
 
     private void ApplyForce() => rg2d.AddForce(new Vector2(0, -(Force *= .88f)));
 
-public void Evolve()
+    public void Evolve()
     {
-    // if (levelNum == 1) {
+        // if (levelNum == 1) {
         rg2d.velocity = new Vector2(0, 0);
         this.GetComponent<CircularGravity>().enabled = false;
-    if (Vector3.Magnitude(transform.position - moveHere) < 0.5) // when we are close enough
+        if (Vector3.Magnitude(transform.position - moveHere) < 0.5) // when we are close enough
         {
             if (!moveBackDown)
             {  // spriteChange here
@@ -89,11 +110,11 @@ public void Evolve()
                 moveBackDown = true;
 
                 this.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic; // No more moving the monster round
-               // moveHere = new Vector3(0.59f, 8.6f, 0);
+                                                                                       // moveHere = new Vector3(0.59f, 8.6f, 0);
                 moveHere = attachCollarHere.position;
                 this.transform.rotation = Quaternion.Euler(0, 0, 270);
                 transform.localScale = new Vector3(-Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
-                    
+
             }
             else
             {
@@ -102,11 +123,11 @@ public void Evolve()
                 AddLeash();
                 movement = GeneralMovement; // Go back to normal movement
                 this.GetComponent<CircularGravity>().enabled = true;
-                PlayInteract = true;
+                Interact = true;
             }
         }
         else transform.position = Vector2.Lerp(transform.position, moveHere, 0.04f);
-    //  }
+        //  }
     }
 
     void AddLeash() => leash = Instantiate(leash, transform) as GameObject;
@@ -119,8 +140,8 @@ public void Evolve()
         return ray.GetPoint(distance);
     }
 
-    public void AnimatePush() => animator.SetBool("Push", true);  //animator.SetTrigger("EndPush");
+    public void Push() => animator.SetBool("Push", true);  //animator.SetTrigger("EndPush");
 
-    public void AnimateStopPush() => animator.SetBool("Push", false);  //animator.SetTrigger("EndPush");
+    public void StopPush() => animator.SetBool("Push", false);  //animator.SetTrigger("EndPush");
 
 }

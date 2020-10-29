@@ -21,10 +21,7 @@ public class Rope : MonoBehaviour
         this.lineRenderer = this.GetComponent<LineRenderer>();
 
         startPoint = this.transform.parent;
-        
         endPoint = GameObject.Find("Monster/Collar").transform;
-        Debug.Log(startPoint);
-        Debug.Log(endPoint);
 
         //  Vector3 ropeStartPoint = startPoint.transform.position;
         Vector3 ropeStartPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -47,7 +44,7 @@ public class Rope : MonoBehaviour
 
     public void CheckRopeAdjust(int amount)
     {
-        if (segmentLength == amount) return; 
+        if (segmentLength == amount) return;
 
         segmentLength += (segmentLength > amount ? -1 : 1);
         expectedRopeSize = amount;
@@ -55,7 +52,7 @@ public class Rope : MonoBehaviour
 
     private void FixedUpdate()
     {
-       
+
     }
 
     private void Simulate()
@@ -74,15 +71,13 @@ public class Rope : MonoBehaviour
         }
 
         //CONSTRAINTS
-        for (int i = 0; i < 50; i++)
-        {
-            this.ApplyConstraint();
-        }
+        for (int i = 0; i < 50; i++) this.ApplyConstraint();
+
     }
 
 
     private void ApplyConstraint()
-    { 
+    {
         RopeSegment firstSegment = this.ropeSegments[0];
         firstSegment.posNow = this.startPoint.position;
         this.ropeSegments[0] = firstSegment;
@@ -125,10 +120,7 @@ public class Rope : MonoBehaviour
         lineRenderer.endWidth = lineWidth;
 
         Vector3[] ropePositions = new Vector3[this.segmentLength];
-        for (int i = 0; i < this.segmentLength; i++)
-        {
-            ropePositions[i] = this.ropeSegments[i].posNow;
-        }
+        for (int i = 0; i < this.segmentLength; i++) ropePositions[i] = this.ropeSegments[i].posNow;
 
         lineRenderer.positionCount = ropePositions.Length;
         lineRenderer.SetPositions(ropePositions);

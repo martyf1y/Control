@@ -269,7 +269,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: HoldingNewspaperB
+    m_ConditionEvent: WithPaperB
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 8018759693222633409}
@@ -318,7 +318,7 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
-  - m_Name: HoldingNewspaperB
+  - m_Name: WithPaperB
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -532,7 +532,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 2
-    m_ConditionEvent: HoldingNewspaperB
+    m_ConditionEvent: WithPaperB
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -481737238354430206}

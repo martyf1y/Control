@@ -5,9 +5,7 @@ using UnityEngine;
 public class Monster : Character
 {
     public static Monster instance = null;
-    public bool holdingNewspaper = false;
     [HideInInspector] public bool scaleMonster = false;
-
     void Start()
     {
         //Check if instance already exists
@@ -21,27 +19,40 @@ public class Monster : Character
     public override void Update()
     {
         base.Update();
-
-        if (scaleMonster) // One off fix for sprite size difference
-            scaleMonster = ScaleMonster(new Vector3(0.22f, 0.22f, 1));
+        // One off fix for sprite size difference
+        if (scaleMonster) scaleMonster = ScaleMonster(new Vector3(0.22f, 0.22f, 1));
+    }
+    public bool HitOnHead(Collider2D obj, float oSpeed)
+    {
+        Vector2 oPos = obj.transform.position;
+        Vector2 pos = GetComponent<Collider2D>().transform.position;
+        float dir = GetComponent<Collider2D>().transform.localScale.x;
+        bool headSide = (dir == -1 && oPos.x < pos.x) || (dir == 1 && oPos.x > pos.x);
+        bool onHead = oPos.y > pos.y && headSide;
+        return obj.IsTouching(GetComponent<Collider2D>()) && onHead && oSpeed > 1f;
     }
 
-    public void AnimatePush(char goThisWay) => animator.SetBool(goThisWay == 'L' ? "PushLeftB" : "PushRightB", true);
 
-    public void AnimateStopPush()
+    // ------------------------------ Animations  ---------------------------------- //
+    public override void L1Move(char direction) => animator.SetBool(direction == 'L' ? "PushLeftB" : "PushRightB", true);
+    public override void L2Move(char direction)
+    {
+        Flip(direction);
+        animator.SetBool(direction == 'L' ? "PushLeftB" : "PushRightB", true);
+    }
+    public void StopPush()
     {
         animator.speed = 1;
         animator.SetBool("PushRightB", false);
         animator.SetBool("PushLeftB", false);
     }
 
-    public void AnimateGrabNewspaper() => animator.SetBool("HoldingNewspaperB", true);
+    public void GrabNewspaper() => animator.SetBool("WithPaperB", true);
+    public void DropNewspaper() => animator.SetBool("WithPaperB", false);
 
-    public void AnimateDropNewspaper() => animator.SetBool("HoldingNewspaperB", false);
-
+    // ------------------------------ Animations  ---------------------------------- //
 
     // ------------------------------ Level 1 Evolve Function ---------------------------------- //
-
     public void Evolve(int levelNum)
     {
         if (levelNum == 1)
@@ -71,7 +82,7 @@ public class Monster : Character
 
         transform.position = new Vector3(0, 8.48f, 0);
         transform.GetChild(0).gameObject.SetActive(true); // Collar
-        transform.GetChild(0).gameObject.transform.position = new Vector3((transform.position.x+.54f), (transform.position.y + .24f), 0f);
+        transform.GetChild(0).gameObject.transform.position = new Vector3((transform.position.x + .54f), (transform.position.y + .24f), 0f);
     }
     // ------------------------------ Level 1 Evolve Function ---------------------------------- //
 
